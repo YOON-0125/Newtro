@@ -121,6 +121,22 @@ public abstract class WeaponBase : MonoBehaviour
         // 기본적으로 데미지 10% 증가
         damage *= 1.1f;
     }
+
+    /// <summary>
+    /// 데미지 배수 적용
+    /// </summary>
+    public virtual void ApplyDamageMultiplier(float m)
+    {
+        damage *= m;
+    }
+
+    /// <summary>
+    /// 쿨다운 배수 적용
+    /// </summary>
+    public virtual void ApplyCooldownMultiplier(float m)
+    {
+        cooldown *= m;
+    }
     
     /// <summary>
     /// 공격 사운드 재생

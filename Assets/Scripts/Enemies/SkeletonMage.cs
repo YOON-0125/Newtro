@@ -379,7 +379,7 @@ public class MagicProjectile : MonoBehaviour
             var playerHealth = other.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(damage);
+                playerHealth.TakeDamage(damage, DamageTag.Physical);
             }
             
             CreateHitEffect();

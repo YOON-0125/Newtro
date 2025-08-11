@@ -207,7 +207,7 @@ public class HealthBarUI : MonoBehaviour
     private void TestTakeDamage()
     {
         if (playerHealth != null)
-            playerHealth.TakeDamage(1f);
+            playerHealth.TakeDamage(1f, DamageTag.Physical);
     }
     
     [ContextMenu("Test Heal")]

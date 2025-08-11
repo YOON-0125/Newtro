@@ -13,6 +13,8 @@ public abstract class WeaponBase : MonoBehaviour
     [SerializeField] protected float range = 10f;
     [SerializeField] protected int level = 1;
     [SerializeField] protected int maxLevel = 10;
+    [SerializeField] protected DamageTag damageTag = DamageTag.Physical;
+    [SerializeField] protected StatusEffect statusEffect;
     
     [Header("사운드")]
     [SerializeField] protected AudioClip attackSound;
@@ -129,6 +131,22 @@ public abstract class WeaponBase : MonoBehaviour
     {
         // 기본적으로 데미지 10% 증가
         damage *= 1.1f;
+    }
+
+    /// <summary>
+    /// 데미지 배수 적용
+    /// </summary>
+    public virtual void ApplyDamageMultiplier(float m)
+    {
+        damage *= m;
+    }
+
+    /// <summary>
+    /// 쿨다운 배수 적용
+    /// </summary>
+    public virtual void ApplyCooldownMultiplier(float m)
+    {
+        cooldown *= m;
     }
     
     /// <summary>

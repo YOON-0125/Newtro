@@ -90,9 +90,15 @@ public class ProjectileWeapon : WeaponBase
         Projectile projectileComponent = projectile.GetComponent<Projectile>();
         if (projectileComponent == null)
             projectileComponent = projectile.AddComponent<Projectile>();
+ codex/implement-relic-system-for-rewards
 
         projectileComponent.Initialize(damage, projectileLifetime, projectileSpeed, 1);
 
+=======
+            
+          projectileComponent.Initialize(damage, projectileLifetime, damageTag, statusEffect);
+        
+ main
         // 회전 설정 (발사 방향으로)
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         projectile.transform.rotation = Quaternion.Euler(0, 0, angle);
@@ -166,11 +172,20 @@ public class Projectile : PooledProjectile
     private float damage;
     private float lifetime;
     private float startTime;
+ codex/implement-relic-system-for-rewards
 
     public void Initialize(float damage, float lifetime, float speed, int pierce)
+=======
+    private DamageTag damageTag;
+    private StatusEffect statusEffect;
+    
+    public void Initialize(float damage, float lifetime, DamageTag tag, StatusEffect effect)
+ main
     {
         this.damage = damage;
         this.lifetime = lifetime;
+        this.damageTag = tag;
+        this.statusEffect = effect;
         this.startTime = Time.time;
         Speed = speed;
         Pierce = pierce;
@@ -193,6 +208,7 @@ public class Projectile : PooledProjectile
             var enemy = other.GetComponent<EnemyBase>();
             if (enemy != null)
             {
+ codex/implement-relic-system-for-rewards
                 float finalDamage = damage;
                 var relicManager = FindObjectOfType<RelicManager>();
                 if (relicManager != null)
@@ -200,6 +216,11 @@ public class Projectile : PooledProjectile
                     relicManager.OnDamageDealt(enemy, ref finalDamage, ElementTag.Physical);
                 }
                 enemy.TakeDamage(finalDamage);
+=======
+                enemy.TakeDamage(damage, damageTag);
+                var status = enemy.GetComponent<IStatusReceiver>();
+                status?.ApplyStatus(statusEffect);
+ main
             }
 
             Pierce--;

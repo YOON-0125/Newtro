@@ -102,7 +102,9 @@ public class ChainWeapon : WeaponBase
         var enemy = target.GetComponent<EnemyBase>();
         if (enemy != null)
         {
-            enemy.TakeDamage(damage);
+            enemy.TakeDamage(damage, damageTag);
+            var status = enemy.GetComponent<IStatusReceiver>();
+            status?.ApplyStatus(statusEffect);
         }
         
         CreateChainEffect(fromPosition, target.position);

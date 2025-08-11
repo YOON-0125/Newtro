@@ -85,17 +85,21 @@ public class ProjectileWeapon : WeaponBase
             
         rb.gravityScale = 0;
         rb.linearVelocity = direction * projectileSpeed;
-        
+
         // 발사체 컴포넌트 설정
         Projectile projectileComponent = projectile.GetComponent<Projectile>();
         if (projectileComponent == null)
             projectileComponent = projectile.AddComponent<Projectile>();
-            
-        projectileComponent.Initialize(damage, projectileLifetime);
-        
+
+        projectileComponent.Initialize(damage, projectileLifetime, projectileSpeed, 1);
+
         // 회전 설정 (발사 방향으로)
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         projectile.transform.rotation = Quaternion.Euler(0, 0, angle);
+
+        var relicManager = FindObjectOfType<RelicManager>();
+        if (relicManager != null)
+            relicManager.OnProjectileSpawned(projectileComponent);
     }
     
     protected override void OnLevelUp()
@@ -157,17 +161,19 @@ public class ProjectileWeapon : WeaponBase
 /// <summary>
 /// 발사체 컴포넌트
 /// </summary>
-public class Projectile : MonoBehaviour
+public class Projectile : PooledProjectile
 {
     private float damage;
     private float lifetime;
     private float startTime;
-    
-    public void Initialize(float damage, float lifetime)
+
+    public void Initialize(float damage, float lifetime, float speed, int pierce)
     {
         this.damage = damage;
         this.lifetime = lifetime;
         this.startTime = Time.time;
+        Speed = speed;
+        Pierce = pierce;
     }
     
     private void Update()
@@ -184,14 +190,21 @@ public class Projectile : MonoBehaviour
         // 적과 충돌 시
         if (other.CompareTag("Enemy"))
         {
-            // 데미지 처리
             var enemy = other.GetComponent<EnemyBase>();
             if (enemy != null)
             {
-                enemy.TakeDamage(damage);
+                float finalDamage = damage;
+                var relicManager = FindObjectOfType<RelicManager>();
+                if (relicManager != null)
+                {
+                    relicManager.OnDamageDealt(enemy, ref finalDamage, ElementTag.Physical);
+                }
+                enemy.TakeDamage(finalDamage);
             }
-            
-            DestroyProjectile();
+
+            Pierce--;
+            if (Pierce <= 0)
+                DestroyProjectile();
         }
         // 벽과 충돌 시
         else if (other.CompareTag("Wall"))

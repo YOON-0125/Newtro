@@ -10,6 +10,7 @@ public abstract class WeaponBase : MonoBehaviour
     [SerializeField] protected string weaponName;
     [SerializeField] protected float damage = 10f;
     [SerializeField] protected float cooldown = 1f;
+    [SerializeField] protected float range = 10f;
     [SerializeField] protected int level = 1;
     [SerializeField] protected int maxLevel = 10;
     
@@ -37,6 +38,7 @@ public abstract class WeaponBase : MonoBehaviour
     public string WeaponName => weaponName;
     public float Damage => damage;
     public float Cooldown => cooldown;
+    public float Range { get => range; set => range = value; }
     public int Level => level;
     public int MaxLevel => maxLevel;
     public bool CanAttack => Time.time >= lastAttackTime + cooldown;
@@ -71,7 +73,11 @@ public abstract class WeaponBase : MonoBehaviour
     {
         if (!CanAttack || isAttacking)
             return false;
-            
+
+        var relicManager = FindObjectOfType<RelicManager>();
+        if (relicManager != null)
+            relicManager.OnBeforeWeaponFired(this);
+
         lastAttackTime = Time.time;
         isAttacking = true;
         
@@ -86,6 +92,9 @@ public abstract class WeaponBase : MonoBehaviour
         
         return true;
     }
+
+    public virtual void ApplyDamageMultiplier(float m) { damage *= m; }
+    public virtual void ApplyCooldownMultiplier(float m) { cooldown *= m; }
     
     /// <summary>
     /// 실제 공격 로직 (각 무기별로 구현)
@@ -180,7 +189,7 @@ public abstract class WeaponBase : MonoBehaviour
     /// </summary>
     protected virtual float GetAttackRange()
     {
-        return 10f; // 기본 공격 범위
+        return range; // 기본 공격 범위
     }
     
     protected virtual void OnDrawGizmosSelected()

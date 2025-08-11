@@ -91,7 +91,7 @@ public class ProjectileWeapon : WeaponBase
         if (projectileComponent == null)
             projectileComponent = projectile.AddComponent<Projectile>();
             
-        projectileComponent.Initialize(damage, projectileLifetime);
+          projectileComponent.Initialize(damage, projectileLifetime, damageTag, statusEffect);
         
         // 회전 설정 (발사 방향으로)
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
@@ -162,11 +162,15 @@ public class Projectile : MonoBehaviour
     private float damage;
     private float lifetime;
     private float startTime;
+    private DamageTag damageTag;
+    private StatusEffect statusEffect;
     
-    public void Initialize(float damage, float lifetime)
+    public void Initialize(float damage, float lifetime, DamageTag tag, StatusEffect effect)
     {
         this.damage = damage;
         this.lifetime = lifetime;
+        this.damageTag = tag;
+        this.statusEffect = effect;
         this.startTime = Time.time;
     }
     
@@ -188,7 +192,9 @@ public class Projectile : MonoBehaviour
             var enemy = other.GetComponent<EnemyBase>();
             if (enemy != null)
             {
-                enemy.TakeDamage(damage);
+                enemy.TakeDamage(damage, damageTag);
+                var status = enemy.GetComponent<IStatusReceiver>();
+                status?.ApplyStatus(statusEffect);
             }
             
             DestroyProjectile();

@@ -94,7 +94,7 @@ public class FieldWeapon : WeaponBase
         if (fieldInstance == null)
             fieldInstance = fieldObject.AddComponent<FieldInstance>();
             
-        fieldInstance.Initialize(this, damage, fieldRadius, fieldDuration, tickInterval, effectType, slowEffect);
+          fieldInstance.Initialize(this, damage, fieldRadius, fieldDuration, tickInterval, effectType, slowEffect, damageTag, statusEffect);
         activeFields.Add(fieldInstance);
     }
     
@@ -252,28 +252,33 @@ public class FieldWeapon : WeaponBase
 /// </summary>
 public class FieldInstance : MonoBehaviour
 {
-    private FieldWeapon parentWeapon;
-    private float damage;
-    private float radius;
-    private float duration;
-    private float tickInterval;
-    private FieldWeapon.FieldEffectType effectType;
-    private float slowEffect;
+        private FieldWeapon parentWeapon;
+        private float damage;
+        private float radius;
+        private float duration;
+        private float tickInterval;
+        private FieldWeapon.FieldEffectType effectType;
+        private float slowEffect;
+        private DamageTag damageTag;
+        private StatusEffect statusEffect;
     
     private float startTime;
     private float lastTickTime;
     private HashSet<EnemyBase> affectedEnemies = new HashSet<EnemyBase>();
     
-    public void Initialize(FieldWeapon parent, float damage, float radius, float duration, 
-                          float tickInterval, FieldWeapon.FieldEffectType effectType, float slowEffect)
-    {
-        this.parentWeapon = parent;
-        this.damage = damage;
-        this.radius = radius;
-        this.duration = duration;
-        this.tickInterval = tickInterval;
-        this.effectType = effectType;
-        this.slowEffect = slowEffect;
+        public void Initialize(FieldWeapon parent, float damage, float radius, float duration,
+                               float tickInterval, FieldWeapon.FieldEffectType effectType, float slowEffect,
+                               DamageTag tag, StatusEffect statusEffect)
+        {
+            this.parentWeapon = parent;
+            this.damage = damage;
+            this.radius = radius;
+            this.duration = duration;
+            this.tickInterval = tickInterval;
+            this.effectType = effectType;
+            this.slowEffect = slowEffect;
+            this.damageTag = tag;
+            this.statusEffect = statusEffect;
         
         startTime = Time.time;
         lastTickTime = startTime;
@@ -314,7 +319,9 @@ public class FieldInstance : MonoBehaviour
                 if (effectType == FieldWeapon.FieldEffectType.Damage || 
                     effectType == FieldWeapon.FieldEffectType.DamageAndSlow)
                 {
-                    enemy.TakeDamage(damage);
+                  enemy.TakeDamage(damage, damageTag);
+                  var status = enemy.GetComponent<IStatusReceiver>();
+                  status?.ApplyStatus(statusEffect);
                 }
             }
         }
@@ -349,15 +356,18 @@ public class FieldInstance : MonoBehaviour
     /// <summary>
     /// 필드 효과 적용/해제
     /// </summary>
-    private void ApplyFieldEffect(EnemyBase enemy, bool apply)
-    {
-        if (effectType == FieldWeapon.FieldEffectType.Slow || 
-            effectType == FieldWeapon.FieldEffectType.DamageAndSlow)
+        private void ApplyFieldEffect(EnemyBase enemy, bool apply)
         {
-            // 슬로우 효과 적용/해제 (적 클래스에서 구현 예정)
-            // enemy.ApplySlow(apply ? slowEffect : 1f);
+          if (effectType == FieldWeapon.FieldEffectType.Slow ||
+              effectType == FieldWeapon.FieldEffectType.DamageAndSlow)
+          {
+              var status = enemy.GetComponent<IStatusReceiver>();
+              if (apply)
+                  status?.ApplyStatus(statusEffect);
+              else
+                  status?.RemoveStatus(statusEffect.type);
+          }
         }
-    }
     
     /// <summary>
     /// 필드 파괴

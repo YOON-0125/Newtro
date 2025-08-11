@@ -53,13 +53,13 @@ public abstract class EnemyBase : MonoBehaviour
     protected Collider2D col;
     protected Animator animator;
     protected AudioSource audioSource;
+    protected StatusController statusController;
     
     // 상태 관련
     protected Transform target;
     protected float lastAttackTime;
     protected bool isDead;
     protected bool isAttacking;
-    protected float currentSlowMultiplier = 1f;
     
     // 상태 열거형
     public enum EnemyState
@@ -89,6 +89,7 @@ public abstract class EnemyBase : MonoBehaviour
         col = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        statusController = GetComponent<StatusController>();
         
         // 기본 설정
         if (audioSource == null)
@@ -226,7 +227,8 @@ public abstract class EnemyBase : MonoBehaviour
     /// </summary>
     protected virtual void Move(Vector2 direction)
     {
-        Vector2 targetVelocity = direction * moveSpeed * currentSlowMultiplier;
+        float speedMul = statusController != null ? statusController.GetSpeedMultiplier() : 1f;
+        Vector2 targetVelocity = direction * moveSpeed * speedMul;
         rb.linearVelocity = targetVelocity;
         
         // 이동 방향으로 회전 (2D에서는 스프라이트 플립으로 처리 가능)
@@ -276,10 +278,15 @@ public abstract class EnemyBase : MonoBehaviour
     /// <summary>
     /// 데미지 받기
     /// </summary>
-    public virtual void TakeDamage(float damageAmount)
+    public virtual void TakeDamage(float damageAmount, DamageTag tag = DamageTag.Physical)
     {
         if (isDead) return;
-        
+
+        if (statusController != null)
+        {
+            damageAmount *= statusController.GetDamageTakenMultiplier(tag);
+        }
+
         currentHealth -= damageAmount;
         currentHealth = Mathf.Max(0, currentHealth);
         
@@ -448,14 +455,6 @@ public abstract class EnemyBase : MonoBehaviour
     }
     
     /// <summary>
-    /// 슬로우 효과 적용
-    /// </summary>
-    public virtual void ApplySlow(float slowMultiplier)
-    {
-        currentSlowMultiplier = Mathf.Clamp01(slowMultiplier);
-    }
-    
-    /// <summary>
     /// 사운드 재생
     /// </summary>
     protected virtual void PlaySound(AudioClip clip)
@@ -507,7 +506,7 @@ public abstract class EnemyBase : MonoBehaviour
             if (playerHealth != null)
             {
                 Debug.Log($"{gameObject.name}: Dealing {damage} damage to player");
-                playerHealth.TakeDamage(damage);
+                playerHealth.TakeDamage(damage, DamageTag.Physical);
             }
             else
             {

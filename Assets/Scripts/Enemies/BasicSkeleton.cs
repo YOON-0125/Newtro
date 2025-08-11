@@ -116,9 +116,9 @@ public class BasicSkeleton : EnemyBase
                 var playerHealth = other.GetComponent<PlayerHealth>();
                 if (playerHealth != null)
                 {
-                    playerHealth.TakeDamage(contactDamage);
+                    playerHealth.TakeDamage(contactDamage, DamageTag.Physical);
                     lastContactDamageTime = Time.time;
-                    
+
                     // 접촉 데미지 이벤트
                     events?.OnAttack?.Invoke();
                 }

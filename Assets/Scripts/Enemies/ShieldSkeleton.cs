@@ -232,14 +232,14 @@ public class ShieldSkeleton : EnemyBase
             var playerHealth = target.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(damage);
+                playerHealth.TakeDamage(damage, DamageTag.Physical);
             }
         }
         
         Invoke(nameof(OnAttackComplete), 0.8f);
     }
     
-    public override void TakeDamage(float damageAmount)
+    public override void TakeDamage(float damageAmount, DamageTag tag = DamageTag.Physical)
     {
         if (isDead || isInvulnerable) return;
         
@@ -251,7 +251,7 @@ public class ShieldSkeleton : EnemyBase
         }
         
         // 일반 데미지 처리
-        base.TakeDamage(damageAmount);
+        base.TakeDamage(damageAmount, tag);
     }
     
     /// <summary>
@@ -277,7 +277,7 @@ public class ShieldSkeleton : EnemyBase
             
             // 나머지 데미지는 본체가 받음
             float remainingDamage = Mathf.Abs(shieldHealth);
-            base.TakeDamage(remainingDamage);
+            base.TakeDamage(remainingDamage, tag);
         }
         
         // 반격 체크
@@ -306,7 +306,7 @@ public class ShieldSkeleton : EnemyBase
             var playerHealth = target.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(counterDamage);
+                playerHealth.TakeDamage(counterDamage, DamageTag.Physical);
             }
         }
     }
@@ -402,7 +402,7 @@ public class ShieldSkeleton : EnemyBase
             var playerHealth = other.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(chargeDamage);
+                playerHealth.TakeDamage(chargeDamage, DamageTag.Physical);
             }
         }
         else

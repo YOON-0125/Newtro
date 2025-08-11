@@ -39,6 +39,7 @@ public class WeaponManager : MonoBehaviour
     public int MaxWeapons => maxWeapons;
     public bool HasSpaceForNewWeapon => equippedWeapons.Count < maxWeapons;
     public IReadOnlyList<WeaponBase> EquippedWeapons => equippedWeapons.AsReadOnly();
+    public IReadOnlyList<WeaponBase> AllWeapons => equippedWeapons.AsReadOnly();
     
     /// <summary>
     /// 무기 데이터 클래스
@@ -178,8 +179,22 @@ public class WeaponManager : MonoBehaviour
         equippedWeapons.Add(weapon);
         weaponsByName[weaponName] = weapon;
         
+        var relicManager = FindObjectOfType<RelicManager>();
+        if (relicManager != null)
+        {
+            float d = weapon.Damage;
+            float c = weapon.Cooldown;
+            float r = weapon.Range;
+            relicManager.ModifyWeaponStats(weapon, ref d, ref c, ref r);
+            if (d != weapon.Damage)
+                weapon.ApplyDamageMultiplier(Mathf.Max(0.0001f, d / Mathf.Max(0.0001f, weapon.Damage)));
+            if (c != weapon.Cooldown)
+                weapon.ApplyCooldownMultiplier(Mathf.Max(0.0001f, c / Mathf.Max(0.0001f, weapon.Cooldown)));
+            weapon.Range = r;
+        }
+
         events?.OnWeaponAdded?.Invoke(weapon);
-        
+
         Debug.Log($"무기 추가됨: {weaponName}");
         return true;
     }
@@ -214,6 +229,20 @@ public class WeaponManager : MonoBehaviour
         
         if (weapon.LevelUp())
         {
+            var relicManager = FindObjectOfType<RelicManager>();
+            if (relicManager != null)
+            {
+                float d = weapon.Damage;
+                float c = weapon.Cooldown;
+                float r = weapon.Range;
+                relicManager.ModifyWeaponStats(weapon, ref d, ref c, ref r);
+                if (d != weapon.Damage)
+                    weapon.ApplyDamageMultiplier(Mathf.Max(0.0001f, d / Mathf.Max(0.0001f, weapon.Damage)));
+                if (c != weapon.Cooldown)
+                    weapon.ApplyCooldownMultiplier(Mathf.Max(0.0001f, c / Mathf.Max(0.0001f, weapon.Cooldown)));
+                weapon.Range = r;
+            }
+
             events?.OnWeaponLevelUp?.Invoke(weapon);
             Debug.Log($"무기 레벨업: {weaponName} -> Lv.{weapon.Level}");
             return true;

@@ -85,17 +85,27 @@ public class ProjectileWeapon : WeaponBase
             
         rb.gravityScale = 0;
         rb.linearVelocity = direction * projectileSpeed;
-        
+
         // 발사체 컴포넌트 설정
         Projectile projectileComponent = projectile.GetComponent<Projectile>();
         if (projectileComponent == null)
             projectileComponent = projectile.AddComponent<Projectile>();
+ codex/implement-relic-system-for-rewards
+
+        projectileComponent.Initialize(damage, projectileLifetime, projectileSpeed, 1);
+
+=======
             
           projectileComponent.Initialize(damage, projectileLifetime, damageTag, statusEffect);
         
+ main
         // 회전 설정 (발사 방향으로)
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         projectile.transform.rotation = Quaternion.Euler(0, 0, angle);
+
+        var relicManager = FindObjectOfType<RelicManager>();
+        if (relicManager != null)
+            relicManager.OnProjectileSpawned(projectileComponent);
     }
     
     protected override void OnLevelUp()
@@ -157,21 +167,28 @@ public class ProjectileWeapon : WeaponBase
 /// <summary>
 /// 발사체 컴포넌트
 /// </summary>
-public class Projectile : MonoBehaviour
+public class Projectile : PooledProjectile
 {
     private float damage;
     private float lifetime;
     private float startTime;
+ codex/implement-relic-system-for-rewards
+
+    public void Initialize(float damage, float lifetime, float speed, int pierce)
+=======
     private DamageTag damageTag;
     private StatusEffect statusEffect;
     
     public void Initialize(float damage, float lifetime, DamageTag tag, StatusEffect effect)
+ main
     {
         this.damage = damage;
         this.lifetime = lifetime;
         this.damageTag = tag;
         this.statusEffect = effect;
         this.startTime = Time.time;
+        Speed = speed;
+        Pierce = pierce;
     }
     
     private void Update()
@@ -188,16 +205,27 @@ public class Projectile : MonoBehaviour
         // 적과 충돌 시
         if (other.CompareTag("Enemy"))
         {
-            // 데미지 처리
             var enemy = other.GetComponent<EnemyBase>();
             if (enemy != null)
             {
+ codex/implement-relic-system-for-rewards
+                float finalDamage = damage;
+                var relicManager = FindObjectOfType<RelicManager>();
+                if (relicManager != null)
+                {
+                    relicManager.OnDamageDealt(enemy, ref finalDamage, ElementTag.Physical);
+                }
+                enemy.TakeDamage(finalDamage);
+=======
                 enemy.TakeDamage(damage, damageTag);
                 var status = enemy.GetComponent<IStatusReceiver>();
                 status?.ApplyStatus(statusEffect);
+ main
             }
-            
-            DestroyProjectile();
+
+            Pierce--;
+            if (Pierce <= 0)
+                DestroyProjectile();
         }
         // 벽과 충돌 시
         else if (other.CompareTag("Wall"))

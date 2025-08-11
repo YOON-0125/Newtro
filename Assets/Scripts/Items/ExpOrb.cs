@@ -203,18 +203,12 @@ public class ExpOrb : MonoBehaviour
             // 중복 수집 방지
             if (isBeingCollected && gameObject != null)
             {
-                // 경험치 지급
                 GameManager gameManager = GameManager.Instance;
                 if (gameManager != null)
                 {
                     gameManager.AddExperience(expValue);
                     Debug.Log($"ExpOrb: 경험치 {expValue} 획득!");
-                    
-                    // 획득 효과
-                    PlayCollectEffect();
-                    
-                    // 즉시 오브 제거 (중복 방지)
-                    Destroy(gameObject);
+                    StartCoroutine(CollectAnimationAndDestroy());
                 }
             }
         }
@@ -234,28 +228,24 @@ public class ExpOrb : MonoBehaviour
                 {
                     gameManager.AddExperience(expValue);
                     Debug.Log($"ExpOrb: 경험치 {expValue} 획득! (2D)");
-                    PlayCollectEffect();
-                    Destroy(gameObject);
+                    StartCoroutine(CollectAnimationAndDestroy());
                 }
             }
         }
     }
-    
     /// <summary>
-    /// 획득 효과 (간단한 파티클이나 사운드)
+    /// 획득 효과 재생 후 오브젝트 제거
     /// </summary>
-    private void PlayCollectEffect()
+    private System.Collections.IEnumerator CollectAnimationAndDestroy()
     {
-        // 간단한 스케일 효과
-        StartCoroutine(CollectAnimation());
-    }
-    
-    private System.Collections.IEnumerator CollectAnimation()
-    {
+        // 애니메이션이 재생되는 동안은 isBeingCollected 플래그를 false로 설정하여 중복 처리 방지
+        isBeingCollected = false;
+
+        // 간단한 스케일 키우기 효과 (기존 코드와 동일)
         float duration = 0.2f;
         Vector3 startScale = transform.localScale;
         Vector3 endScale = startScale * 1.5f;
-        
+
         float elapsed = 0f;
         while (elapsed < duration)
         {
@@ -264,6 +254,9 @@ public class ExpOrb : MonoBehaviour
             elapsed += Time.deltaTime;
             yield return null;
         }
+
+        // 애니메이션이 끝난 후 오브젝트 파괴
+        Destroy(gameObject);
     }
     
     /// <summary>

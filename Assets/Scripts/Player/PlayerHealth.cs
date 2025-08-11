@@ -89,17 +89,23 @@ public class PlayerHealth : MonoBehaviour
     /// <summary>
     /// 데미지 받기
     /// </summary>
-    public void TakeDamage(float damageAmount)
+    public void TakeDamage(float damageAmount, DamageTag tag = DamageTag.Physical)
     {
         Debug.Log($"PlayerHealth: TakeDamage called with {damageAmount}. Current health: {currentHealth}, isDead: {isDead}, isInvincible: {isInvincible}");
-        
-        if (isDead || isInvincible) 
+
+        if (isDead || isInvincible)
         {
             Debug.Log("PlayerHealth: Damage blocked (dead or invincible)");
             return;
         }
-        
-        // 방어력 계산
+
+        // 방어력 및 상태 이상 계산
+        var status = GetComponent<StatusController>();
+        if (status != null)
+        {
+            damageAmount *= status.GetDamageTakenMultiplier(tag);
+        }
+
         float finalDamage = CalculateFinalDamage(damageAmount);
         Debug.Log($"PlayerHealth: Final damage after armor: {finalDamage}");
         

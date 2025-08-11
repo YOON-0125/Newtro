@@ -12,6 +12,8 @@ public abstract class WeaponBase : MonoBehaviour
     [SerializeField] protected float cooldown = 1f;
     [SerializeField] protected int level = 1;
     [SerializeField] protected int maxLevel = 10;
+    [SerializeField] protected DamageTag damageTag = DamageTag.Physical;
+    [SerializeField] protected StatusEffect statusEffect;
     
     [Header("사운드")]
     [SerializeField] protected AudioClip attackSound;

@@ -269,7 +269,7 @@ public class DualBladeSkeleton : EnemyBase
             var playerHealth = target.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(finalDamage);
+                playerHealth.TakeDamage(finalDamage, DamageTag.Physical);
                 
                 // 크리티컬 이펙트
                 if (isCritical && criticalHitEffect != null)
@@ -342,7 +342,7 @@ public class DualBladeSkeleton : EnemyBase
         }
     }
     
-    public override void TakeDamage(float damageAmount)
+    public override void TakeDamage(float damageAmount, DamageTag tag = DamageTag.Physical)
     {
         // 회피 체크
         if (canDodge && Random.value <= dodgeChance)
@@ -356,7 +356,7 @@ public class DualBladeSkeleton : EnemyBase
         }
         
         // 일반 데미지 처리
-        base.TakeDamage(damageAmount);
+        base.TakeDamage(damageAmount, tag);
     }
     
     protected override void DropItems()

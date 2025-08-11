@@ -2210,7 +2210,6 @@ GameObject:
   - component: {fileID: 4279928720762668695}
   - component: {fileID: 1393732500599276062}
   - component: {fileID: 2536703652081221063}
-  - component: {fileID: 2904533990213738981}
   - component: {fileID: 4397407504110152863}
   m_Layer: 8
   m_Name: SPUM_20250810161955772
@@ -6656,6 +6655,7 @@ MonoBehaviour:
   _charMS: 5
   _goalPos: {x: 0, y: 0, z: 0}
   isAction: 0
+  useDirectMovement: 1
 --- !u!114 &1393732500599276062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6734,48 +6734,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0.3111725}
   m_Radius: 0.25320435
---- !u!114 &2904533990213738981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3932832586059966582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 931a930d18a2743428c8e0d389f4e9b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 12
-  currentHealth: 0
-  healthRegenRate: 0.5
-  regenDelay: 30
-  armor: 0
-  damageReduction: 0
-  hasInvincibility: 0
-  invincibilityDuration: 1
-  events:
-    OnHealthChanged:
-      m_PersistentCalls:
-        m_Calls: []
-    OnDamageTaken:
-      m_PersistentCalls:
-        m_Calls: []
-    OnHealthRestored:
-      m_PersistentCalls:
-        m_Calls: []
-    OnDeath:
-      m_PersistentCalls:
-        m_Calls: []
-    OnRevive:
-      m_PersistentCalls:
-        m_Calls: []
-    OnInvincibilityStart:
-      m_PersistentCalls:
-        m_Calls: []
-    OnInvincibilityEnd:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!50 &4397407504110152863
 Rigidbody2D:
   serializedVersion: 5

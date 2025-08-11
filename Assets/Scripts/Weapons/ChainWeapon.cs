@@ -17,6 +17,12 @@ public class ChainWeapon : WeaponBase
     
     private HashSet<Transform> hitTargets = new HashSet<Transform>();
     
+    protected override void InitializeWeapon()
+    {
+        base.InitializeWeapon();
+        damageTag = DamageTag.Lightning; // 번개 데미지 설정
+    }
+    
     protected override void ExecuteAttack()
     {
         Transform firstTarget = FindNearestTargetFromPlayer();
@@ -103,8 +109,9 @@ public class ChainWeapon : WeaponBase
         if (enemy != null)
         {
             enemy.TakeDamage(damage, damageTag);
-            var status = enemy.GetComponent<IStatusReceiver>();
-            status?.ApplyStatus(statusEffect);
+            
+            // 상태효과 적용 (WeaponBase의 새 메서드 사용)
+            ApplyStatusToTarget(target.gameObject);
         }
         
         CreateChainEffect(fromPosition, target.position);

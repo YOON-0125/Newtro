@@ -95,9 +95,6 @@ public abstract class WeaponBase : MonoBehaviour
         return true;
     }
 
-    public virtual void ApplyDamageMultiplier(float m) { damage *= m; }
-    public virtual void ApplyCooldownMultiplier(float m) { cooldown *= m; }
-    
     /// <summary>
     /// 실제 공격 로직 (각 무기별로 구현)
     /// </summary>
@@ -166,6 +163,78 @@ public abstract class WeaponBase : MonoBehaviour
     protected virtual void OnAttackComplete()
     {
         isAttacking = false;
+    }
+    
+    /// <summary>
+    /// 적에게 상태효과 적용
+    /// </summary>
+    protected virtual void ApplyStatusToTarget(GameObject target)
+    {
+        if (target == null) return;
+        
+        // StatusController 컴포넌트 확인
+        var statusController = target.GetComponent<StatusController>();
+        if (statusController != null)
+        {
+            // DamageTag에 따른 자동 상태효과 적용
+            StatusEffect autoEffect = GetAutoStatusEffect();
+            
+            // 설정된 상태효과가 있으면 우선 적용
+            if (statusEffect.type != default(StatusType) && statusEffect.duration > 0)
+            {
+                statusController.ApplyStatus(statusEffect);
+                Debug.Log($"[{weaponName}] {target.name}에게 설정된 상태효과 적용: {statusEffect.type}");
+            }
+            // 자동 상태효과 적용
+            else if (autoEffect.type != default(StatusType))
+            {
+                statusController.ApplyStatus(autoEffect);
+                Debug.Log($"[{weaponName}] {target.name}에게 자동 상태효과 적용: {autoEffect.type} (DamageTag: {damageTag})");
+            }
+            else
+            {
+                Debug.Log($"[{weaponName}] {target.name}에게 적용할 상태효과가 없음 (DamageTag: {damageTag})");
+            }
+        }
+        else
+        {
+            Debug.LogWarning($"[{weaponName}] {target.name}에 StatusController가 없습니다!");
+        }
+    }
+    
+    /// <summary>
+    /// DamageTag에 따른 자동 상태효과 생성
+    /// </summary>
+    protected virtual StatusEffect GetAutoStatusEffect()
+    {
+        StatusEffect effect = new StatusEffect();
+        
+        switch (damageTag)
+        {
+            case DamageTag.Fire:
+                effect.type = StatusType.Fire;
+                effect.magnitude = damage * 0.2f; // 데미지의 20%
+                effect.duration = 3f;
+                effect.tickInterval = 0.5f;
+                effect.stacks = 1;
+                break;
+                
+            case DamageTag.Ice:
+                effect.type = StatusType.Ice;
+                effect.magnitude = 0.3f; // 30% 슬로우
+                effect.duration = 2f;
+                effect.stacks = 1;
+                break;
+                
+            case DamageTag.Lightning:
+                effect.type = StatusType.Lightning;
+                effect.duration = 4f;
+                effect.tickInterval = 1f;
+                effect.stacks = 1;
+                break;
+        }
+        
+        return effect;
     }
     
     /// <summary>

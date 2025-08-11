@@ -107,9 +107,9 @@ public class UpgradeSystem : MonoBehaviour
     /// </summary>
     private void InitializeReferences()
     {
-        weaponManager = FindObjectOfType<WeaponManager>();
-        playerHealth = FindObjectOfType<PlayerHealth>();
-        gameManager = FindObjectOfType<GameManager>();
+        weaponManager = FindFirstObjectByType<WeaponManager>();
+        playerHealth = FindFirstObjectByType<PlayerHealth>();
+        gameManager = FindFirstObjectByType<GameManager>();
         
         if (weaponManager == null) Debug.LogWarning("UpgradeSystem: WeaponManager를 찾을 수 없습니다!");
         if (playerHealth == null) Debug.LogWarning("UpgradeSystem: PlayerHealth를 찾을 수 없습니다!");
@@ -121,16 +121,25 @@ public class UpgradeSystem : MonoBehaviour
     /// </summary>
     private void InitializeDefaultUpgrades()
     {
+        Debug.Log($"[UpgradeSystem] 현재 업그레이드 개수: {allUpgrades.Count}");
+        
         if (allUpgrades.Count == 0)
         {
+            Debug.Log("[UpgradeSystem] 기본 업그레이드 옵션들 추가 중...");
             // 기본 업그레이드 옵션들 추가
-            AddDefaultUpgrades();
+            // AddDefaultUpgrades();
+            Debug.Log($"[UpgradeSystem] 기본 업그레이드 추가 완료. 총 개수: {allUpgrades.Count}");
+        }
+        else
+        {
+            Debug.Log("[UpgradeSystem] Inspector에서 설정된 업그레이드 사용");
         }
     }
     
     /// <summary>
     /// 기본 업그레이드들 추가 (Inspector에서 설정하지 않은 경우)
     /// </summary>
+    /*
     private void AddDefaultUpgrades()
     {
         // 무기 업그레이드
@@ -192,6 +201,65 @@ public class UpgradeSystem : MonoBehaviour
             canRepeat = false
         });
         
+        allUpgrades.Add(new UpgradeOption
+        {
+            id = "new_chain_lightning",
+            displayName = "라이트닝 체인 획득",
+            description = "연쇄 번개로 여러 적을 동시에 공격하는 무기를 획득합니다.",
+            type = UpgradeType.NewWeapon,
+            targetId = "ChainLightning",
+            weight = 60,
+            canRepeat = false
+        });
+        
+        allUpgrades.Add(new UpgradeOption
+        {
+            id = "new_electric_sphere",
+            displayName = "전기 구체 획득",
+            description = "주변에 전기 피해를 주는 구체를 생성하는 무기를 획득합니다.",
+            type = UpgradeType.NewWeapon,
+            targetId = "ElectricSphere",
+            weight = 50,
+            minLevel = 2,
+            canRepeat = false
+        });
+        
+        allUpgrades.Add(new UpgradeOption
+        {
+            id = "new_frost_nova",
+            displayName = "프로스트 노바 획득",
+            description = "플레이어 주변으로 얼음 폭발을 일으키는 무기를 획득합니다.",
+            type = UpgradeType.NewWeapon,
+            targetId = "FrostNova",
+            weight = 50,
+            minLevel = 3,
+            canRepeat = false
+        });
+        
+        allUpgrades.Add(new UpgradeOption
+        {
+            id = "new_raining_fire",
+            displayName = "레이닝 파이어 획득",
+            description = "하늘에서 화염구를 떨어뜨려 화염 지대를 만드는 무기를 획득합니다.",
+            type = UpgradeType.NewWeapon,
+            targetId = "RainingFire",
+            weight = 40,
+            minLevel = 4,
+            canRepeat = false
+        });
+        
+        allUpgrades.Add(new UpgradeOption
+        {
+            id = "new_thunder",
+            displayName = "썬더 획득",
+            description = "번개를 떨어뜨려 전기 지대를 생성하는 무기를 획득합니다.",
+            type = UpgradeType.NewWeapon,
+            targetId = "Thunder",
+            weight = 40,
+            minLevel = 5,
+            canRepeat = false
+        });
+        
         // 특수 업그레이드
         allUpgrades.Add(new UpgradeOption
         {
@@ -203,7 +271,81 @@ public class UpgradeSystem : MonoBehaviour
             weight = 50,
             canRepeat = false
         });
+        
+        // 개별 무기 업그레이드
+        allUpgrades.Add(new UpgradeOption
+        {
+            id = "fireball_level_up",
+            displayName = "파이어볼 레벨업",
+            description = "파이어볼의 데미지와 분열 효과가 강화됩니다.",
+            type = UpgradeType.WeaponUpgrade,
+            targetId = "Fireball",
+            weight = 40,
+            canRepeat = true,
+            prerequisites = new List<string> { "new_fireball" }
+        });
+        
+        allUpgrades.Add(new UpgradeOption
+        {
+            id = "chain_lightning_level_up",
+            displayName = "라이트닝 체인 레벨업",
+            description = "라이트닝 체인의 연쇄 수와 범위가 증가합니다.",
+            type = UpgradeType.WeaponUpgrade,
+            targetId = "ChainLightning",
+            weight = 40,
+            canRepeat = true,
+            prerequisites = new List<string> { "new_chain_lightning" }
+        });
+        
+        allUpgrades.Add(new UpgradeOption
+        {
+            id = "electric_sphere_level_up",
+            displayName = "전기 구체 레벨업",
+            description = "전기 구체의 데미지와 전기장 범위가 증가합니다.",
+            type = UpgradeType.WeaponUpgrade,
+            targetId = "ElectricSphere",
+            weight = 40,
+            canRepeat = true,
+            prerequisites = new List<string> { "new_electric_sphere" }
+        });
+        
+        allUpgrades.Add(new UpgradeOption
+        {
+            id = "frost_nova_level_up",
+            displayName = "프로스트 노바 레벨업",
+            description = "프로스트 노바의 범위와 냉각 효과가 강화됩니다.",
+            type = UpgradeType.WeaponUpgrade,
+            targetId = "FrostNova",
+            weight = 40,
+            canRepeat = true,
+            prerequisites = new List<string> { "new_frost_nova" }
+        });
+        
+        allUpgrades.Add(new UpgradeOption
+        {
+            id = "raining_fire_level_up",
+            displayName = "레이닝 파이어 레벨업",
+            description = "레이닝 파이어의 낙하 속도와 화염 지대 지속시간이 증가합니다.",
+            type = UpgradeType.WeaponUpgrade,
+            targetId = "RainingFire",
+            weight = 40,
+            canRepeat = true,
+            prerequisites = new List<string> { "new_raining_fire" }
+        });
+        
+        allUpgrades.Add(new UpgradeOption
+        {
+            id = "thunder_level_up",
+            displayName = "썬더 레벨업",
+            description = "썬더의 데미지와 전기 지대 효과가 강화됩니다.",
+            type = UpgradeType.WeaponUpgrade,
+            targetId = "Thunder",
+            weight = 40,
+            canRepeat = true,
+            prerequisites = new List<string> { "new_thunder" }
+        });
     }
+    */
     
     /// <summary>
     /// 레벨업 시 업그레이드 옵션 생성
@@ -381,6 +523,36 @@ public class UpgradeSystem : MonoBehaviour
                         ApplyCooldownMultiplier(weapon, upgrade.value1);
                     }
                 }
+                break;
+                
+            case "fireball_level_up":
+                // 파이어볼 레벨업
+                weaponManager.LevelUpWeapon("Fireball");
+                break;
+                
+            case "chain_lightning_level_up":
+                // 라이트닝 체인 레벨업
+                weaponManager.LevelUpWeapon("ChainLightning");
+                break;
+                
+            case "electric_sphere_level_up":
+                // 전기 구체 레벨업
+                weaponManager.LevelUpWeapon("ElectricSphere");
+                break;
+                
+            case "frost_nova_level_up":
+                // 프로스트 노바 레벨업
+                weaponManager.LevelUpWeapon("FrostNova");
+                break;
+                
+            case "raining_fire_level_up":
+                // 레이닝 파이어 레벨업
+                weaponManager.LevelUpWeapon("RainingFire");
+                break;
+                
+            case "thunder_level_up":
+                // 썬더 레벨업
+                weaponManager.LevelUpWeapon("Thunder");
                 break;
         }
     }

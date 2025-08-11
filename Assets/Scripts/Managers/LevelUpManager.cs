@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using TMPro;
 
 /// <summary>
 /// 레벨업 UI 관리자 - 업그레이드 선택 화면 처리
@@ -10,7 +11,7 @@ public class LevelUpManager : MonoBehaviour
 {
     [Header("UI 참조")]
     [SerializeField] private GameObject levelUpPanel;
-    [SerializeField] private Text levelUpTitle;
+    [SerializeField] private TextMeshProUGUI levelUpTitle;
     [SerializeField] private Transform upgradeOptionsContainer;
     [SerializeField] private GameObject upgradeOptionPrefab;
     

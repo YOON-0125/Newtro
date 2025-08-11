@@ -98,6 +98,13 @@ public abstract class EnemyBase : MonoBehaviour
             audioSource.playOnAwake = false;
         }
         
+        // StatusController 없으면 자동 추가
+        if (statusController == null)
+        {
+            statusController = gameObject.AddComponent<StatusController>();
+            Debug.Log($"[EnemyBase] {enemyName}에 StatusController 자동 추가");
+        }
+        
         rb.gravityScale = 0f;
         currentHealth = maxHealth;
     }

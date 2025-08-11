@@ -21,6 +21,7 @@ public class Fireball : WeaponBase
         base.InitializeWeapon();
         damage = 5f;
         cooldown = 1f;
+        damageTag = DamageTag.Fire; // 화염 데미지 설정
         if (projectilePrefab == null)
         {
             projectilePrefab = new GameObject("FireballProjectile");

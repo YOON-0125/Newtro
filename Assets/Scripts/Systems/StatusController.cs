@@ -140,6 +140,8 @@ public class StatusController : MonoBehaviour, IStatusReceiver
 
     public void ApplyStatus(StatusEffect e)
     {
+        Debug.Log($"[StatusController] {gameObject.name}에게 상태효과 적용: {e.type} (지속시간: {e.duration}s, 강도: {e.magnitude})");
+        
         switch (e.type)
         {
             case StatusType.Fire:
@@ -261,7 +263,9 @@ public class StatusController : MonoBehaviour, IStatusReceiver
         {
             float amp = ampPerStack * state.stacks;
             amp = Mathf.Min(amp, ampMax);
-            return 1f + amp;
+            float multiplier = 1f + amp;
+            Debug.Log($"[StatusController] {gameObject.name} - 번개 데미지 증폭: x{multiplier:F2} (스택: {state.stacks})");
+            return multiplier;
         }
         return 1f;
     }

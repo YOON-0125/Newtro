@@ -6,43 +6,43 @@ using UnityEngine;
 public class ExpOrb : MonoBehaviour
 {
     [Header("설정")]
-    [SerializeField] private int expValue = 5;
-    [SerializeField] private float magnetRange = 3f;      // 자석 효과 범위
-    [SerializeField] private float magnetStrength = 5f;   // 자석 끌어당기는 힘
-    [SerializeField] private float maxMoveSpeed = 10f;    // 최대 이동 속도
-    [SerializeField] private float acceleration = 8f;     // 가속도
-    [SerializeField] private float lifetime = 30f;        // 수명 (30초 후 자동 삭제)
+    public int experienceValue = 5;
+    public float magnetRange = 3f;
+    public float magnetSpeed = 8f;
+    [SerializeField] private float lifetime = 30f;
     
     [Header("시각 효과")]
-    [SerializeField] private float bobSpeed = 2f;         // 위아래 움직임 속도
-    [SerializeField] private float bobHeight = 0.2f;      // 위아래 움직임 높이
-    [SerializeField] private float rotateSpeed = 90f;     // 회전 속도
+    [SerializeField] private float bobSpeed = 2f;
+    [SerializeField] private float bobHeight = 0.2f;
+    [SerializeField] private float rotateSpeed = 90f;
+    [SerializeField] private bool useCustomVisuals = true; // Inspector에서 체크하면 SetupVisuals 스킵
     
     // 내부 변수
-    private Transform player;
     private Vector3 startPosition;
-    private Vector3 currentVelocity = Vector3.zero;
     private bool isBeingCollected = false;
     private float spawnTime;
     
     private void Start()
     {
-        // 플레이어 찾기
-        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
-        if (playerObj != null)
-        {
-            player = playerObj.transform;
-        }
-        else
-        {
-            Debug.LogWarning("ExpOrb: Player를 찾을 수 없습니다!");
-        }
-        
         startPosition = transform.position;
         spawnTime = Time.time;
         
-        // 시각적 설정
-        SetupVisuals();
+        // 디버그 로그 추가
+        Debug.Log($"[ExpOrb] useCustomVisuals = {useCustomVisuals}");
+        
+        // 시각적 설정 (프리팹을 사용하지 않는 경우에만)
+        if (!useCustomVisuals)
+        {
+            Debug.Log("[ExpOrb] 기본 구체 생성");
+            SetupVisuals();
+        }
+        else
+        {
+            Debug.Log("[ExpOrb] 커스텀 비주얼 사용 - SetupVisuals 스킵");
+        }
+        
+        // 프리팹 사용 시에도 콜라이더는 확인
+        EnsureColliderSetup();
     }
     
     private void Update()
@@ -54,20 +54,43 @@ public class ExpOrb : MonoBehaviour
             return;
         }
         
-        if (player != null)
+        // GameManager와 플레이어 확인
+        if (GameManager.Instance == null)
         {
-            float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+            Debug.LogWarning("[ExpOrb] GameManager.Instance가 null입니다!");
+            IdleBobbing();
+            transform.Rotate(0, 0, rotateSpeed * Time.deltaTime);
+            return;
+        }
+        
+        if (GameManager.Instance.Player == null) 
+        {
+            Debug.LogWarning("[ExpOrb] GameManager.Instance.Player가 null입니다!");
+            IdleBobbing();
+            transform.Rotate(0, 0, rotateSpeed * Time.deltaTime);
+            return;
+        }
+        
+        Vector3 playerPos = GameManager.Instance.Player.position;
+        float distance = Vector3.Distance(transform.position, playerPos);
+        
+        // 플레이어가 가까이 오면 자석 효과로 끌어당김
+        if (distance <= magnetRange)
+        {
+            isBeingCollected = true;
+            Vector3 direction = (playerPos - transform.position).normalized;
+            transform.position += direction * magnetSpeed * Time.deltaTime;
             
-            // 자석 범위 안에 들어오면 플레이어쪽으로 이동
-            if (distanceToPlayer <= magnetRange)
+            // 플레이어와 충돌하면 수집
+            if (distance <= 0.5f)
             {
-                MoveTowardsPlayer();
+                CollectExperience();
             }
-            else
-            {
-                // 제자리에서 둥둥 떠다니는 효과
-                IdleBobbing();
-            }
+        }
+        else
+        {
+            // 제자리에서 둥둥 떠다니는 효과
+            IdleBobbing();
         }
         
         // 항상 회전
@@ -75,7 +98,7 @@ public class ExpOrb : MonoBehaviour
     }
     
     /// <summary>
-    /// 시각적 설정 (개선된 EXP 오브)
+    /// 시각적 설정 (기본 구체만)
     /// </summary>
     private void SetupVisuals()
     {
@@ -88,94 +111,69 @@ public class ExpOrb : MonoBehaviour
         // 발광하는 초록색 머티리얼
         Renderer renderer = sphere.GetComponent<Renderer>();
         Material mat = new Material(Shader.Find("Standard"));
-        mat.color = new Color(0.2f, 1f, 0.3f, 1f); // 밝은 초록색
+        mat.color = new Color(0.2f, 1f, 0.3f, 1f);
         mat.EnableKeyword("_EMISSION");
-        mat.SetColor("_EmissionColor", new Color(0.1f, 0.8f, 0.2f, 1f)); // 발광 효과
+        mat.SetColor("_EmissionColor", new Color(0.1f, 0.8f, 0.2f, 1f));
         mat.SetFloat("_Metallic", 0.1f);
         mat.SetFloat("_Glossiness", 0.9f);
         renderer.material = mat;
         
-        // 외곽 링 효과 (선택사항)
-        CreateOuterRing(sphere.transform);
-        
-        // 콜라이더 제거 (부모에서 트리거로 처리)
-        Destroy(sphere.GetComponent<Collider>());
-        
-        // 트리거 콜라이더 설정 (더 큰 범위)
-        SphereCollider trigger = gameObject.AddComponent<SphereCollider>();
-        trigger.isTrigger = true;
-        trigger.radius = 0.8f;
-        
-        // Rigidbody 추가 (트리거 감지용)
-        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
-        rb.useGravity = false;
-        rb.isKinematic = true;
-    }
-    
-    /// <summary>
-    /// 외곽 링 효과 생성
-    /// </summary>
-    private void CreateOuterRing(Transform parent)
-    {
-        GameObject ring = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
-        ring.transform.SetParent(parent);
-        ring.transform.localPosition = Vector3.zero;
-        ring.transform.localScale = new Vector3(1.5f, 0.05f, 1.5f);
-        ring.transform.localRotation = Quaternion.Euler(90, 0, 0);
-        
-        // 반투명 초록색 링
-        Renderer ringRenderer = ring.GetComponent<Renderer>();
-        Material ringMat = new Material(Shader.Find("Standard"));
-        ringMat.color = new Color(0.2f, 1f, 0.3f, 0.3f);
-        ringMat.SetFloat("_Mode", 3); // Transparent mode
-        ringMat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
-        ringMat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
-        ringMat.SetInt("_ZWrite", 0);
-        ringMat.DisableKeyword("_ALPHATEST_ON");
-        ringMat.EnableKeyword("_ALPHABLEND_ON");
-        ringMat.DisableKeyword("_ALPHAPREMULTIPLY_ON");
-        ringMat.renderQueue = 3000;
-        ringRenderer.material = ringMat;
-        
-        // 콜라이더 제거
-        Destroy(ring.GetComponent<Collider>());
-    }
-    
-    /// <summary>
-    /// 플레이어 쪽으로 부드럽게 이동 (개선된 자석 효과)
-    /// </summary>
-    private void MoveTowardsPlayer()
-    {
-        isBeingCollected = true;
-        
-        // 플레이어와의 거리와 방향 계산
-        Vector3 directionToPlayer = player.position - transform.position;
-        float distanceToPlayer = directionToPlayer.magnitude;
-        
-        if (distanceToPlayer > 0.2f) // 최소 거리 임계값
+        // 자식 오브젝트 콜라이더 제거
+        Collider sphereCollider = sphere.GetComponent<Collider>();
+        if (sphereCollider != null)
         {
-            // 정규화된 방향 벡터
-            Vector3 normalizedDirection = directionToPlayer.normalized;
-            
-            // 거리에 따른 자석 힘 계산 (역제곱 법칙 적용)
-            float distanceRatio = Mathf.Clamp01(1f - (distanceToPlayer / magnetRange));
-            float magnetForce = magnetStrength * distanceRatio * distanceRatio; // 제곱해서 더 강한 효과
-            
-            // 직접적인 속도 계산 (가속도 누적 방식 대신)
-            float targetSpeed = Mathf.Lerp(2f, maxMoveSpeed, distanceRatio);
-            Vector3 targetVelocity = normalizedDirection * targetSpeed;
-            
-            // 부드러운 속도 보간 (급작스러운 변화 방지)
-            currentVelocity = Vector3.Lerp(currentVelocity, targetVelocity, acceleration * Time.deltaTime);
-            
-            // 위치 직접 업데이트
-            transform.position += currentVelocity * Time.deltaTime;
+            Destroy(sphereCollider);
+        }
+    }
+    
+    /// <summary>
+    /// 콜라이더 설정 확인 (프리팹용)
+    /// </summary>
+    private void EnsureColliderSetup()
+    {
+        // 이미 콜라이더가 있는지 확인
+        CircleCollider2D existingCollider = GetComponent<CircleCollider2D>();
+        if (existingCollider == null)
+        {
+            // 콜라이더가 없으면 추가
+            CircleCollider2D trigger = gameObject.AddComponent<CircleCollider2D>();
+            trigger.isTrigger = true;
+            trigger.radius = 0.5f;
         }
         else
         {
-            // 매우 가까우면 직접 플레이어 위치로 이동
-            transform.position = Vector3.MoveTowards(transform.position, player.position, maxMoveSpeed * 2f * Time.deltaTime);
+            // 기존 콜라이더가 있으면 트리거로 설정
+            existingCollider.isTrigger = true;
         }
+        
+        // Rigidbody2D 확인
+        Rigidbody2D existingRb = GetComponent<Rigidbody2D>();
+        if (existingRb == null)
+        {
+            Rigidbody2D rb2D = gameObject.AddComponent<Rigidbody2D>();
+            rb2D.gravityScale = 0f;
+            rb2D.bodyType = RigidbodyType2D.Kinematic;
+        }
+        else
+        {
+            existingRb.gravityScale = 0f;
+            existingRb.bodyType = RigidbodyType2D.Kinematic;
+        }
+    }
+    
+    /// <summary>
+    /// 경험치 수집 처리
+    /// </summary>
+    private void CollectExperience()
+    {
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.AddExperience(experienceValue);
+            Debug.Log($"[ExpOrb] ✅ 경험치 {experienceValue} 획득!");
+        }
+        
+        // 오브젝트 파괴
+        Destroy(gameObject);
     }
     
     /// <summary>
@@ -193,70 +191,21 @@ public class ExpOrb : MonoBehaviour
     }
     
     /// <summary>
-    /// 플레이어와 충돌 시 경험치 지급
+    /// 2D 충돌 처리
     /// </summary>
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        // Player 태그와 PlayerHealth 컴포넌트 둘 다 확인
-        if (other.CompareTag("Player") || other.GetComponent<PlayerHealth>() != null)
+        Debug.Log($"[ExpOrb] OnTriggerEnter2D - 충돌한 오브젝트: {other.name}, 태그: {other.tag}");
+        
+        if (other.CompareTag("Player"))
         {
-            // 중복 수집 방지
-            if (isBeingCollected && gameObject != null)
-            {
-                GameManager gameManager = GameManager.Instance;
-                if (gameManager != null)
-                {
-                    gameManager.AddExperience(expValue);
-                    Debug.Log($"ExpOrb: 경험치 {expValue} 획득!");
-                    StartCoroutine(CollectAnimationAndDestroy());
-                }
-            }
+            Debug.Log("[ExpOrb] 플레이어와 충돌! 경험치 수집 시작");
+            CollectExperience();
         }
-    }
-    
-    /// <summary>
-    /// 2D 충돌 지원 (혹시 2D 콜라이더 사용하는 경우)
-    /// </summary>
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player") || other.GetComponent<PlayerHealth>() != null)
+        else
         {
-            if (isBeingCollected && gameObject != null)
-            {
-                GameManager gameManager = GameManager.Instance;
-                if (gameManager != null)
-                {
-                    gameManager.AddExperience(expValue);
-                    Debug.Log($"ExpOrb: 경험치 {expValue} 획득! (2D)");
-                    StartCoroutine(CollectAnimationAndDestroy());
-                }
-            }
+            Debug.Log($"[ExpOrb] 플레이어가 아닌 오브젝트와 충돌: {other.name}");
         }
-    }
-    /// <summary>
-    /// 획득 효과 재생 후 오브젝트 제거
-    /// </summary>
-    private System.Collections.IEnumerator CollectAnimationAndDestroy()
-    {
-        // 애니메이션이 재생되는 동안은 isBeingCollected 플래그를 false로 설정하여 중복 처리 방지
-        isBeingCollected = false;
-
-        // 간단한 스케일 키우기 효과 (기존 코드와 동일)
-        float duration = 0.2f;
-        Vector3 startScale = transform.localScale;
-        Vector3 endScale = startScale * 1.5f;
-
-        float elapsed = 0f;
-        while (elapsed < duration)
-        {
-            float t = elapsed / duration;
-            transform.localScale = Vector3.Lerp(startScale, endScale, t);
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        // 애니메이션이 끝난 후 오브젝트 파괴
-        Destroy(gameObject);
     }
     
     /// <summary>
@@ -264,7 +213,7 @@ public class ExpOrb : MonoBehaviour
     /// </summary>
     public void SetExpValue(int value)
     {
-        expValue = value;
+        experienceValue = value;
     }
     
     /// <summary>
@@ -278,25 +227,33 @@ public class ExpOrb : MonoBehaviour
     /// <summary>
     /// 자석 강도 설정
     /// </summary>
-    public void SetMagnetStrength(float strength)
+    public void SetMagnetSpeed(float speed)
     {
-        magnetStrength = strength;
+        magnetSpeed = speed;
     }
     
     /// <summary>
-    /// 최대 이동 속도 설정
+    /// 자석 강도 설정 (ExpOrbManager 호환용)
+    /// </summary>
+    public void SetMagnetStrength(float strength)
+    {
+        magnetSpeed = strength;
+    }
+    
+    /// <summary>
+    /// 최대 이동 속도 설정 (ExpOrbManager 호환용)
     /// </summary>
     public void SetMaxMoveSpeed(float speed)
     {
-        maxMoveSpeed = speed;
+        magnetSpeed = speed;
     }
     
     /// <summary>
-    /// 가속도 설정
+    /// 가속도 설정 (ExpOrbManager 호환용)
     /// </summary>
-    public void SetAcceleration(float accel)
+    public void SetAcceleration(float acceleration)
     {
-        acceleration = accel;
+        // 현재 구조에서는 사용하지 않지만 호환성을 위해 유지
     }
 
 #if UNITY_EDITOR

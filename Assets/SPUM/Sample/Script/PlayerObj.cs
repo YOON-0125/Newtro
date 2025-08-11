@@ -15,6 +15,12 @@ public class PlayerObj : MonoBehaviour
     public Vector3 _goalPos;
     public bool isAction = false;
     public Dictionary<PlayerState, int> IndexPair = new ();
+    
+    // 직접 이동을 위한 새로운 변수들
+    [Header("Direct Movement Settings")]
+    public bool useDirectMovement = true;
+    private Rigidbody2D rb;
+    private Vector2 inputDirection;
     void Start()
     {
         if(_prefabs == null )
@@ -29,56 +35,84 @@ public class PlayerObj : MonoBehaviour
         {
             IndexPair[state] = 0;
         }
+        
+        // Rigidbody2D 컴포넌트 가져오기 (직접 이동용)
+        rb = GetComponent<Rigidbody2D>();
+        if (rb == null)
+        {
+            rb = gameObject.AddComponent<Rigidbody2D>();
+        }
+        
+        // Rigidbody2D 설정
+        rb.gravityScale = 0f;
+        rb.freezeRotation = true;
     }
     public void SetStateAnimationIndex(PlayerState state, int index = 0){
         IndexPair[state] = index;
     }
     public void PlayStateAnimation(PlayerState state){
-        // StateAnimationPairs가 초기화되었는지 확인
-        if(_prefabs.StateAnimationPairs == null || _prefabs.StateAnimationPairs.Count == 0)
-        {
-            Debug.LogWarning("StateAnimationPairs가 초기화되지 않았습니다. 기본 애니메이션을 재생합니다.");
-            return;
-        }
-        
-        // StateAnimationPairs에 키가 있는지 확인
-        if(!_prefabs.StateAnimationPairs.TryGetValue(state.ToString(), out var animationList))
-        {
-            Debug.LogWarning($"StateAnimationPairs에 '{state}' 키가 없습니다!");
-            Debug.LogWarning($"현재 등록된 키들: {string.Join(", ", _prefabs.StateAnimationPairs.Keys)}");
-            return;
-        }
-        
-        // 애니메이션 리스트가 비어있는지 확인
-        if(animationList == null || animationList.Count == 0)
-        {
-            Debug.LogWarning($"'{state}' 상태의 애니메이션 리스트가 비어있습니다!");
-            return;
-        }
-        
         _prefabs.PlayAnimation(state, IndexPair[state]);
     }
     void Update()
     {
         if(isAction) return;
 
-        transform.position = new Vector3(transform.position.x,transform.position.y,transform.localPosition.y * 0.01f);
-        
-        // WASD 입력 처리 추가
-        HandleWASDInput();
-        
-        switch(_currentState)
+        if (useDirectMovement)
         {
-            case PlayerState.IDLE:
-            
-            break;
-
-            case PlayerState.MOVE:
-            DoMove();
-            break;
+            HandleDirectMovement();
         }
-        PlayStateAnimation(_currentState);
+        else
+        {
+            // 기존 방식 (목표점 이동)
+            transform.position = new Vector3(transform.position.x,transform.position.y,transform.localPosition.y * 0.01f);
+            switch(_currentState)
+            {
+                case PlayerState.IDLE:
+                
+                break;
 
+                case PlayerState.MOVE:
+                DoMove();
+                break;
+            }
+        }
+        
+        PlayStateAnimation(_currentState);
+    }
+    
+    void HandleDirectMovement()
+    {
+        // 키보드 입력 받기
+        inputDirection.x = Input.GetAxisRaw("Horizontal");
+        inputDirection.y = Input.GetAxisRaw("Vertical");
+        
+        // 대각선 이동시 속도 정규화
+        if (inputDirection.magnitude > 1f)
+        {
+            inputDirection = inputDirection.normalized;
+        }
+        
+        // Rigidbody2D로 직접 이동
+        rb.linearVelocity = inputDirection * _charMS;
+        
+        // 상태 업데이트
+        if (inputDirection.magnitude > 0.1f)
+        {
+            _currentState = PlayerState.MOVE;
+            
+            // 스프라이트 방향 설정
+            if (inputDirection.x > 0)
+                _prefabs.transform.localScale = new Vector3(-1, 1, 1);
+            else if (inputDirection.x < 0)
+                _prefabs.transform.localScale = new Vector3(1, 1, 1);
+        }
+        else
+        {
+            _currentState = PlayerState.IDLE;
+        }
+        
+        // Z position 설정 (SPUM 에셋 특성)
+        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y * 0.01f);
     }
 
     void DoMove()
@@ -103,68 +137,5 @@ public class PlayerObj : MonoBehaviour
         isAction = false;
         _goalPos = pos;
         _currentState = PlayerState.MOVE;
-    }
-    
-    /// <summary>
-    /// WASD 키보드 입력을 처리하여 SPUM 이동 시스템과 연동
-    /// </summary>
-    void HandleWASDInput()
-    {
-        // Unity Input Manager 사용 (기본 설정)
-        Vector2 inputVector = new Vector2(
-            Input.GetAxisRaw("Horizontal"), // A(-1) / D(+1)
-            Input.GetAxisRaw("Vertical")    // S(-1) / W(+1)
-        );
-        
-        // 스페이스바 공격 (기존 기능 유지)
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            PlayAttack();
-            return;
-        }
-        
-        // 입력이 있을 때만 이동 처리
-        if(inputVector.magnitude > 0.1f)
-        {
-            // 현재 위치에서 입력 방향으로 목표 지점 계산
-            float moveDistance = 1.0f; // 한 번에 이동할 거리
-            Vector3 targetPosition = transform.position + (Vector3)inputVector.normalized * moveDistance;
-            
-            // SPUM의 기존 SetMovePos 방식 활용
-            SetMovePos(targetPosition);
-        }
-        else
-        {
-            // 입력이 없으면 현재 위치를 목표로 설정 (즉시 정지)
-            if(_currentState == PlayerState.MOVE)
-            {
-                _goalPos = transform.position;
-            }
-        }
-    }
-    
-    /// <summary>
-    /// 공격 애니메이션 재생 (기존 기능)
-    /// </summary>
-    void PlayAttack()
-    {
-        if(_currentState == PlayerState.ATTACK) return;
-        
-        isAction = true;
-        _currentState = PlayerState.ATTACK;
-        PlayStateAnimation(_currentState);
-        
-        // 0.5초 후 공격 애니메이션 종료
-        StartCoroutine(EndAttackAnimation());
-    }
-    
-    /// <summary>
-    /// 공격 애니메이션 종료 처리
-    /// </summary>
-    IEnumerator EndAttackAnimation()
-    {
-        yield return new WaitForSeconds(0.5f);
-        isAction = false;
-        _currentState = PlayerState.IDLE;
     }
 }

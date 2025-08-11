@@ -246,7 +246,7 @@ public class ShieldSkeleton : EnemyBase
         // 방패가 활성화된 경우 블록 체크
         if (isShieldActive && Random.value <= blockChance)
         {
-            HandleBlock(damageAmount);
+            HandleBlock(damageAmount, tag);
             return;
         }
         
@@ -257,7 +257,7 @@ public class ShieldSkeleton : EnemyBase
     /// <summary>
     /// 블록 처리
     /// </summary>
-    private void HandleBlock(float damageAmount)
+    private void HandleBlock(float damageAmount, DamageTag tag)
     {
         // 방패 데미지
         shieldHealth -= damageAmount * 0.5f; // 방패는 데미지 50%만 받음

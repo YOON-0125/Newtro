@@ -68,6 +68,12 @@ public class WeaponManager : MonoBehaviour
     
     private void Start()
     {
+        // availableWeapons가 비어있으면 자동으로 무기들을 찾아서 등록
+        if (availableWeapons.Count == 0)
+        {
+            SetupDefaultWeapons();
+        }
+        
         // availableWeapons가 설정된 WeaponManager만 무기를 추가
         if (availableWeapons.Count > 0)
         {
@@ -356,6 +362,154 @@ public class WeaponManager : MonoBehaviour
         }
         
         return info;
+    }
+    
+    /// <summary>
+    /// 기본 무기들을 자동으로 설정
+    /// </summary>
+    private void SetupDefaultWeapons()
+    {
+        Debug.Log("[WeaponManager] 기본 무기들을 자동으로 설정합니다.");
+        
+        // 런타임에서 무기 프리팹들을 동적 생성
+        SetupFireballWeapon();
+        SetupChainLightningWeapon();
+        SetupElectricSphereWeapon();
+        SetupFrostNovaWeapon();
+        SetupRainingFireWeapon();
+        SetupThunderWeapon();
+        
+        Debug.Log($"[WeaponManager] 총 {availableWeapons.Count}개의 무기가 등록되었습니다.");
+    }
+    
+    /// <summary>
+    /// 파이어볼 무기 설정
+    /// </summary>
+    private void SetupFireballWeapon()
+    {
+        // 런타임에서 Fireball 프리팹 생성
+        GameObject fireballPrefab = new GameObject("Fireball_Prefab");
+        var fireball = fireballPrefab.AddComponent<Fireball>();
+        fireballPrefab.SetActive(false);
+        
+        // WeaponData 추가
+        WeaponData fireballData = new WeaponData
+        {
+            weaponName = "Fireball",
+            weaponPrefab = fireballPrefab,
+            description = "화염 투사체를 발사하는 무기입니다.",
+            unlockLevel = 1
+        };
+        
+        availableWeapons.Add(fireballData);
+        Debug.Log("[WeaponManager] Fireball 무기 등록 완료");
+    }
+    
+    /// <summary>
+    /// 체인 라이트닝 무기 설정
+    /// </summary>
+    private void SetupChainLightningWeapon()
+    {
+        // 런타임에서 ChainWeapon 프리팹 생성
+        GameObject chainPrefab = new GameObject("ChainLightning_Prefab");
+        var chainWeapon = chainPrefab.AddComponent<ChainWeapon>();
+        chainPrefab.SetActive(false);
+        
+        // WeaponData 추가
+        WeaponData chainData = new WeaponData
+        {
+            weaponName = "ChainLightning",
+            weaponPrefab = chainPrefab,
+            description = "연쇄 번개로 여러 적을 동시에 공격하는 무기입니다.",
+            unlockLevel = 1
+        };
+        
+        availableWeapons.Add(chainData);
+        Debug.Log("[WeaponManager] ChainLightning 무기 등록 완료");
+    }
+    
+    /// <summary>
+    /// 전기 구체 무기 설정
+    /// </summary>
+    private void SetupElectricSphereWeapon()
+    {
+        GameObject spherePrefab = new GameObject("ElectricSphere_Prefab");
+        var electricSphere = spherePrefab.AddComponent<ElectricSphere>();
+        spherePrefab.SetActive(false);
+        
+        WeaponData sphereData = new WeaponData
+        {
+            weaponName = "ElectricSphere",
+            weaponPrefab = spherePrefab,
+            description = "주변에 전기 피해를 주는 구체를 생성합니다.",
+            unlockLevel = 2
+        };
+        
+        availableWeapons.Add(sphereData);
+        Debug.Log("[WeaponManager] ElectricSphere 무기 등록 완료");
+    }
+    
+    /// <summary>
+    /// 프로스트 노바 무기 설정
+    /// </summary>
+    private void SetupFrostNovaWeapon()
+    {
+        GameObject frostPrefab = new GameObject("FrostNova_Prefab");
+        var frostNova = frostPrefab.AddComponent<FrostNova>();
+        frostPrefab.SetActive(false);
+        
+        WeaponData frostData = new WeaponData
+        {
+            weaponName = "FrostNova",
+            weaponPrefab = frostPrefab,
+            description = "플레이어 주변으로 얼음 폭발을 일으켜 적을 얼립니다.",
+            unlockLevel = 3
+        };
+        
+        availableWeapons.Add(frostData);
+        Debug.Log("[WeaponManager] FrostNova 무기 등록 완료");
+    }
+    
+    /// <summary>
+    /// 레이닝 파이어 무기 설정
+    /// </summary>
+    private void SetupRainingFireWeapon()
+    {
+        GameObject rainPrefab = new GameObject("RainingFire_Prefab");
+        var rainingFire = rainPrefab.AddComponent<RainingFire>();
+        rainPrefab.SetActive(false);
+        
+        WeaponData rainData = new WeaponData
+        {
+            weaponName = "RainingFire",
+            weaponPrefab = rainPrefab,
+            description = "하늘에서 화염구를 떨어뜨려 화염 지대를 만듭니다.",
+            unlockLevel = 4
+        };
+        
+        availableWeapons.Add(rainData);
+        Debug.Log("[WeaponManager] RainingFire 무기 등록 완료");
+    }
+    
+    /// <summary>
+    /// 썬더 무기 설정
+    /// </summary>
+    private void SetupThunderWeapon()
+    {
+        GameObject thunderPrefab = new GameObject("Thunder_Prefab");
+        var thunder = thunderPrefab.AddComponent<Thunder>();
+        thunderPrefab.SetActive(false);
+        
+        WeaponData thunderData = new WeaponData
+        {
+            weaponName = "Thunder",
+            weaponPrefab = thunderPrefab,
+            description = "번개를 떨어뜨려 전기 지대를 생성합니다.",
+            unlockLevel = 5
+        };
+        
+        availableWeapons.Add(thunderData);
+        Debug.Log("[WeaponManager] Thunder 무기 등록 완료");
     }
     
     /// <summary>

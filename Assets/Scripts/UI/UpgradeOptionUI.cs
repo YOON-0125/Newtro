@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using TMPro;
 
 /// <summary>
 /// 개별 업그레이드 옵션 UI 컴포넌트
@@ -10,9 +11,9 @@ public class UpgradeOptionUI : MonoBehaviour, IPointerEnterHandler, IPointerExit
     [Header("UI 컴포넌트")]
     [SerializeField] private Button optionButton;
     [SerializeField] private Image iconImage;
-    [SerializeField] private Text nameText;
-    [SerializeField] private Text descriptionText;
-    [SerializeField] private Text valueText;
+    [SerializeField] private TextMeshProUGUI nameText;
+    [SerializeField] private TextMeshProUGUI descriptionText;
+    [SerializeField] private TextMeshProUGUI valueText;
     [SerializeField] private Image backgroundImage;
     [SerializeField] private Image borderImage;
     
@@ -41,9 +42,9 @@ public class UpgradeOptionUI : MonoBehaviour, IPointerEnterHandler, IPointerExit
         // 컴포넌트 자동 할당
         if (optionButton == null) optionButton = GetComponent<Button>();
         if (iconImage == null) iconImage = transform.Find("Icon")?.GetComponent<Image>();
-        if (nameText == null) nameText = transform.Find("NameText")?.GetComponent<Text>();
-        if (descriptionText == null) descriptionText = transform.Find("DescriptionText")?.GetComponent<Text>();
-        if (valueText == null) valueText = transform.Find("ValueText")?.GetComponent<Text>();
+        if (nameText == null) nameText = transform.Find("NameText")?.GetComponent<TextMeshProUGUI>();
+        if (descriptionText == null) descriptionText = transform.Find("DescriptionText")?.GetComponent<TextMeshProUGUI>();
+        if (valueText == null) valueText = transform.Find("ValueText")?.GetComponent<TextMeshProUGUI>();
         if (backgroundImage == null) backgroundImage = transform.Find("Background")?.GetComponent<Image>();
         if (borderImage == null) borderImage = transform.Find("Border")?.GetComponent<Image>();
         

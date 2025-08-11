@@ -1,0 +1,2574 @@
+fileFormatVersion: 2
+guid: b401a17cf7500f14aaf26dd690ea2789
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8016800434522044692
+    second: fire_purple_0
+  - first:
+      213: -6479649305128537829
+    second: fire_purple_1
+  - first:
+      213: -5135599323251319272
+    second: fire_purple_2
+  - first:
+      213: -4060042835434123790
+    second: fire_purple_3
+  - first:
+      213: 8869230890334664988
+    second: fire_purple_4
+  - first:
+      213: 2406515687686329373
+    second: fire_purple_5
+  - first:
+      213: -2041530449182207173
+    second: fire_purple_6
+  - first:
+      213: -5112243769823075449
+    second: fire_purple_7
+  - first:
+      213: -6749807031694967413
+    second: fire_purple_8
+  - first:
+      213: 4648491575145873476
+    second: fire_purple_9
+  - first:
+      213: 391209090560133232
+    second: fire_purple_10
+  - first:
+      213: 2773362066961932415
+    second: fire_purple_11
+  - first:
+      213: -8615002524282575704
+    second: fire_purple_12
+  - first:
+      213: 7795794108037150571
+    second: fire_purple_13
+  - first:
+      213: -1161568646884671853
+    second: fire_purple_14
+  - first:
+      213: 4683927378088222027
+    second: fire_purple_15
+  - first:
+      213: 1915815187811150094
+    second: fire_purple_16
+  - first:
+      213: -8035633049479733159
+    second: fire_purple_17
+  - first:
+      213: 802508191290458704
+    second: fire_purple_18
+  - first:
+      213: 4130928253864317613
+    second: fire_purple_19
+  - first:
+      213: -2136649644756773803
+    second: fire_purple_20
+  - first:
+      213: 5654000979460905950
+    second: fire_purple_21
+  - first:
+      213: -8269558670461947036
+    second: fire_purple_22
+  - first:
+      213: -4456783179491469946
+    second: fire_purple_23
+  - first:
+      213: 1638710967637184920
+    second: fire_purple_24
+  - first:
+      213: -3815028958216047628
+    second: fire_purple_25
+  - first:
+      213: 2874414137642917643
+    second: fire_purple_26
+  - first:
+      213: 3104242368159500269
+    second: fire_purple_27
+  - first:
+      213: 3882893143060224958
+    second: fire_purple_28
+  - first:
+      213: -4301221564777082464
+    second: fire_purple_29
+  - first:
+      213: -5157000341117197875
+    second: fire_purple_30
+  - first:
+      213: -7258030172973348722
+    second: fire_purple_31
+  - first:
+      213: -8362209778438933149
+    second: fire_purple_32
+  - first:
+      213: 7810141837678743538
+    second: fire_purple_33
+  - first:
+      213: 1392970034679061762
+    second: fire_purple_34
+  - first:
+      213: 1258084925602539984
+    second: fire_purple_35
+  - first:
+      213: 1860220480305473021
+    second: fire_purple_36
+  - first:
+      213: -5289454488967611906
+    second: fire_purple_37
+  - first:
+      213: -329664900598402376
+    second: fire_purple_38
+  - first:
+      213: 2068443779930479968
+    second: fire_purple_39
+  - first:
+      213: 3673396712686540717
+    second: fire_purple_40
+  - first:
+      213: 4283732570877288273
+    second: fire_purple_41
+  - first:
+      213: 1803048614962990561
+    second: fire_purple_42
+  - first:
+      213: -9067884480256821012
+    second: fire_purple_43
+  - first:
+      213: -3990471856548648695
+    second: fire_purple_44
+  - first:
+      213: 57457550213036413
+    second: fire_purple_45
+  - first:
+      213: 2869829749596523220
+    second: fire_purple_46
+  - first:
+      213: -3626612336269888368
+    second: fire_purple_47
+  - first:
+      213: -5060777797254121949
+    second: fire_purple_48
+  - first:
+      213: -6747266216642023824
+    second: fire_purple_49
+  - first:
+      213: -830778832995341520
+    second: fire_purple_50
+  - first:
+      213: 1312391710216061541
+    second: fire_purple_51
+  - first:
+      213: -4219447022082264254
+    second: fire_purple_52
+  - first:
+      213: 5822379850876859190
+    second: fire_purple_53
+  - first:
+      213: -4901628044834108526
+    second: fire_purple_54
+  - first:
+      213: -4273172925131584254
+    second: fire_purple_55
+  - first:
+      213: -3017207364114671363
+    second: fire_purple_56
+  - first:
+      213: 5880539752345789032
+    second: fire_purple_57
+  - first:
+      213: -9223231499598488985
+    second: fire_purple_58
+  - first:
+      213: -5428793827081449287
+    second: fire_purple_59
+  - first:
+      213: -381140740937084945
+    second: fire_purple_60
+  - first:
+      213: -324600505441501277
+    second: fire_purple_61
+  - first:
+      213: -8003959498248965999
+    second: fire_purple_62
+  - first:
+      213: 5944760274436616480
+    second: fire_purple_63
+  - first:
+      213: 6308861496971966367
+    second: fire_purple_64
+  - first:
+      213: 5502058591842752113
+    second: fire_purple_65
+  - first:
+      213: 6490209813221874183
+    second: fire_purple_66
+  - first:
+      213: -2527878172347271472
+    second: fire_purple_67
+  - first:
+      213: 7651713994281972738
+    second: fire_purple_68
+  - first:
+      213: 1175729589672605777
+    second: fire_purple_69
+  - first:
+      213: 6051667995323117444
+    second: fire_purple_70
+  - first:
+      213: -5494496023764155385
+    second: fire_purple_71
+  - first:
+      213: -7843797115551019355
+    second: fire_purple_72
+  - first:
+      213: -8407635165333155514
+    second: fire_purple_73
+  - first:
+      213: 7214475708577737710
+    second: fire_purple_74
+  - first:
+      213: -6280594494490508041
+    second: fire_purple_75
+  - first:
+      213: 7927991756692999199
+    second: fire_purple_76
+  - first:
+      213: 336624348898541657
+    second: fire_purple_77
+  - first:
+      213: 7459275000984455020
+    second: fire_purple_78
+  - first:
+      213: 6880074406037326518
+    second: fire_purple_79
+  - first:
+      213: -9221314803787004320
+    second: fire_purple_80
+  - first:
+      213: 3120306396321909071
+    second: fire_purple_81
+  - first:
+      213: 1449539957784114903
+    second: fire_purple_82
+  - first:
+      213: 3138079653158056695
+    second: fire_purple_83
+  - first:
+      213: -4878017870663240863
+    second: fire_purple_84
+  - first:
+      213: 3152013462477155666
+    second: fire_purple_85
+  - first:
+      213: -7339022028805044997
+    second: fire_purple_86
+  - first:
+      213: -737015178298406586
+    second: fire_purple_87
+  - first:
+      213: -518806163935486147
+    second: fire_purple_88
+  - first:
+      213: 4868656383839714121
+    second: fire_purple_89
+  - first:
+      213: 5760611011490395373
+    second: fire_purple_90
+  - first:
+      213: -4105152972897962649
+    second: fire_purple_91
+  - first:
+      213: 8605968227634693444
+    second: fire_purple_92
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fire_purple_0
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 778
+        width: 32
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce6cd19ca7a9eb090800000000000000
+      internalID: -8016800434522044692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_1
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 777
+        width: 25
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b11f4b2a949a316a0800000000000000
+      internalID: -6479649305128537829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_2
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 767
+        width: 45
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e5ed400afaab8b0800000000000000
+      internalID: -5135599323251319272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_3
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 770
+        width: 61
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fd441d5d84d7a7c0800000000000000
+      internalID: -4060042835434123790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_4
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 773
+        width: 62
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19b159e086d51b70800000000000000
+      internalID: 8869230890334664988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_5
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 833
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14d2f68449a56120800000000000000
+      internalID: 2406515687686329373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_6
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 770
+        width: 70
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b33d95a7fd60ba3e0800000000000000
+      internalID: -2041530449182207173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_7
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 840
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783ed7e8069ad09b0800000000000000
+      internalID: -5112243769823075449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_8
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 770
+        width: 72
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d3365444ed352a0800000000000000
+      internalID: -6749807031694967413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_9
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 778
+        width: 11
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44047f57572c28040800000000000000
+      internalID: 4648491575145873476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_10
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 825
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0788dbb589add6500800000000000000
+      internalID: 391209090560133232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_11
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 772
+        width: 8
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f702fc22b16fc7620800000000000000
+      internalID: 2773362066961932415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_12
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 796
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a42b0139dc517880800000000000000
+      internalID: -8615002524282575704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_13
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 779
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6733a7ff69303c60800000000000000
+      internalID: 7795794108037150571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_14
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 770
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e353c487741efe0800000000000000
+      internalID: -1161568646884671853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_15
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 577
+        width: 76
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ddca44227a00140800000000000000
+      internalID: 4683927378088222027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_16
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 716
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0928cc43c7569a10800000000000000
+      internalID: 1915815187811150094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_17
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 569
+        width: 81
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9502f5ce052bb7090800000000000000
+      internalID: -8035633049479733159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_18
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 569
+        width: 73
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0528537b2f4132b00800000000000000
+      internalID: 802508191290458704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_19
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 569
+        width: 73
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da2153c3c51045930800000000000000
+      internalID: 4130928253864317613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_20
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 569
+        width: 74
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 554dec2f7781952e0800000000000000
+      internalID: -2136649644756773803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_21
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 570
+        width: 74
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb5a744feb077e40800000000000000
+      internalID: 5654000979460905950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_22
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 570
+        width: 81
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4633dd50430ac3d80800000000000000
+      internalID: -8269558670461947036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_23
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 683
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6859971bf435622c0800000000000000
+      internalID: -4456783179491469946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_24
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 671
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8911d8b51feddb610800000000000000
+      internalID: 1638710967637184920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_25
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 648
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f334b9106b4e0bc0800000000000000
+      internalID: -3815028958216047628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_26
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 656
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f119bcd68f3e720800000000000000
+      internalID: 2874414137642917643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_27
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 635
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de74dd2acfb741b20800000000000000
+      internalID: 3104242368159500269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_28
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 637
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebb97ecbdbec2e530800000000000000
+      internalID: 3882893143060224958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_29
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 625
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1563396cdfe44c0800000000000000
+      internalID: -4301221564777082464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_30
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 624
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc124214387ae68b0800000000000000
+      internalID: -5157000341117197875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_31
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 617
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e884bda230c464b90800000000000000
+      internalID: -7258030172973348722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_32
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 608
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36579dae28673fb80800000000000000
+      internalID: -8362209778438933149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_33
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 609
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff02481f92336c60800000000000000
+      internalID: 7810141837678743538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_34
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 599
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d1fc3cdd2d45310800000000000000
+      internalID: 1392970034679061762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_35
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 385
+        width: 82
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d920dff29d957110800000000000000
+      internalID: 1258084925602539984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_36
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 390
+        width: 74
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df5a384cba4d0d910800000000000000
+      internalID: 1860220480305473021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_37
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 479
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef97d71ca251896b0800000000000000
+      internalID: -5289454488967611906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_38
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 388
+        width: 79
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b2fae0058bcc6bf0800000000000000
+      internalID: -329664900598402376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_39
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 484
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d5f94a8a694bc10800000000000000
+      internalID: 2068443779930479968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_40
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 385
+        width: 85
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7d4c209d68af230800000000000000
+      internalID: 3673396712686540717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_41
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 385
+        width: 85
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f59e7b310e27b30800000000000000
+      internalID: 4283732570877288273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_42
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 385
+        width: 82
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed01af8927b50910800000000000000
+      internalID: 1803048614962990561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_43
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 385
+        width: 84
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8b302eb17682280800000000000000
+      internalID: -9067884480256821012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_44
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 471
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90969382dfefe98c0800000000000000
+      internalID: -3990471856548648695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_45
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 476
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d79bc1666512cc000800000000000000
+      internalID: 57457550213036413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_46
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 438
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da8c86c3fea3d720800000000000000
+      internalID: 2869829749596523220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_47
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 445
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09475967b4fabadc0800000000000000
+      internalID: -3626612336269888368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_48
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 443
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 326fb73186184c9b0800000000000000
+      internalID: -5060777797254121949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_49
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 419
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07eee00ef15ec52a0800000000000000
+      internalID: -6747266216642023824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_50
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 417
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03b26649d0b7874f0800000000000000
+      internalID: -830778832995341520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_51
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 413
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 562889d9e4d863210800000000000000
+      internalID: 1312391710216061541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_52
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 410
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 243f43cf9438175c0800000000000000
+      internalID: -4219447022082264254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_53
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 218
+        width: 78
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63338e640af3dc050800000000000000
+      internalID: 5822379850876859190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_54
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 219
+        width: 70
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b029e534be9fbb0800000000000000
+      internalID: -4901628044834108526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_55
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 296
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d07b56dd3a2b4c0800000000000000
+      internalID: -4273172925131584254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_56
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 304
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df8904063e9b026d0800000000000000
+      internalID: -3017207364114671363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_57
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 223
+        width: 69
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86262229fbfdb9150800000000000000
+      internalID: 5880539752345789032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_58
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 288
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76a1d3161df700080800000000000000
+      internalID: -9223231499598488985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_59
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 299
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b01af9f6cc09a4b0800000000000000
+      internalID: -5428793827081449287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_60
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 233
+        width: 69
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef0407f38ae5baf0800000000000000
+      internalID: -381140740937084945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_61
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 233
+        width: 82
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3af3f336f89ce7bf0800000000000000
+      internalID: -324600505441501277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_62
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 297
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 190b14e3e393ce090800000000000000
+      internalID: -8003959498248965999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_63
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 241
+        width: 63
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021f5a019f7008250800000000000000
+      internalID: 5944760274436616480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_64
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 249
+        width: 71
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9737201b149d8750800000000000000
+      internalID: 6308861496971966367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_65
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 274
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1765c2c532d3b5c40800000000000000
+      internalID: 5502058591842752113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_66
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 278
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a18d2407bd11a50800000000000000
+      internalID: 6490209813221874183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_67
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 292
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6f6cd023c2becd0800000000000000
+      internalID: -2527878172347271472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_68
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 294
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204ff085659503a60800000000000000
+      internalID: 7651713994281972738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_69
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 275
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 158f95025d7015010800000000000000
+      internalID: 1175729589672605777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_70
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 282
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48fa5d78af7dbf350800000000000000
+      internalID: 6051667995323117444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_71
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 266
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704cdbb3af0afb3b0800000000000000
+      internalID: -5494496023764155385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_72
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 271
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae0955e41c352390800000000000000
+      internalID: -7843797115551019355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_73
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 259
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6411c39dc54125b80800000000000000
+      internalID: -8407635165333155514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_74
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 70
+        width: 65
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eebe57ade67fe1460800000000000000
+      internalID: 7214475708577737710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_75
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 68
+        width: 68
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f48e915598d6d8a0800000000000000
+      internalID: -6280594494490508041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_76
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 135
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c49e79f72e50e60800000000000000
+      internalID: 7927991756692999199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_77
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 135
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95048d2df0eeba400800000000000000
+      internalID: 336624348898541657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_78
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 95
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6741aba71ba48760800000000000000
+      internalID: 7459275000984455020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_79
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 135
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba8c18583fea7f50800000000000000
+      internalID: 6880074406037326518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_80
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 140
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0668936ea0f470080800000000000000
+      internalID: -9221314803787004320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_81
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 108
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f498527a22e8d4b20800000000000000
+      internalID: 3120306396321909071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_82
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 103
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6f47f59eccd1410800000000000000
+      internalID: 1449539957784114903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_83
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 110
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2fd5b71d2bc8b20800000000000000
+      internalID: 3138079653158056695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_84
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 104
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1633c1b679ccd4cb0800000000000000
+      internalID: -4878017870663240863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_85
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 80
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d23364b833ebb20800000000000000
+      internalID: 3152013462477155666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_86
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 80
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf40f4e395e862a90800000000000000
+      internalID: -7339022028805044997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_87
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 75
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649c377a99895c5f0800000000000000
+      internalID: -737015178298406586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_88
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 97
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3f975bea84dcc8f0800000000000000
+      internalID: -518806163935486147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_89
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 90
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94b34349f21f09340800000000000000
+      internalID: 4868656383839714121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_90
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 77
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de4b615a13dc1ff40800000000000000
+      internalID: 5760611011490395373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_91
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 74
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76537c50f119707c0800000000000000
+      internalID: -4105152972897962649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_purple_92
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 63
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445c674b18a8e6770800000000000000
+      internalID: 8605968227634693444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fire_purple_0: -8016800434522044692
+      fire_purple_1: -6479649305128537829
+      fire_purple_10: 391209090560133232
+      fire_purple_11: 2773362066961932415
+      fire_purple_12: -8615002524282575704
+      fire_purple_13: 7795794108037150571
+      fire_purple_14: -1161568646884671853
+      fire_purple_15: 4683927378088222027
+      fire_purple_16: 1915815187811150094
+      fire_purple_17: -8035633049479733159
+      fire_purple_18: 802508191290458704
+      fire_purple_19: 4130928253864317613
+      fire_purple_2: -5135599323251319272
+      fire_purple_20: -2136649644756773803
+      fire_purple_21: 5654000979460905950
+      fire_purple_22: -8269558670461947036
+      fire_purple_23: -4456783179491469946
+      fire_purple_24: 1638710967637184920
+      fire_purple_25: -3815028958216047628
+      fire_purple_26: 2874414137642917643
+      fire_purple_27: 3104242368159500269
+      fire_purple_28: 3882893143060224958
+      fire_purple_29: -4301221564777082464
+      fire_purple_3: -4060042835434123790
+      fire_purple_30: -5157000341117197875
+      fire_purple_31: -7258030172973348722
+      fire_purple_32: -8362209778438933149
+      fire_purple_33: 7810141837678743538
+      fire_purple_34: 1392970034679061762
+      fire_purple_35: 1258084925602539984
+      fire_purple_36: 1860220480305473021
+      fire_purple_37: -5289454488967611906
+      fire_purple_38: -329664900598402376
+      fire_purple_39: 2068443779930479968
+      fire_purple_4: 8869230890334664988
+      fire_purple_40: 3673396712686540717
+      fire_purple_41: 4283732570877288273
+      fire_purple_42: 1803048614962990561
+      fire_purple_43: -9067884480256821012
+      fire_purple_44: -3990471856548648695
+      fire_purple_45: 57457550213036413
+      fire_purple_46: 2869829749596523220
+      fire_purple_47: -3626612336269888368
+      fire_purple_48: -5060777797254121949
+      fire_purple_49: -6747266216642023824
+      fire_purple_5: 2406515687686329373
+      fire_purple_50: -830778832995341520
+      fire_purple_51: 1312391710216061541
+      fire_purple_52: -4219447022082264254
+      fire_purple_53: 5822379850876859190
+      fire_purple_54: -4901628044834108526
+      fire_purple_55: -4273172925131584254
+      fire_purple_56: -3017207364114671363
+      fire_purple_57: 5880539752345789032
+      fire_purple_58: -9223231499598488985
+      fire_purple_59: -5428793827081449287
+      fire_purple_6: -2041530449182207173
+      fire_purple_60: -381140740937084945
+      fire_purple_61: -324600505441501277
+      fire_purple_62: -8003959498248965999
+      fire_purple_63: 5944760274436616480
+      fire_purple_64: 6308861496971966367
+      fire_purple_65: 5502058591842752113
+      fire_purple_66: 6490209813221874183
+      fire_purple_67: -2527878172347271472
+      fire_purple_68: 7651713994281972738
+      fire_purple_69: 1175729589672605777
+      fire_purple_7: -5112243769823075449
+      fire_purple_70: 6051667995323117444
+      fire_purple_71: -5494496023764155385
+      fire_purple_72: -7843797115551019355
+      fire_purple_73: -8407635165333155514
+      fire_purple_74: 7214475708577737710
+      fire_purple_75: -6280594494490508041
+      fire_purple_76: 7927991756692999199
+      fire_purple_77: 336624348898541657
+      fire_purple_78: 7459275000984455020
+      fire_purple_79: 6880074406037326518
+      fire_purple_8: -6749807031694967413
+      fire_purple_80: -9221314803787004320
+      fire_purple_81: 3120306396321909071
+      fire_purple_82: 1449539957784114903
+      fire_purple_83: 3138079653158056695
+      fire_purple_84: -4878017870663240863
+      fire_purple_85: 3152013462477155666
+      fire_purple_86: -7339022028805044997
+      fire_purple_87: -737015178298406586
+      fire_purple_88: -518806163935486147
+      fire_purple_89: 4868656383839714121
+      fire_purple_9: 4648491575145873476
+      fire_purple_90: 5760611011490395373
+      fire_purple_91: -4105152972897962649
+      fire_purple_92: 8605968227634693444
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

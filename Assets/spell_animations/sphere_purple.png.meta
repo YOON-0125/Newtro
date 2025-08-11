@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: aa811789bf1bc3e4d972dbdd68c404b7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5888224362212439055
+    second: sphere_purple_0
+  - first:
+      213: -2792506531793315798
+    second: sphere_purple_1
+  - first:
+      213: 7911536857226519160
+    second: sphere_purple_2
+  - first:
+      213: 7766417925062091990
+    second: sphere_purple_3
+  - first:
+      213: -3998441128246198346
+    second: sphere_purple_4
+  - first:
+      213: 8295142647223219730
+    second: sphere_purple_5
+  - first:
+      213: 624001708909975577
+    second: sphere_purple_6
+  - first:
+      213: -4094913541517210841
+    second: sphere_purple_7
+  - first:
+      213: 4123655554683389096
+    second: sphere_purple_8
+  - first:
+      213: 209609797175215205
+    second: sphere_purple_9
+  - first:
+      213: -1919974866717232141
+    second: sphere_purple_10
+  - first:
+      213: -7966568440935390245
+    second: sphere_purple_11
+  - first:
+      213: -2676451089019863795
+    second: sphere_purple_12
+  - first:
+      213: -8187957731512775539
+    second: sphere_purple_13
+  - first:
+      213: 867815788249604499
+    second: sphere_purple_14
+  - first:
+      213: -5708731429919760584
+    second: sphere_purple_15
+  - first:
+      213: -4244770861107421579
+    second: sphere_purple_16
+  - first:
+      213: -8229892999457479766
+    second: sphere_purple_17
+  - first:
+      213: -4501339340783793522
+    second: sphere_purple_18
+  - first:
+      213: 1109114650804883750
+    second: sphere_purple_19
+  - first:
+      213: 4806298156704490630
+    second: sphere_purple_20
+  - first:
+      213: 6956416897011636590
+    second: sphere_purple_21
+  - first:
+      213: 1813587956755334340
+    second: sphere_purple_22
+  - first:
+      213: 2804874584544596177
+    second: sphere_purple_23
+  - first:
+      213: 5225947828066003326
+    second: sphere_purple_24
+  - first:
+      213: 5202540443489077803
+    second: sphere_purple_25
+  - first:
+      213: -6530192354057250311
+    second: sphere_purple_26
+  - first:
+      213: -7576937991336674799
+    second: sphere_purple_27
+  - first:
+      213: 1262540031968517021
+    second: sphere_purple_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sphere_purple_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 578
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f04397b3cdc27b150800000000000000
+      internalID: 5888224362212439055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 565
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28508bca160f39d0800000000000000
+      internalID: -2792506531793315798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_2
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 559
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 872a562cadc6bcd60800000000000000
+      internalID: 7911536857226519160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_3
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 554
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d46d8064fbd7cb60800000000000000
+      internalID: 7766417925062091990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_4
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 544
+        width: 34
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bfb29f7afea288c0800000000000000
+      internalID: -3998441128246198346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_5
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 543
+        width: 41
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216fee0c9444e1370800000000000000
+      internalID: 8295142647223219730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_6
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 571
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918d0d68f36e8a800800000000000000
+      internalID: 624001708909975577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_7
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 538
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72b0eeb64d1fb27c0800000000000000
+      internalID: -4094913541517210841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 404
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a448f001ea2a3930800000000000000
+      internalID: 4123655554683389096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 400
+        width: 68
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 564021efffea8e200800000000000000
+      internalID: 209609797175215205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_10
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 400
+        width: 81
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f334abf701ea55e0800000000000000
+      internalID: -1919974866717232141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_11
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 400
+        width: 89
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd3653f2630117190800000000000000
+      internalID: -7966568440935390245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_12
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 401
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0d734c3ae55bdad0800000000000000
+      internalID: -2676451089019863795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_13
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 401
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8c844923d78e5e80800000000000000
+      internalID: -8187957731512775539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_14
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 273
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391e71d8cd91b0c00800000000000000
+      internalID: 867815788249604499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_15
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 273
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83f5689b20386c0b0800000000000000
+      internalID: -5708731429919760584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_16
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 273
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57e53ce346b8715c0800000000000000
+      internalID: -4244770861107421579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_17
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 273
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3ecdbbbeb89cd80800000000000000
+      internalID: -8229892999457479766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_18
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 273
+        width: 94
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a471bf7b70881c0800000000000000
+      internalID: -4501339340783793522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_19
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 275
+        width: 91
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621186806ed546f00800000000000000
+      internalID: 1109114650804883750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_20
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 147
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6846cfa65b663b240800000000000000
+      internalID: 4806298156704490630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_21
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 146
+        width: 90
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6957e7af482a8060800000000000000
+      internalID: 6956416897011636590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_22
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 147
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c4045b43a82b2910800000000000000
+      internalID: 1813587956755334340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_23
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 147
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d05d43e29aece620800000000000000
+      internalID: 2804874584544596177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_24
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 147
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7929928cdb468840800000000000000
+      internalID: 5225947828066003326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_25
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 148
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2a05c718f2233840800000000000000
+      internalID: 5202540443489077803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_26
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 26
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9127507a81065a0800000000000000
+      internalID: -6530192354057250311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_27
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 27
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11a373d8a0f49d690800000000000000
+      internalID: -7576937991336674799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_purple_28
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 30
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9b91384871758110800000000000000
+      internalID: 1262540031968517021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sphere_purple_0: 5888224362212439055
+      sphere_purple_1: -2792506531793315798
+      sphere_purple_10: -1919974866717232141
+      sphere_purple_11: -7966568440935390245
+      sphere_purple_12: -2676451089019863795
+      sphere_purple_13: -8187957731512775539
+      sphere_purple_14: 867815788249604499
+      sphere_purple_15: -5708731429919760584
+      sphere_purple_16: -4244770861107421579
+      sphere_purple_17: -8229892999457479766
+      sphere_purple_18: -4501339340783793522
+      sphere_purple_19: 1109114650804883750
+      sphere_purple_2: 7911536857226519160
+      sphere_purple_20: 4806298156704490630
+      sphere_purple_21: 6956416897011636590
+      sphere_purple_22: 1813587956755334340
+      sphere_purple_23: 2804874584544596177
+      sphere_purple_24: 5225947828066003326
+      sphere_purple_25: 5202540443489077803
+      sphere_purple_26: -6530192354057250311
+      sphere_purple_27: -7576937991336674799
+      sphere_purple_28: 1262540031968517021
+      sphere_purple_3: 7766417925062091990
+      sphere_purple_4: -3998441128246198346
+      sphere_purple_5: 8295142647223219730
+      sphere_purple_6: 624001708909975577
+      sphere_purple_7: -4094913541517210841
+      sphere_purple_8: 4123655554683389096
+      sphere_purple_9: 209609797175215205
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,3900 @@
+fileFormatVersion: 2
+guid: 9ac63c689e31d354db8b7230743f9cd5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -408809625482783416
+    second: flash_heal_0
+  - first:
+      213: -4809709583603959071
+    second: flash_heal_1
+  - first:
+      213: 254921747756053908
+    second: flash_heal_2
+  - first:
+      213: 6499593703397567924
+    second: flash_heal_3
+  - first:
+      213: 8207231240256295609
+    second: flash_heal_4
+  - first:
+      213: -8970624913386941980
+    second: flash_heal_5
+  - first:
+      213: -187318590937114270
+    second: flash_heal_6
+  - first:
+      213: -6486607241562917735
+    second: flash_heal_7
+  - first:
+      213: -1456798955167164102
+    second: flash_heal_8
+  - first:
+      213: -5445417813088242177
+    second: flash_heal_9
+  - first:
+      213: -4961714311332777906
+    second: flash_heal_10
+  - first:
+      213: -15940206818722246
+    second: flash_heal_11
+  - first:
+      213: -4090013765571408741
+    second: flash_heal_12
+  - first:
+      213: -4494275924756534423
+    second: flash_heal_13
+  - first:
+      213: 2250237930286636979
+    second: flash_heal_14
+  - first:
+      213: 8366780380970775710
+    second: flash_heal_15
+  - first:
+      213: -4063144803752538445
+    second: flash_heal_16
+  - first:
+      213: -7913073910226171289
+    second: flash_heal_17
+  - first:
+      213: -2448896602173602621
+    second: flash_heal_18
+  - first:
+      213: -6764563711047656686
+    second: flash_heal_19
+  - first:
+      213: -1320587437606666259
+    second: flash_heal_20
+  - first:
+      213: -6151215189007006553
+    second: flash_heal_21
+  - first:
+      213: 290116661657008143
+    second: flash_heal_22
+  - first:
+      213: 7964060731050848946
+    second: flash_heal_23
+  - first:
+      213: 7752994377515890921
+    second: flash_heal_24
+  - first:
+      213: 5695778911703969906
+    second: flash_heal_25
+  - first:
+      213: -6495288028316245122
+    second: flash_heal_26
+  - first:
+      213: 1468997306597721131
+    second: flash_heal_27
+  - first:
+      213: -8718492852886575920
+    second: flash_heal_28
+  - first:
+      213: 8279005806814777468
+    second: flash_heal_29
+  - first:
+      213: -6637523494479032071
+    second: flash_heal_30
+  - first:
+      213: -2389531392056249811
+    second: flash_heal_31
+  - first:
+      213: 5709476489541017348
+    second: flash_heal_32
+  - first:
+      213: -4296015043734161219
+    second: flash_heal_33
+  - first:
+      213: -8154765942593209319
+    second: flash_heal_34
+  - first:
+      213: -1737612058339461406
+    second: flash_heal_35
+  - first:
+      213: -2346641459241661981
+    second: flash_heal_36
+  - first:
+      213: 1019879127030942422
+    second: flash_heal_37
+  - first:
+      213: 9165224090781721750
+    second: flash_heal_38
+  - first:
+      213: -3480090729016398771
+    second: flash_heal_39
+  - first:
+      213: 8677968680100115477
+    second: flash_heal_40
+  - first:
+      213: 991857594273864603
+    second: flash_heal_41
+  - first:
+      213: -1322152813561249328
+    second: flash_heal_42
+  - first:
+      213: 7675772749767664850
+    second: flash_heal_43
+  - first:
+      213: 3930745765034796903
+    second: flash_heal_44
+  - first:
+      213: -5962959782790971224
+    second: flash_heal_45
+  - first:
+      213: 5534817712969602019
+    second: flash_heal_46
+  - first:
+      213: -7645018391805899156
+    second: flash_heal_47
+  - first:
+      213: -7197004481542996422
+    second: flash_heal_48
+  - first:
+      213: -1562908022511959908
+    second: flash_heal_49
+  - first:
+      213: 3009944648299279636
+    second: flash_heal_50
+  - first:
+      213: 2488547920331186173
+    second: flash_heal_51
+  - first:
+      213: -3247646047962729162
+    second: flash_heal_52
+  - first:
+      213: 5190900999885794287
+    second: flash_heal_53
+  - first:
+      213: 8072144579817040102
+    second: flash_heal_54
+  - first:
+      213: -6231999873979959715
+    second: flash_heal_55
+  - first:
+      213: 3890840071121948846
+    second: flash_heal_56
+  - first:
+      213: 7160800009133110404
+    second: flash_heal_57
+  - first:
+      213: -2650047080310689929
+    second: flash_heal_58
+  - first:
+      213: -7332430312142177184
+    second: flash_heal_59
+  - first:
+      213: -6813895403285731203
+    second: flash_heal_60
+  - first:
+      213: -7077946948359631461
+    second: flash_heal_61
+  - first:
+      213: 1251355117930079750
+    second: flash_heal_62
+  - first:
+      213: -7879218189465954458
+    second: flash_heal_63
+  - first:
+      213: -5794452605700346783
+    second: flash_heal_64
+  - first:
+      213: -4287089060492453319
+    second: flash_heal_65
+  - first:
+      213: 7545743199500242299
+    second: flash_heal_66
+  - first:
+      213: 6783529197245482170
+    second: flash_heal_67
+  - first:
+      213: 8866836014121819833
+    second: flash_heal_68
+  - first:
+      213: -109462882971956494
+    second: flash_heal_69
+  - first:
+      213: -1210950436960572665
+    second: flash_heal_70
+  - first:
+      213: 2747364835413868488
+    second: flash_heal_71
+  - first:
+      213: 7087502525647430820
+    second: flash_heal_72
+  - first:
+      213: -8082756261739405196
+    second: flash_heal_73
+  - first:
+      213: -6680661039255748025
+    second: flash_heal_74
+  - first:
+      213: -5743827261044991420
+    second: flash_heal_75
+  - first:
+      213: -3902794027409462573
+    second: flash_heal_76
+  - first:
+      213: 3887158307110988304
+    second: flash_heal_77
+  - first:
+      213: -7082349211569348522
+    second: flash_heal_78
+  - first:
+      213: 2197217808240682917
+    second: flash_heal_79
+  - first:
+      213: -4001591747085793014
+    second: flash_heal_80
+  - first:
+      213: 3675224294830087495
+    second: flash_heal_81
+  - first:
+      213: 3653430959683106626
+    second: flash_heal_82
+  - first:
+      213: -5031943286683466872
+    second: flash_heal_83
+  - first:
+      213: -1542948948668865101
+    second: flash_heal_84
+  - first:
+      213: -8588707893791548592
+    second: flash_heal_85
+  - first:
+      213: 7371320082049265472
+    second: flash_heal_86
+  - first:
+      213: -3053971766580167068
+    second: flash_heal_87
+  - first:
+      213: 7992732404860586277
+    second: flash_heal_88
+  - first:
+      213: 3995824341825596599
+    second: flash_heal_89
+  - first:
+      213: 5364081607014257036
+    second: flash_heal_90
+  - first:
+      213: -8570719950224119086
+    second: flash_heal_91
+  - first:
+      213: -8013293739130312298
+    second: flash_heal_92
+  - first:
+      213: 7004495078847808081
+    second: flash_heal_93
+  - first:
+      213: -1876914947791635696
+    second: flash_heal_94
+  - first:
+      213: -3900703539219184235
+    second: flash_heal_95
+  - first:
+      213: 5741607649219274943
+    second: flash_heal_96
+  - first:
+      213: -4401226157363230773
+    second: flash_heal_97
+  - first:
+      213: 9102389132060679349
+    second: flash_heal_98
+  - first:
+      213: 5372835830867389013
+    second: flash_heal_99
+  - first:
+      213: -3216935337737687089
+    second: flash_heal_100
+  - first:
+      213: -6331337027346164099
+    second: flash_heal_101
+  - first:
+      213: -7431485196059531179
+    second: flash_heal_102
+  - first:
+      213: 6535381984679554163
+    second: flash_heal_103
+  - first:
+      213: -5007419284427541157
+    second: flash_heal_104
+  - first:
+      213: 2825197472712892561
+    second: flash_heal_105
+  - first:
+      213: -7169858374096427535
+    second: flash_heal_106
+  - first:
+      213: -1737751654222073408
+    second: flash_heal_107
+  - first:
+      213: -6417575444140184687
+    second: flash_heal_108
+  - first:
+      213: -303877850874989349
+    second: flash_heal_109
+  - first:
+      213: 5806265850587487078
+    second: flash_heal_110
+  - first:
+      213: -2644446724519963066
+    second: flash_heal_111
+  - first:
+      213: 888640251821922509
+    second: flash_heal_112
+  - first:
+      213: -3131609793875022001
+    second: flash_heal_113
+  - first:
+      213: -4065284442800579024
+    second: flash_heal_114
+  - first:
+      213: -5749574131235586304
+    second: flash_heal_115
+  - first:
+      213: 1744123994123614005
+    second: flash_heal_116
+  - first:
+      213: -3502074643202392749
+    second: flash_heal_117
+  - first:
+      213: 2486500005467962858
+    second: flash_heal_118
+  - first:
+      213: 7933635215901777630
+    second: flash_heal_119
+  - first:
+      213: -2443765085072905124
+    second: flash_heal_120
+  - first:
+      213: -5268376901825112524
+    second: flash_heal_121
+  - first:
+      213: 6885512161553031431
+    second: flash_heal_122
+  - first:
+      213: 5175037445686001080
+    second: flash_heal_123
+  - first:
+      213: -2683392107321241414
+    second: flash_heal_124
+  - first:
+      213: -130614451173891295
+    second: flash_heal_125
+  - first:
+      213: -1121592457451887723
+    second: flash_heal_126
+  - first:
+      213: 8688088352220728055
+    second: flash_heal_127
+  - first:
+      213: -5411201811181827872
+    second: flash_heal_128
+  - first:
+      213: 4572927183615014522
+    second: flash_heal_129
+  - first:
+      213: 2011328461338714941
+    second: flash_heal_130
+  - first:
+      213: -7161813083697660243
+    second: flash_heal_131
+  - first:
+      213: -2860123337934045059
+    second: flash_heal_132
+  - first:
+      213: 5426489965206367898
+    second: flash_heal_133
+  - first:
+      213: 8803981870933054517
+    second: flash_heal_134
+  - first:
+      213: 2934839491709872765
+    second: flash_heal_135
+  - first:
+      213: 679806723141622585
+    second: flash_heal_136
+  - first:
+      213: -6847658164375777982
+    second: flash_heal_137
+  - first:
+      213: 2352939717417133605
+    second: flash_heal_138
+  - first:
+      213: 5881185499093948160
+    second: flash_heal_139
+  - first:
+      213: -5851525848847208428
+    second: flash_heal_140
+  - first:
+      213: 4459174186466107671
+    second: flash_heal_141
+  - first:
+      213: -7131952709286578948
+    second: flash_heal_142
+  - first:
+      213: -3068240405179739346
+    second: flash_heal_143
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: flash_heal_0
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 3577
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8459654cfcd935af0800000000000000
+      internalID: -408809625482783416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_1
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 3578
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea7e7cdd9a704db0800000000000000
+      internalID: -4809709583603959071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_2
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 3578
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 495758c9af9a98300800000000000000
+      internalID: 254921747756053908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_3
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 3577
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bda0637902333a50800000000000000
+      internalID: 6499593703397567924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_4
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 3578
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b217f84451f5e170800000000000000
+      internalID: 8207231240256295609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_5
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 3578
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e15d407b20f18380800000000000000
+      internalID: -8970624913386941980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_6
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 3576
+        width: 49
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269dd57ebb2866df0800000000000000
+      internalID: -187318590937114270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_7
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 3577
+        width: 42
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9947a21d411faf5a0800000000000000
+      internalID: -6486607241562917735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_8
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 3577
+        width: 43
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a39d918911968cbe0800000000000000
+      internalID: -1456798955167164102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_9
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 3575
+        width: 66
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff57a4d995dfd64b0800000000000000
+      internalID: -5445417813088242177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_10
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 3576
+        width: 78
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40b9044f13742bb0800000000000000
+      internalID: -4961714311332777906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_11
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 3189
+        width: 83
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e7ce2677e57cff0800000000000000
+      internalID: -15940206818722246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_12
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 3191
+        width: 79
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9c88a8662a5d37c0800000000000000
+      internalID: -4090013765571408741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_13
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 3188
+        width: 144
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96beb4eabdf11a1c0800000000000000
+      internalID: -4494275924756534423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_14
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 3185
+        width: 145
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bf58dea9737a3f10800000000000000
+      internalID: 2250237930286636979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_15
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 3181
+        width: 147
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9478796d66cc1470800000000000000
+      internalID: 8366780380970775710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_16
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 3178
+        width: 148
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3be0b55145fcc97c0800000000000000
+      internalID: -4063144803752538445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_17
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 2791
+        width: 152
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ace83343d1f2290800000000000000
+      internalID: -7913073910226171289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_18
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 2788
+        width: 156
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c408cfd385c30ed0800000000000000
+      internalID: -2448896602173602621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_19
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 2784
+        width: 158
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b918e15217f12a0800000000000000
+      internalID: -6764563711047656686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_20
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 2858
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def7c96e8b45cade0800000000000000
+      internalID: -1320587437606666259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_21
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 2782
+        width: 148
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a4004a406e72aaa0800000000000000
+      internalID: -6151215189007006553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_22
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 2859
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08fc711193b60400800000000000000
+      internalID: 290116661657008143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_23
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 2799
+        width: 137
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b27ceb1a07068e60800000000000000
+      internalID: 7964060731050848946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_24
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 2831
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e87f692f4b289b60800000000000000
+      internalID: 7752994377515890921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_25
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 2814
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270b64f1eb87b0f40800000000000000
+      internalID: 5695778911703969906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_26
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 2787
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e73ec56a3f91cd5a0800000000000000
+      internalID: -6495288028316245122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_27
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 2433
+        width: 139
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2443cb644de26410800000000000000
+      internalID: 1468997306597721131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_28
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 2443
+        width: 137
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4e9ee51f0b10780800000000000000
+      internalID: -8718492852886575920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_29
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 2445
+        width: 140
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c705790daefe4e270800000000000000
+      internalID: 8279005806814777468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_30
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 2443
+        width: 139
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f094438c87c2e3a0800000000000000
+      internalID: -6637523494479032071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_31
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 2504
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d22b7d4fbdda6ded0800000000000000
+      internalID: -2389531392056249811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_32
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 2463
+        width: 129
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40f598cfd922c3f40800000000000000
+      internalID: 5709476489541017348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_33
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 2489
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8bd78341d7164c0800000000000000
+      internalID: -4296015043734161219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_34
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 2441
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91c374db49374de80800000000000000
+      internalID: -8154765942593209319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_35
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 2438
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e6bd390a03c2e7e0800000000000000
+      internalID: -1737612058339461406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_36
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 2471
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e942be960e0f6fd0800000000000000
+      internalID: -2346641459241661981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_37
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 2462
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dac38899a6572e00800000000000000
+      internalID: 1019879127030942422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_38
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 2451
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 694a5e940ca613f70800000000000000
+      internalID: 9165224090781721750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_39
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 2445
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ce8d69beb34bfc0800000000000000
+      internalID: -3480090729016398771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_40
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 2431
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514355569865e6870800000000000000
+      internalID: 8677968680100115477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_41
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 2426
+        width: 37
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b97761a39c3cd00800000000000000
+      internalID: 991857594273864603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_42
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 2438
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d106e86505c6ade0800000000000000
+      internalID: -1322152813561249328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_43
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 2422
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4668ed5a2d58a60800000000000000
+      internalID: 7675772749767664850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_44
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 2436
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76725438270dc8630800000000000000
+      internalID: 3930745765034796903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_45
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 2421
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a0cdc0bbaf4f3da0800000000000000
+      internalID: -5962959782790971224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_46
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 2414
+        width: 40
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e3d71e926f9fcc40800000000000000
+      internalID: 5534817712969602019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_47
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 2427
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ec417174077e590800000000000000
+      internalID: -7645018391805899156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_48
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2063
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e3cbe2e8a1f1c90800000000000000
+      internalID: -7197004481542996422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_49
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 2080
+        width: 130
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9001952f6f6f4ae0800000000000000
+      internalID: -1562908022511959908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_50
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 2088
+        width: 127
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4157773d5b875c920800000000000000
+      internalID: 3009944648299279636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_51
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 2137
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff90ed0629198220800000000000000
+      internalID: 2488547920331186173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_52
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2090
+        width: 125
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635fafa402b0ee2d0800000000000000
+      internalID: -3247646047962729162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_53
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 2141
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feba962f4f8c90840800000000000000
+      internalID: 5190900999885794287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_54
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 2103
+        width: 107
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e8e69f2ab4060070800000000000000
+      internalID: 8072144579817040102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_55
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 2145
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d563527122d7389a0800000000000000
+      internalID: -6231999873979959715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_56
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 2130
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea0541d1e6a0ff530800000000000000
+      internalID: 3890840071121948846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_57
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 2104
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4843ef33ba5406360800000000000000
+      internalID: 7160800009133110404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_58
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 2089
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77f25049834293bd0800000000000000
+      internalID: -2650047080310689929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_59
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 2095
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06c7570ea79fd3a90800000000000000
+      internalID: -7332430312142177184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_60
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 2093
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d78ac767b3e2071a0800000000000000
+      internalID: -6813895403285731203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_61
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 2078
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9dc6f340c416cd90800000000000000
+      internalID: -7077946948359631461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_62
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2074
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 606e61c89d4bd5110800000000000000
+      internalID: 1251355117930079750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_63
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 2076
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667d5157dc467a290800000000000000
+      internalID: -7879218189465954458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_64
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 2082
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ce4613e08f59fa0800000000000000
+      internalID: -5794452605700346783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_65
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 2086
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a52e4a6333184c0800000000000000
+      internalID: -4287089060492453319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_66
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 2086
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d088cf57dd7b860800000000000000
+      internalID: 7545743199500242299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_67
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 2074
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab4ce4d3ddfe32e50800000000000000
+      internalID: 6783529197245482170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_68
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 2057
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9be1f5750645d0b70800000000000000
+      internalID: 8866836014121819833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_69
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 2056
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2facd50861c1b7ef0800000000000000
+      internalID: -109462882971956494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_70
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1724
+        width: 113
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b6c545ef6d13fe0800000000000000
+      internalID: -1210950436960572665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_71
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1733
+        width: 110
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cf3e3bf2c9902620800000000000000
+      internalID: 2747364835413868488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_72
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1744
+        width: 111
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a426e1fefddb5260800000000000000
+      internalID: 7087502525647430820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_73
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1751
+        width: 115
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47065f4110844df80800000000000000
+      internalID: -8082756261739405196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_74
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 1792
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7428e523e268943a0800000000000000
+      internalID: -6680661039255748025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_75
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1755
+        width: 107
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a5536c983d940b0800000000000000
+      internalID: -5743827261044991420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_76
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1758
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da2ebc828d76d9c0800000000000000
+      internalID: -3902794027409462573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_77
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 1742
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a2f01a2e5f1f530800000000000000
+      internalID: 3887158307110988304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_78
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 1750
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 650242d7ae076bd90800000000000000
+      internalID: -7082349211569348522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_79
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 1747
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a7295a84f51e7e10800000000000000
+      internalID: 2197217808240682917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_80
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 1737
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0901d2e18d7778c0800000000000000
+      internalID: -4001591747085793014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_81
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1720
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d9b332605010330800000000000000
+      internalID: 3675224294830087495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_82
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1727
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2477353e91893b230800000000000000
+      internalID: 3653430959683106626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_83
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1709
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883025bbd32fa2ab0800000000000000
+      internalID: -5031943286683466872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_84
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 1384
+        width: 108
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5a7082b18569ae0800000000000000
+      internalID: -1542948948668865101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_85
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 1428
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05b16feeca7cec880800000000000000
+      internalID: -8588707893791548592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_86
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1389
+        width: 93
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04fef384f803c4660800000000000000
+      internalID: 7371320082049265472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_87
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1434
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46ebae2ebdc1e95d0800000000000000
+      internalID: -3053971766580167068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_88
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 1394
+        width: 88
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 529087066c3ebee60800000000000000
+      internalID: 7992732404860586277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_89
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 1453
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bcaf5f6115047730800000000000000
+      internalID: 3995824341825596599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_90
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1399
+        width: 90
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c819a4c2dcb017a40800000000000000
+      internalID: 5364081607014257036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_91
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 1399
+        width: 87
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2daa9896d9fae0980800000000000000
+      internalID: -8570719950224119086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_92
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1441
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699a64eeccf0bc090800000000000000
+      internalID: -8013293739130312298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_93
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 1428
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15202bda927f43160800000000000000
+      internalID: 7004495078847808081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_94
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 1425
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b324f9ccbd3f5e0800000000000000
+      internalID: -1876914947791635696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_95
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 1429
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5954bb24ccaedd9c0800000000000000
+      internalID: -3900703539219184235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_96
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1404
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb861639cb94eaf40800000000000000
+      internalID: 5741607649219274943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_97
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1407
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc7053ae024bbe2c0800000000000000
+      internalID: -4401226157363230773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_98
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 1415
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bc5ad760be225e70800000000000000
+      internalID: 9102389132060679349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_99
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1381
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55a675fb8b5209a40800000000000000
+      internalID: 5372835830867389013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_100
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1386
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf6eb8ba562b53d0800000000000000
+      internalID: -3216935337737687089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_101
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1027
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7611cbb4829228a0800000000000000
+      internalID: -6331337027346164099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_102
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1030
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5582c4f769f0ed890800000000000000
+      internalID: -7431485196059531179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_103
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1023
+        width: 77
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37cef440a4752ba50800000000000000
+      internalID: 6535381984679554163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_104
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1057
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b557146f0b2128ab0800000000000000
+      internalID: -5007419284427541157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_105
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 1042
+        width: 81
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1902265022e153720800000000000000
+      internalID: 2825197472712892561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_106
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 1037
+        width: 78
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f56f1adbcb8f7c90800000000000000
+      internalID: -7169858374096427535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_107
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 1036
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c1fe36d31442e7e0800000000000000
+      internalID: -1737751654222073408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_108
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1034
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b21c4a22130f6a0800000000000000
+      internalID: -6417575444140184687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_109
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 1035
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd4bc7364b868cbf0800000000000000
+      internalID: -303877850874989349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_110
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1010
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b9fb73700049050800000000000000
+      internalID: 5806265850587487078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_111
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1023
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 646da8507b90d4bd0800000000000000
+      internalID: -2644446724519963066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_112
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1023
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc895fec995155c00800000000000000
+      internalID: 888640251821922509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_113
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 661
+        width: 85
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4fe1f40c794a84d0800000000000000
+      internalID: -3131609793875022001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_114
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 678
+        width: 79
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e13fb86553597c0800000000000000
+      internalID: -4065284442800579024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_115
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 675
+        width: 72
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f7de94ac86530b0800000000000000
+      internalID: -5749574131235586304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_116
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 700
+        width: 76
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53739f9288f543810800000000000000
+      internalID: 1744123994123614005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_117
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 733
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35db403baa1266fc0800000000000000
+      internalID: -3502074643202392749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_118
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 699
+        width: 64
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aedbce7b492d18220800000000000000
+      internalID: 2486500005467962858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_119
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 691
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ededa55d13fe91e60800000000000000
+      internalID: 7933635215901777630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_120
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 697
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5c2abd4a90061ed0800000000000000
+      internalID: -2443765085072905124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_121
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 692
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43657dfee17f2e6b0800000000000000
+      internalID: -5268376901825112524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_122
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 689
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 701200674d04e8f50800000000000000
+      internalID: 6885512161553031431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_123
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 694
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bd7579632d61d740800000000000000
+      internalID: 5175037445686001080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_124
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 697
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab0d70a781da2cad0800000000000000
+      internalID: -2683392107321241414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_125
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 698
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1236f3349d6ff2ef0800000000000000
+      internalID: -130614451173891295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_126
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 677
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 593a2d63a9d4f60f0800000000000000
+      internalID: -1121592457451887723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_127
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 660
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa435b235a429870800000000000000
+      internalID: 8688088352220728055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_128
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 319
+        width: 65
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e88e8c5f9c87e4b0800000000000000
+      internalID: -5411201811181827872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_129
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 375
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a76b91b8b0d467f30800000000000000
+      internalID: 4572927183615014522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_130
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 362
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d332ab0449ca9eb10800000000000000
+      internalID: 2011328461338714941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_131
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 330
+        width: 51
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daeb47ef1f02c9c90800000000000000
+      internalID: -7161813083697660243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_132
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 373
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7003ac4afcce48d0800000000000000
+      internalID: -2860123337934045059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_133
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 334
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ee8516fd3ce4b40800000000000000
+      internalID: 5426489965206367898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_134
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 339
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53491f9bdd60e2a70800000000000000
+      internalID: 8803981870933054517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_135
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 359
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7aa720e7f4aab820800000000000000
+      internalID: 2934839491709872765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_136
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 350
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b57c8ec982f6900800000000000000
+      internalID: 679806723141622585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_137
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 338
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24d04111e2b38f0a0800000000000000
+      internalID: -6847658164375777982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_138
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 360
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5266e82e43257a020800000000000000
+      internalID: 2352939717417133605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_139
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 332
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0075ca33d0b2e9150800000000000000
+      internalID: 5881185499093948160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_140
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 347
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41032714e343bcea0800000000000000
+      internalID: -5851525848847208428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_141
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 328
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71167effb4b22ed30800000000000000
+      internalID: 4459174186466107671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_142
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 327
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf4b6103cc6360d90800000000000000
+      internalID: -7131952709286578948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_heal_143
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 324
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e23d2c39b9b6b65d0800000000000000
+      internalID: -3068240405179739346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      flash_heal_0: -408809625482783416
+      flash_heal_1: -4809709583603959071
+      flash_heal_10: -4961714311332777906
+      flash_heal_100: -3216935337737687089
+      flash_heal_101: -6331337027346164099
+      flash_heal_102: -7431485196059531179
+      flash_heal_103: 6535381984679554163
+      flash_heal_104: -5007419284427541157
+      flash_heal_105: 2825197472712892561
+      flash_heal_106: -7169858374096427535
+      flash_heal_107: -1737751654222073408
+      flash_heal_108: -6417575444140184687
+      flash_heal_109: -303877850874989349
+      flash_heal_11: -15940206818722246
+      flash_heal_110: 5806265850587487078
+      flash_heal_111: -2644446724519963066
+      flash_heal_112: 888640251821922509
+      flash_heal_113: -3131609793875022001
+      flash_heal_114: -4065284442800579024
+      flash_heal_115: -5749574131235586304
+      flash_heal_116: 1744123994123614005
+      flash_heal_117: -3502074643202392749
+      flash_heal_118: 2486500005467962858
+      flash_heal_119: 7933635215901777630
+      flash_heal_12: -4090013765571408741
+      flash_heal_120: -2443765085072905124
+      flash_heal_121: -5268376901825112524
+      flash_heal_122: 6885512161553031431
+      flash_heal_123: 5175037445686001080
+      flash_heal_124: -2683392107321241414
+      flash_heal_125: -130614451173891295
+      flash_heal_126: -1121592457451887723
+      flash_heal_127: 8688088352220728055
+      flash_heal_128: -5411201811181827872
+      flash_heal_129: 4572927183615014522
+      flash_heal_13: -4494275924756534423
+      flash_heal_130: 2011328461338714941
+      flash_heal_131: -7161813083697660243
+      flash_heal_132: -2860123337934045059
+      flash_heal_133: 5426489965206367898
+      flash_heal_134: 8803981870933054517
+      flash_heal_135: 2934839491709872765
+      flash_heal_136: 679806723141622585
+      flash_heal_137: -6847658164375777982
+      flash_heal_138: 2352939717417133605
+      flash_heal_139: 5881185499093948160
+      flash_heal_14: 2250237930286636979
+      flash_heal_140: -5851525848847208428
+      flash_heal_141: 4459174186466107671
+      flash_heal_142: -7131952709286578948
+      flash_heal_143: -3068240405179739346
+      flash_heal_15: 8366780380970775710
+      flash_heal_16: -4063144803752538445
+      flash_heal_17: -7913073910226171289
+      flash_heal_18: -2448896602173602621
+      flash_heal_19: -6764563711047656686
+      flash_heal_2: 254921747756053908
+      flash_heal_20: -1320587437606666259
+      flash_heal_21: -6151215189007006553
+      flash_heal_22: 290116661657008143
+      flash_heal_23: 7964060731050848946
+      flash_heal_24: 7752994377515890921
+      flash_heal_25: 5695778911703969906
+      flash_heal_26: -6495288028316245122
+      flash_heal_27: 1468997306597721131
+      flash_heal_28: -8718492852886575920
+      flash_heal_29: 8279005806814777468
+      flash_heal_3: 6499593703397567924
+      flash_heal_30: -6637523494479032071
+      flash_heal_31: -2389531392056249811
+      flash_heal_32: 5709476489541017348
+      flash_heal_33: -4296015043734161219
+      flash_heal_34: -8154765942593209319
+      flash_heal_35: -1737612058339461406
+      flash_heal_36: -2346641459241661981
+      flash_heal_37: 1019879127030942422
+      flash_heal_38: 9165224090781721750
+      flash_heal_39: -3480090729016398771
+      flash_heal_4: 8207231240256295609
+      flash_heal_40: 8677968680100115477
+      flash_heal_41: 991857594273864603
+      flash_heal_42: -1322152813561249328
+      flash_heal_43: 7675772749767664850
+      flash_heal_44: 3930745765034796903
+      flash_heal_45: -5962959782790971224
+      flash_heal_46: 5534817712969602019
+      flash_heal_47: -7645018391805899156
+      flash_heal_48: -7197004481542996422
+      flash_heal_49: -1562908022511959908
+      flash_heal_5: -8970624913386941980
+      flash_heal_50: 3009944648299279636
+      flash_heal_51: 2488547920331186173
+      flash_heal_52: -3247646047962729162
+      flash_heal_53: 5190900999885794287
+      flash_heal_54: 8072144579817040102
+      flash_heal_55: -6231999873979959715
+      flash_heal_56: 3890840071121948846
+      flash_heal_57: 7160800009133110404
+      flash_heal_58: -2650047080310689929
+      flash_heal_59: -7332430312142177184
+      flash_heal_6: -187318590937114270
+      flash_heal_60: -6813895403285731203
+      flash_heal_61: -7077946948359631461
+      flash_heal_62: 1251355117930079750
+      flash_heal_63: -7879218189465954458
+      flash_heal_64: -5794452605700346783
+      flash_heal_65: -4287089060492453319
+      flash_heal_66: 7545743199500242299
+      flash_heal_67: 6783529197245482170
+      flash_heal_68: 8866836014121819833
+      flash_heal_69: -109462882971956494
+      flash_heal_7: -6486607241562917735
+      flash_heal_70: -1210950436960572665
+      flash_heal_71: 2747364835413868488
+      flash_heal_72: 7087502525647430820
+      flash_heal_73: -8082756261739405196
+      flash_heal_74: -6680661039255748025
+      flash_heal_75: -5743827261044991420
+      flash_heal_76: -3902794027409462573
+      flash_heal_77: 3887158307110988304
+      flash_heal_78: -7082349211569348522
+      flash_heal_79: 2197217808240682917
+      flash_heal_8: -1456798955167164102
+      flash_heal_80: -4001591747085793014
+      flash_heal_81: 3675224294830087495
+      flash_heal_82: 3653430959683106626
+      flash_heal_83: -5031943286683466872
+      flash_heal_84: -1542948948668865101
+      flash_heal_85: -8588707893791548592
+      flash_heal_86: 7371320082049265472
+      flash_heal_87: -3053971766580167068
+      flash_heal_88: 7992732404860586277
+      flash_heal_89: 3995824341825596599
+      flash_heal_9: -5445417813088242177
+      flash_heal_90: 5364081607014257036
+      flash_heal_91: -8570719950224119086
+      flash_heal_92: -8013293739130312298
+      flash_heal_93: 7004495078847808081
+      flash_heal_94: -1876914947791635696
+      flash_heal_95: -3900703539219184235
+      flash_heal_96: 5741607649219274943
+      flash_heal_97: -4401226157363230773
+      flash_heal_98: 9102389132060679349
+      flash_heal_99: 5372835830867389013
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

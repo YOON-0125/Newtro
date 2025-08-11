@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: 48467ea6bc6f3874caf898904a759601
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6184839678822097464
+    second: sphere_blue_0
+  - first:
+      213: -1671615038452152342
+    second: sphere_blue_1
+  - first:
+      213: -8769377156370022634
+    second: sphere_blue_2
+  - first:
+      213: 8173707086622766305
+    second: sphere_blue_3
+  - first:
+      213: -1904876172429806211
+    second: sphere_blue_4
+  - first:
+      213: 6013366461103468125
+    second: sphere_blue_5
+  - first:
+      213: 9006527806005676908
+    second: sphere_blue_6
+  - first:
+      213: -7832788206903821057
+    second: sphere_blue_7
+  - first:
+      213: -6859963286785599059
+    second: sphere_blue_8
+  - first:
+      213: -3957922313449177526
+    second: sphere_blue_9
+  - first:
+      213: -5566220582079307396
+    second: sphere_blue_10
+  - first:
+      213: 5163258759080531201
+    second: sphere_blue_11
+  - first:
+      213: -8240190092212581074
+    second: sphere_blue_12
+  - first:
+      213: 1303236360799607333
+    second: sphere_blue_13
+  - first:
+      213: -2521404310341613317
+    second: sphere_blue_14
+  - first:
+      213: -1025141773569020385
+    second: sphere_blue_15
+  - first:
+      213: 9089118008879593639
+    second: sphere_blue_16
+  - first:
+      213: 4057567620959660801
+    second: sphere_blue_17
+  - first:
+      213: -4740141935893194559
+    second: sphere_blue_18
+  - first:
+      213: -1690211837980091875
+    second: sphere_blue_19
+  - first:
+      213: 3188453525326076233
+    second: sphere_blue_20
+  - first:
+      213: -2109225400005332032
+    second: sphere_blue_21
+  - first:
+      213: 4705066625691747434
+    second: sphere_blue_22
+  - first:
+      213: 1864327595711382442
+    second: sphere_blue_23
+  - first:
+      213: -3825707178405555558
+    second: sphere_blue_24
+  - first:
+      213: -6930393606928929996
+    second: sphere_blue_25
+  - first:
+      213: 1311060498232399774
+    second: sphere_blue_26
+  - first:
+      213: 3106611756727021347
+    second: sphere_blue_27
+  - first:
+      213: -5989220809121748353
+    second: sphere_blue_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sphere_blue_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 578
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cd511fa4190b2aa0800000000000000
+      internalID: -6184839678822097464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 565
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae7cbd7aafa3dc8e0800000000000000
+      internalID: -1671615038452152342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_2
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 559
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61fb32d30f9ec4680800000000000000
+      internalID: -8769377156370022634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_3
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 554
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e43e340a47de6170800000000000000
+      internalID: 8173707086622766305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_4
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 544
+        width: 34
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d753731b6358095e0800000000000000
+      internalID: -1904876172429806211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_5
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 543
+        width: 41
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5ee15aafe4c37350800000000000000
+      internalID: 6013366461103468125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_6
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 571
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b85a8225d9dfc70800000000000000
+      internalID: 9006527806005676908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_7
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 538
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffcf0ae20a85c4390800000000000000
+      internalID: -7832788206903821057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 404
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da95cee7cb38cc0a0800000000000000
+      internalID: -6859963286785599059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 400
+        width: 68
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ef44a30a2a219c0800000000000000
+      internalID: -3957922313449177526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_10
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 400
+        width: 81
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c71e1b72fdfc0c2b0800000000000000
+      internalID: -5566220582079307396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_11
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 400
+        width: 89
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1055b6a3c7497a740800000000000000
+      internalID: 5163258759080531201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_12
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 401
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2dc9fff4c6f4ad80800000000000000
+      internalID: -8240190092212581074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_13
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 401
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a55d7b096061210800000000000000
+      internalID: 1303236360799607333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_14
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 273
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf803f2832c220dd0800000000000000
+      internalID: -2521404310341613317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_15
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 273
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e21060df6f5c1f0800000000000000
+      internalID: -1025141773569020385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_16
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 273
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8bfd04ca8032e70800000000000000
+      internalID: 9089118008879593639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_17
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 273
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b6d6bd0406f4830800000000000000
+      internalID: 4057567620959660801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_18
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 273
+        width: 94
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c8572e0602a73eb0800000000000000
+      internalID: -4740141935893194559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_19
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 275
+        width: 91
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a590ad9492b88e0800000000000000
+      internalID: -1690211837980091875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_20
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 147
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94917ef8699af3c20800000000000000
+      internalID: 3188453525326076233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_21
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 146
+        width: 90
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c373718ca68ab2e0800000000000000
+      internalID: -2109225400005332032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_22
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 147
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6407e4ea21cb4140800000000000000
+      internalID: 4705066625691747434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_23
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 147
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3c557121c6fd910800000000000000
+      internalID: 1864327595711382442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_24
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 147
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a929978379b58eac0800000000000000
+      internalID: -3825707178405555558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_25
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 148
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43bec59bbbb42df90800000000000000
+      internalID: -6930393606928929996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_26
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 26
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97503ca392d13210800000000000000
+      internalID: 1311060498232399774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_27
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 27
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32f24c6eee6ec1b20800000000000000
+      internalID: 3106611756727021347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sphere_blue_28
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 30
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7aabe6086302eca0800000000000000
+      internalID: -5989220809121748353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sphere_blue_0: -6184839678822097464
+      sphere_blue_1: -1671615038452152342
+      sphere_blue_10: -5566220582079307396
+      sphere_blue_11: 5163258759080531201
+      sphere_blue_12: -8240190092212581074
+      sphere_blue_13: 1303236360799607333
+      sphere_blue_14: -2521404310341613317
+      sphere_blue_15: -1025141773569020385
+      sphere_blue_16: 9089118008879593639
+      sphere_blue_17: 4057567620959660801
+      sphere_blue_18: -4740141935893194559
+      sphere_blue_19: -1690211837980091875
+      sphere_blue_2: -8769377156370022634
+      sphere_blue_20: 3188453525326076233
+      sphere_blue_21: -2109225400005332032
+      sphere_blue_22: 4705066625691747434
+      sphere_blue_23: 1864327595711382442
+      sphere_blue_24: -3825707178405555558
+      sphere_blue_25: -6930393606928929996
+      sphere_blue_26: 1311060498232399774
+      sphere_blue_27: 3106611756727021347
+      sphere_blue_28: -5989220809121748353
+      sphere_blue_3: 8173707086622766305
+      sphere_blue_4: -1904876172429806211
+      sphere_blue_5: 6013366461103468125
+      sphere_blue_6: 9006527806005676908
+      sphere_blue_7: -7832788206903821057
+      sphere_blue_8: -6859963286785599059
+      sphere_blue_9: -3957922313449177526
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -45,6 +46,9 @@ public class GameManager : MonoBehaviour
         [Header("이벤트")]
         [SerializeField] private GameManagerEvents events;
         
+        // 외부 접근용 프로퍼티
+        public GameManagerEvents Events => events;
+        
         // 게임 상태 열거형
         public enum GameState
         {
@@ -62,6 +66,9 @@ public class GameManager : MonoBehaviour
         private EnemyManager enemyManager;
         private WeaponManager weaponManager;
         private PlayerHealth playerHealth;
+        private RelicManager relicManager;
+        private UpgradeSystem upgradeSystem;
+        private SimpleObjectPool objectPool;
         
         // 내부 변수
         private bool isGameRunning = false;
@@ -80,6 +87,11 @@ public class GameManager : MonoBehaviour
         public int EnemiesKilled => enemiesKilled;
         public bool IsGameRunning => isGameRunning;
         public bool IsPaused => currentState == GameState.Paused;
+        public Transform Player => player;
+        public RelicManager RelicManager => relicManager;
+        public UpgradeSystem UpgradeSystem => upgradeSystem;
+        public WeaponManager WeaponManager => weaponManager;
+        public SimpleObjectPool ObjectPool => objectPool;
         
         private void Awake()
         {
@@ -88,8 +100,7 @@ public class GameManager : MonoBehaviour
             {
                 Instance = this;
                 // DontDestroyOnLoad는 씬 전환이 필요한 경우에만 사용
-                // 단일 씬 게임이므로 주석 처리
-                // DontDestroyOnLoad(gameObject);
+                DontDestroyOnLoad(gameObject);
             }
             else
             {
@@ -142,11 +153,25 @@ public class GameManager : MonoBehaviour
             // 다른 매니저들 찾기
             enemyManager = FindObjectOfType<EnemyManager>();
             weaponManager = FindObjectOfType<WeaponManager>();
+            relicManager = FindObjectOfType<RelicManager>();
+            upgradeSystem = FindObjectOfType<UpgradeSystem>();
+            
+            // ObjectPool 초기화 (없으면 생성)
+            objectPool = SimpleObjectPool.Instance;
+            if (objectPool == null)
+            {
+                GameObject poolObj = new GameObject("SimpleObjectPool");
+                objectPool = poolObj.AddComponent<SimpleObjectPool>();
+                Debug.Log("[GameManager] SimpleObjectPool 자동 생성 완료");
+            }
             
             if (player != null)
             {
                 playerHealth = player.GetComponent<PlayerHealth>();
             }
+            
+            // 디버그 로그
+            Debug.Log($"[GameManager] 매니저 초기화 완료 - RelicManager: {relicManager != null}, UpgradeSystem: {upgradeSystem != null}, ObjectPool: {objectPool != null}");
         }
         
         /// <summary>
@@ -280,8 +305,72 @@ public class GameManager : MonoBehaviour
             
             Debug.Log($"레벨업! 현재 레벨: {playerLevel}");
             
-            // 레벨업 UI 표시
+            // 업그레이드 옵션 생성 및 UI 표시
             ShowLevelUpUI();
+        }
+        
+        /// <summary>
+        /// 업그레이드 적용 (UI에서 호출)
+        /// </summary>
+        public void ApplyUpgrade(string upgradeId)
+        {
+            if (upgradeSystem != null)
+            {
+                bool success = upgradeSystem.ApplyUpgrade(upgradeId);
+                Debug.Log($"[GameManager] 업그레이드 적용: {upgradeId} - {(success ? "성공" : "실패")}");
+            }
+            else
+            {
+                Debug.LogError("[GameManager] UpgradeSystem이 초기화되지 않았습니다!");
+            }
+        }
+        
+        /// <summary>
+        /// 무기 추가 (업그레이드에서 호출)
+        /// </summary>
+        public bool AddWeapon(string weaponName)
+        {
+            if (weaponManager != null)
+            {
+                bool success = weaponManager.AddWeapon(weaponName);
+                Debug.Log($"[GameManager] 무기 추가: {weaponName} - {(success ? "성공" : "실패")}");
+                return success;
+            }
+            else
+            {
+                Debug.LogError("[GameManager] WeaponManager가 초기화되지 않았습니다!");
+                return false;
+            }
+        }
+        
+        /// <summary>
+        /// 무기 레벨업 (업그레이드에서 호출)
+        /// </summary>
+        public bool LevelUpWeapon(string weaponName)
+        {
+            if (weaponManager != null)
+            {
+                bool success = weaponManager.LevelUpWeapon(weaponName);
+                Debug.Log($"[GameManager] 무기 레벨업: {weaponName} - {(success ? "성공" : "실패")}");
+                return success;
+            }
+            else
+            {
+                Debug.LogError("[GameManager] WeaponManager가 초기화되지 않았습니다!");
+                return false;
+            }
+        }
+        
+        /// <summary>
+        /// 업그레이드 옵션 가져오기 (UI에서 호출)
+        /// </summary>
+        public List<UpgradeOption> GetUpgradeOptions()
+        {
+            if (upgradeSystem != null)
+            {
+                return upgradeSystem.GenerateUpgradeOptions(playerLevel);
+            }
+            return new List<UpgradeOption>();
         }
         
         /// <summary>
@@ -472,6 +561,7 @@ public class GameManager : MonoBehaviour
         
         private void OnDestroy()
         {
+            Debug.LogError("[GameManager] OnDestroy()가 호출되었습니다! GameManager가 파괴됩니다.");
             if (Instance == this)
             {
                 Instance = null;

@@ -1,0 +1,3952 @@
+fileFormatVersion: 2
+guid: 48a0b0d785d4e234b8be56a8ccf9c2b4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6785280460817030038
+    second: smoke_glow_0
+  - first:
+      213: 3643185909687854134
+    second: smoke_glow_1
+  - first:
+      213: 4742328972992369292
+    second: smoke_glow_2
+  - first:
+      213: 2041424886021279708
+    second: smoke_glow_3
+  - first:
+      213: 266185808013042133
+    second: smoke_glow_4
+  - first:
+      213: 1718500161109078743
+    second: smoke_glow_5
+  - first:
+      213: 5592275972635203452
+    second: smoke_glow_6
+  - first:
+      213: -2828629237894452136
+    second: smoke_glow_7
+  - first:
+      213: 5152602255665262792
+    second: smoke_glow_8
+  - first:
+      213: 2523100408172400116
+    second: smoke_glow_9
+  - first:
+      213: -8418390653138259281
+    second: smoke_glow_10
+  - first:
+      213: -4849030063821620472
+    second: smoke_glow_11
+  - first:
+      213: 6176364594319437848
+    second: smoke_glow_12
+  - first:
+      213: 7921836059669798927
+    second: smoke_glow_13
+  - first:
+      213: 8904269404957773248
+    second: smoke_glow_14
+  - first:
+      213: 9016229582956435471
+    second: smoke_glow_15
+  - first:
+      213: 1868434359763334052
+    second: smoke_glow_16
+  - first:
+      213: -4831408190004151311
+    second: smoke_glow_17
+  - first:
+      213: -6281869349017683876
+    second: smoke_glow_18
+  - first:
+      213: -7844342279138466704
+    second: smoke_glow_19
+  - first:
+      213: 2104746521547436551
+    second: smoke_glow_20
+  - first:
+      213: 2759511814183583414
+    second: smoke_glow_21
+  - first:
+      213: 7143577312781264648
+    second: smoke_glow_22
+  - first:
+      213: -3961512492385763573
+    second: smoke_glow_23
+  - first:
+      213: 8692634117344582343
+    second: smoke_glow_24
+  - first:
+      213: -2512632101485050098
+    second: smoke_glow_25
+  - first:
+      213: -1935778558849990714
+    second: smoke_glow_26
+  - first:
+      213: -5682414466924146156
+    second: smoke_glow_27
+  - first:
+      213: -216934548681008611
+    second: smoke_glow_28
+  - first:
+      213: -4237848151285561279
+    second: smoke_glow_29
+  - first:
+      213: -3016875089444282910
+    second: smoke_glow_30
+  - first:
+      213: 4366430170448402958
+    second: smoke_glow_31
+  - first:
+      213: 6084312520005677787
+    second: smoke_glow_32
+  - first:
+      213: 3104000435043236404
+    second: smoke_glow_33
+  - first:
+      213: -7776322203361918820
+    second: smoke_glow_34
+  - first:
+      213: -5788108370093411286
+    second: smoke_glow_35
+  - first:
+      213: -5058883991382803146
+    second: smoke_glow_36
+  - first:
+      213: 8850958186752664710
+    second: smoke_glow_37
+  - first:
+      213: 5388945931752469786
+    second: smoke_glow_38
+  - first:
+      213: -2646789194999645067
+    second: smoke_glow_39
+  - first:
+      213: 9110274935450503797
+    second: smoke_glow_40
+  - first:
+      213: -2365115242884086458
+    second: smoke_glow_41
+  - first:
+      213: -6989060020088071167
+    second: smoke_glow_42
+  - first:
+      213: -3147377112523544008
+    second: smoke_glow_43
+  - first:
+      213: 3696599769256365271
+    second: smoke_glow_44
+  - first:
+      213: -5490972167451672227
+    second: smoke_glow_45
+  - first:
+      213: 326968093322601641
+    second: smoke_glow_46
+  - first:
+      213: 2000462242915924937
+    second: smoke_glow_47
+  - first:
+      213: 6223032327379190751
+    second: smoke_glow_48
+  - first:
+      213: -2023942920333680918
+    second: smoke_glow_49
+  - first:
+      213: -2139859356831254573
+    second: smoke_glow_50
+  - first:
+      213: 7364874640593612000
+    second: smoke_glow_51
+  - first:
+      213: -29693128021884128
+    second: smoke_glow_52
+  - first:
+      213: -8150537462548433510
+    second: smoke_glow_53
+  - first:
+      213: 1288395519779258450
+    second: smoke_glow_54
+  - first:
+      213: -1522360835401606501
+    second: smoke_glow_55
+  - first:
+      213: -5482648638234682964
+    second: smoke_glow_56
+  - first:
+      213: -8396523453085906511
+    second: smoke_glow_57
+  - first:
+      213: -2951930051783570307
+    second: smoke_glow_58
+  - first:
+      213: 4156535371432468321
+    second: smoke_glow_59
+  - first:
+      213: 3191054319158698872
+    second: smoke_glow_60
+  - first:
+      213: -3332303901630320440
+    second: smoke_glow_61
+  - first:
+      213: -3131087647565581052
+    second: smoke_glow_62
+  - first:
+      213: 4802060604747612165
+    second: smoke_glow_63
+  - first:
+      213: -2785772059641945346
+    second: smoke_glow_64
+  - first:
+      213: -6401783637332259988
+    second: smoke_glow_65
+  - first:
+      213: -2646543111843645444
+    second: smoke_glow_66
+  - first:
+      213: -4805504750862660083
+    second: smoke_glow_67
+  - first:
+      213: 1401203970310846454
+    second: smoke_glow_68
+  - first:
+      213: 5453749293192622766
+    second: smoke_glow_69
+  - first:
+      213: 3699733235882472723
+    second: smoke_glow_70
+  - first:
+      213: 593474448952885359
+    second: smoke_glow_71
+  - first:
+      213: 627531354552622598
+    second: smoke_glow_72
+  - first:
+      213: 2295242606629794501
+    second: smoke_glow_73
+  - first:
+      213: -6691082681049810294
+    second: smoke_glow_74
+  - first:
+      213: -190552241595882266
+    second: smoke_glow_75
+  - first:
+      213: -7276960903991635920
+    second: smoke_glow_76
+  - first:
+      213: 8421187091990226650
+    second: smoke_glow_77
+  - first:
+      213: 908762836172885015
+    second: smoke_glow_78
+  - first:
+      213: 7266505423198647597
+    second: smoke_glow_79
+  - first:
+      213: -2949314803100554185
+    second: smoke_glow_80
+  - first:
+      213: -1139735422805455672
+    second: smoke_glow_81
+  - first:
+      213: 4095791544251130149
+    second: smoke_glow_82
+  - first:
+      213: 3564546510263435506
+    second: smoke_glow_83
+  - first:
+      213: 8864283175435948259
+    second: smoke_glow_84
+  - first:
+      213: 8982278566400091984
+    second: smoke_glow_85
+  - first:
+      213: -7597888155002191748
+    second: smoke_glow_86
+  - first:
+      213: -1919811906754427928
+    second: smoke_glow_87
+  - first:
+      213: -1333857855441863797
+    second: smoke_glow_88
+  - first:
+      213: -882085122623537655
+    second: smoke_glow_89
+  - first:
+      213: 8926518640722972759
+    second: smoke_glow_90
+  - first:
+      213: 429120409104298842
+    second: smoke_glow_91
+  - first:
+      213: -4142768192005761366
+    second: smoke_glow_92
+  - first:
+      213: 8920917128295913909
+    second: smoke_glow_93
+  - first:
+      213: -7911397391337304764
+    second: smoke_glow_94
+  - first:
+      213: -8845473662849200225
+    second: smoke_glow_95
+  - first:
+      213: -428679688030940636
+    second: smoke_glow_96
+  - first:
+      213: -7487761988798647019
+    second: smoke_glow_97
+  - first:
+      213: 4231124995246144642
+    second: smoke_glow_98
+  - first:
+      213: -940360252678396397
+    second: smoke_glow_99
+  - first:
+      213: 2674660089517748530
+    second: smoke_glow_100
+  - first:
+      213: 2097126255196656891
+    second: smoke_glow_101
+  - first:
+      213: -2718417318120412051
+    second: smoke_glow_102
+  - first:
+      213: 8271429871287944335
+    second: smoke_glow_103
+  - first:
+      213: 1762518437835253027
+    second: smoke_glow_104
+  - first:
+      213: 268036754193532637
+    second: smoke_glow_105
+  - first:
+      213: 3202142510355839917
+    second: smoke_glow_106
+  - first:
+      213: -7494513054480534946
+    second: smoke_glow_107
+  - first:
+      213: 6154424045387085720
+    second: smoke_glow_108
+  - first:
+      213: 398389699281030749
+    second: smoke_glow_109
+  - first:
+      213: -8795856114801774300
+    second: smoke_glow_110
+  - first:
+      213: 8469121845601145503
+    second: smoke_glow_111
+  - first:
+      213: -260606539946398465
+    second: smoke_glow_112
+  - first:
+      213: 9137568493708528296
+    second: smoke_glow_113
+  - first:
+      213: 4846533699142931932
+    second: smoke_glow_114
+  - first:
+      213: 7875166549856326282
+    second: smoke_glow_115
+  - first:
+      213: 8902765213711113789
+    second: smoke_glow_116
+  - first:
+      213: 2795011950731692862
+    second: smoke_glow_117
+  - first:
+      213: -5900799189489059884
+    second: smoke_glow_118
+  - first:
+      213: -1774306428477977916
+    second: smoke_glow_119
+  - first:
+      213: -3095199368263094067
+    second: smoke_glow_120
+  - first:
+      213: 6089076388922713676
+    second: smoke_glow_121
+  - first:
+      213: -2167648903575693443
+    second: smoke_glow_122
+  - first:
+      213: 4053997797793529338
+    second: smoke_glow_123
+  - first:
+      213: -7748815597701368282
+    second: smoke_glow_124
+  - first:
+      213: 4350355176588288649
+    second: smoke_glow_125
+  - first:
+      213: 2336176329010500404
+    second: smoke_glow_126
+  - first:
+      213: 5030054980645042028
+    second: smoke_glow_127
+  - first:
+      213: -7902817359260621897
+    second: smoke_glow_128
+  - first:
+      213: -3706212787382391350
+    second: smoke_glow_129
+  - first:
+      213: -3840516300158061778
+    second: smoke_glow_130
+  - first:
+      213: 7220698671106959640
+    second: smoke_glow_131
+  - first:
+      213: 7881369122723389648
+    second: smoke_glow_132
+  - first:
+      213: -1251087532499688575
+    second: smoke_glow_133
+  - first:
+      213: 3573185455683265771
+    second: smoke_glow_134
+  - first:
+      213: -299070214965276579
+    second: smoke_glow_135
+  - first:
+      213: -6058210584233294996
+    second: smoke_glow_136
+  - first:
+      213: -8141256362168478037
+    second: smoke_glow_137
+  - first:
+      213: 2431977513610614228
+    second: smoke_glow_138
+  - first:
+      213: 8878861860551193049
+    second: smoke_glow_139
+  - first:
+      213: 6288565766777003214
+    second: smoke_glow_140
+  - first:
+      213: -5598506514926706878
+    second: smoke_glow_141
+  - first:
+      213: 8039666932282309249
+    second: smoke_glow_142
+  - first:
+      213: 1869382652326444454
+    second: smoke_glow_143
+  - first:
+      213: -4418570694828355430
+    second: smoke_glow_144
+  - first:
+      213: 5310010548493948380
+    second: smoke_glow_145
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: smoke_glow_0
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 5409
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69bd56011a82a2e50800000000000000
+      internalID: 6785280460817030038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_1
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 5416
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63427ad48423f8230800000000000000
+      internalID: 3643185909687854134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_2
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 5351
+        width: 39
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82d043331320d140800000000000000
+      internalID: 4742328972992369292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_3
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 5406
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdfc0fe2e19945c10800000000000000
+      internalID: 2041424886021279708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_4
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 5332
+        width: 79
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d12ed2059ea1b300800000000000000
+      internalID: 266185808013042133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_5
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 5361
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2bb51aac659d710800000000000000
+      internalID: 1718500161109078743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_6
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 5331
+        width: 108
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c779fd23e51cb9d40800000000000000
+      internalID: 5592275972635203452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_7
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 5359
+        width: 30
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85c6402e1b0beb8d0800000000000000
+      internalID: -2828629237894452136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_8
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 5329
+        width: 119
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c0fdcda378b18740800000000000000
+      internalID: 5152602255665262792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_9
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 5361
+        width: 33
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fd42c9047ad30320800000000000000
+      internalID: 2523100408172400116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_10
+      rect:
+        serializedVersion: 2
+        x: 2253
+        y: 5324
+        width: 145
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2b933bd4edb2b80800000000000000
+      internalID: -8418390653138259281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_11
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 5363
+        width: 42
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80bf8b429d8c4bcb0800000000000000
+      internalID: -4849030063821620472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_12
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 5315
+        width: 164
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 810b5bfefdad6b550800000000000000
+      internalID: 6176364594319437848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_13
+      rect:
+        serializedVersion: 2
+        x: 3235
+        y: 5301
+        width: 210
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00af71bce300fd60800000000000000
+      internalID: 7921836059669798927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_14
+      rect:
+        serializedVersion: 2
+        x: 3735
+        y: 5295
+        width: 229
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cd03e2d8d1529b70800000000000000
+      internalID: 8904269404957773248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_15
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 5373
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f089c712905102d70800000000000000
+      internalID: 9016229582956435471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_16
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 5360
+        width: 25
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a3f3db96230ee910800000000000000
+      internalID: 1868434359763334052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_17
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 5337
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fbb3ed59d363fcb0800000000000000
+      internalID: -4831408190004151311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_18
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 4777
+        width: 244
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c58f26e1c1152d8a0800000000000000
+      internalID: -6281869349017683876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_19
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 4770
+        width: 256
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 074af5b124c432390800000000000000
+      internalID: -7844342279138466704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_20
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 4762
+        width: 265
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 702f2175fcf853d10800000000000000
+      internalID: 2104746521547436551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_21
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 4752
+        width: 273
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bef7eddf51cb4620800000000000000
+      internalID: 2759511814183583414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_22
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 4742
+        width: 280
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 807edd9b7b5132360800000000000000
+      internalID: 7143577312781264648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_23
+      rect:
+        serializedVersion: 2
+        x: 2686
+        y: 4734
+        width: 286
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ff21e8061e509c0800000000000000
+      internalID: -3961512492385763573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_24
+      rect:
+        serializedVersion: 2
+        x: 3196
+        y: 4727
+        width: 293
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cad3c69ca072a870800000000000000
+      internalID: 8692634117344582343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_25
+      rect:
+        serializedVersion: 2
+        x: 3704
+        y: 4722
+        width: 301
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e078dbb8a66512dd0800000000000000
+      internalID: -2512632101485050098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_26
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 4206
+        width: 308
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cfbdeb28abb225e0800000000000000
+      internalID: -1935778558849990714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_27
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 4202
+        width: 313
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412127826220421b0800000000000000
+      internalID: -5682414466924146156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_28
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 4198
+        width: 318
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1adb566d2b4dfcf0800000000000000
+      internalID: -216934548681008611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_29
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 4196
+        width: 323
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148049a3f832035c0800000000000000
+      internalID: -4237848151285561279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_30
+      rect:
+        serializedVersion: 2
+        x: 2161
+        y: 4193
+        width: 325
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2edd2f91718e126d0800000000000000
+      internalID: -3016875089444282910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_31
+      rect:
+        serializedVersion: 2
+        x: 2674
+        y: 4191
+        width: 326
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a102e0b1da89c30800000000000000
+      internalID: 4366430170448402958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_32
+      rect:
+        serializedVersion: 2
+        x: 3184
+        y: 4187
+        width: 331
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd276693002df6450800000000000000
+      internalID: 6084312520005677787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_33
+      rect:
+        serializedVersion: 2
+        x: 3692
+        y: 4183
+        width: 337
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43af86133ff931b20800000000000000
+      internalID: 3104000435043236404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_34
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 3668
+        width: 342
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9041a12824f41490800000000000000
+      internalID: -7776322203361918820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_35
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 3665
+        width: 347
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a24fd17aa128cafa0800000000000000
+      internalID: -5788108370093411286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_36
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 3662
+        width: 351
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63db7bd10db3bc9b0800000000000000
+      internalID: -5058883991382803146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_37
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 3659
+        width: 357
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6846a33939be4da70800000000000000
+      internalID: 8850958186752664710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_38
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 3657
+        width: 361
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1574e7e5c169ca40800000000000000
+      internalID: 5388945931752469786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_39
+      rect:
+        serializedVersion: 2
+        x: 2648
+        y: 3656
+        width: 364
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c34bc1047b44bd0800000000000000
+      internalID: -2646789194999645067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_40
+      rect:
+        serializedVersion: 2
+        x: 3157
+        y: 3655
+        width: 366
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a0ca519c23e6e70800000000000000
+      internalID: 9110274935450503797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_41
+      rect:
+        serializedVersion: 2
+        x: 3666
+        y: 3654
+        width: 366
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 645480fa73c6d2fd0800000000000000
+      internalID: -2365115242884086458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_42
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 3142
+        width: 368
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c14ccf0fed10f90800000000000000
+      internalID: -6989060020088071167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_43
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 3143
+        width: 372
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ae6d111354254d0800000000000000
+      internalID: -3147377112523544008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_44
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3144
+        width: 376
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc015b97e5fc4330800000000000000
+      internalID: 3696599769256365271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_45
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 3475
+        width: 61
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d518c77f7e52cc3b0800000000000000
+      internalID: -5490972167451672227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_46
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 3504
+        width: 55
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a4616f9fbf998400800000000000000
+      internalID: 326968093322601641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_47
+      rect:
+        serializedVersion: 2
+        x: 2167
+        y: 3480
+        width: 60
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cbb59f9fc113cb10800000000000000
+      internalID: 2000462242915924937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_48
+      rect:
+        serializedVersion: 2
+        x: 2234
+        y: 3507
+        width: 55
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd385334ee6ac5650800000000000000
+      internalID: 6223032327379190751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_49
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 3136
+        width: 389
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee18d323a289e3e0800000000000000
+      internalID: -2023942920333680918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_50
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 3485
+        width: 59
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7f6ce9041bd42e0800000000000000
+      internalID: -2139859356831254573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_51
+      rect:
+        serializedVersion: 2
+        x: 2747
+        y: 3510
+        width: 54
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec6ddff67a453660800000000000000
+      internalID: 7364874640593612000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_52
+      rect:
+        serializedVersion: 2
+        x: 3140
+        y: 3134
+        width: 394
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0234cf3e142869ff0800000000000000
+      internalID: -29693128021884128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_53
+      rect:
+        serializedVersion: 2
+        x: 3192
+        y: 3490
+        width: 57
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9579487c5973ee80800000000000000
+      internalID: -8150537462548433510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_54
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 3514
+        width: 54
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250c5a626ec41e110800000000000000
+      internalID: 1288395519779258450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_55
+      rect:
+        serializedVersion: 2
+        x: 3650
+        y: 3132
+        width: 398
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9a9be1d2ec7fdae0800000000000000
+      internalID: -1522360835401606501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_56
+      rect:
+        serializedVersion: 2
+        x: 3704
+        y: 3495
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca91eb1ac18b9e3b0800000000000000
+      internalID: -5482648638234682964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_57
+      rect:
+        serializedVersion: 2
+        x: 3772
+        y: 3517
+        width: 52
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b90496f76e897b80800000000000000
+      internalID: -8396523453085906511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_58
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 3141
+        width: 380
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7cc3a50243a807d0800000000000000
+      internalID: -2951930051783570307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_59
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 3139
+        width: 385
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f1496e5eafea930800000000000000
+      internalID: 4156535371432468321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_60
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 3008
+        width: 51
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8732e601ff6e84c20800000000000000
+      internalID: 3191054319158698872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_61
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 3019
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c03dabb14741c1d0800000000000000
+      internalID: -3332303901630320440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_62
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 3021
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4057d3eaf542c84d0800000000000000
+      internalID: -3131087647565581052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_63
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 2613
+        width: 411
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50001e77da854a240800000000000000
+      internalID: 4802060604747612165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_64
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 2612
+        width: 415
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef265d74213f659d0800000000000000
+      internalID: -2785772059641945346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_65
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 3027
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b07ef23bb4827a0800000000000000
+      internalID: -6401783637332259988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_66
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 2610
+        width: 417
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf77dcfcf07954bd0800000000000000
+      internalID: -2646543111843645444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_67
+      rect:
+        serializedVersion: 2
+        x: 2778
+        y: 3030
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e0166c3ea6f4db0800000000000000
+      internalID: -4805504750862660083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_68
+      rect:
+        serializedVersion: 2
+        x: 3130
+        y: 2609
+        width: 420
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f7be3c4693127310800000000000000
+      internalID: 1401203970310846454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_69
+      rect:
+        serializedVersion: 2
+        x: 3640
+        y: 2608
+        width: 424
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea2b8c2461c9fab40800000000000000
+      internalID: 5453749293192622766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_70
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 2618
+        width: 401
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3153b78a6c7185330800000000000000
+      internalID: 3699733235882472723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_71
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 2988
+        width: 55
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f608b11fdd17c3800800000000000000
+      internalID: 593474448952885359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_72
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 2616
+        width: 406
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e5781317075b800800000000000000
+      internalID: 627531354552622598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_73
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 2993
+        width: 53
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2b2817df65adf10800000000000000
+      internalID: 2295242606629794501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_74
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 3012
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8af141a0cf7423a0800000000000000
+      internalID: -6691082681049810294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_75
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 2614
+        width: 409
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4e580feb50b5df0800000000000000
+      internalID: -190552241595882266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_76
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 3016
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0305c21ec9a030b90800000000000000
+      internalID: -7276960903991635920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_77
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 2095
+        width: 426
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad6ae25fa011ed470800000000000000
+      internalID: 8421187091990226650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_78
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 2096
+        width: 430
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71c49231cf29c9c00800000000000000
+      internalID: 908762836172885015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_79
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 2096
+        width: 432
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d25743cce20d7d460800000000000000
+      internalID: 7266505423198647597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_80
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 2096
+        width: 436
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ce36e00dde117d0800000000000000
+      internalID: -2949314803100554185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_81
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 2097
+        width: 439
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc40c9eba8de20f0800000000000000
+      internalID: -1139735422805455672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_82
+      rect:
+        serializedVersion: 2
+        x: 2607
+        y: 2098
+        width: 442
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 521232585bc27d830800000000000000
+      internalID: 4095791544251130149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_83
+      rect:
+        serializedVersion: 2
+        x: 2765
+        y: 2500
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f04c915a20d77130800000000000000
+      internalID: 3564546510263435506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_84
+      rect:
+        serializedVersion: 2
+        x: 3118
+        y: 2097
+        width: 444
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0d4544592440b70800000000000000
+      internalID: 8864283175435948259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_85
+      rect:
+        serializedVersion: 2
+        x: 3282
+        y: 2503
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 057e1e714c677ac70800000000000000
+      internalID: 8982278566400091984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_86
+      rect:
+        serializedVersion: 2
+        x: 3628
+        y: 2096
+        width: 447
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7042f57af0ee8690800000000000000
+      internalID: -7597888155002191748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_87
+      rect:
+        serializedVersion: 2
+        x: 3803
+        y: 2519
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e3465e0e357b55e0800000000000000
+      internalID: -1919811906754427928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_88
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 2012
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8bf589f85f2d7de0800000000000000
+      internalID: -1333857855441863797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_89
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 2018
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90efd54214432c3f0800000000000000
+      internalID: -882085122623537655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_90
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1992
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7501235b86d51eb70800000000000000
+      internalID: 8926518640722972759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_91
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 1996
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a53388e0dba84f500800000000000000
+      internalID: 429120409104298842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_92
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 2001
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa695b8574ee186c0800000000000000
+      internalID: -4142768192005761366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_93
+      rect:
+        serializedVersion: 2
+        x: 1783
+        y: 2005
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b996c6fcd67dcb70800000000000000
+      internalID: 8920917128295913909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_94
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 2016
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44d436c2df1153290800000000000000
+      internalID: -7911397391337304764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_95
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 2000
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9fccc7a1909e3580800000000000000
+      internalID: -8845473662849200225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_96
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 1580
+        width: 453
+        height: 421
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4229d7058160d0af0800000000000000
+      internalID: -428679688030940636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_97
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 1580
+        width: 448
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515fbfe9420261890800000000000000
+      internalID: -7487761988798647019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_98
+      rect:
+        serializedVersion: 2
+        x: 3112
+        y: 1579
+        width: 437
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c3ce504c9f7ba30800000000000000
+      internalID: 4231124995246144642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_99
+      rect:
+        serializedVersion: 2
+        x: 3626
+        y: 1579
+        width: 427
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316253a155b23f2f0800000000000000
+      internalID: -940360252678396397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_100
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1583
+        width: 449
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231be923e2d4e1520800000000000000
+      internalID: 2674660089517748530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_101
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 1582
+        width: 452
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf45422d73d7a1d10800000000000000
+      internalID: 2097126255196656891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_102
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 1581
+        width: 453
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6ca92a1add364ad0800000000000000
+      internalID: -2718417318120412051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_103
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 1581
+        width: 453
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f844caed4a50ac270800000000000000
+      internalID: 8271429871287944335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_104
+      rect:
+        serializedVersion: 2
+        x: 3548
+        y: 1767
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3252f355e29b57810800000000000000
+      internalID: 1762518437835253027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_105
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1068
+        width: 422
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd64470020248b300800000000000000
+      internalID: 268036754193532637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_106
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1069
+        width: 420
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dabffe1c5ab407c20800000000000000
+      internalID: 3202142510355839917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_107
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 1072
+        width: 421
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e52f827a5142ef790800000000000000
+      internalID: -7494513054480534946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_108
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 1376
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8977b6ecf08e86550800000000000000
+      internalID: 6154424045387085720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_109
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1072
+        width: 399
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e02db125d578500800000000000000
+      internalID: 398389699281030749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_110
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 1074
+        width: 400
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 421facd4777dee580800000000000000
+      internalID: -8795856114801774300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_111
+      rect:
+        serializedVersion: 2
+        x: 2623
+        y: 1078
+        width: 400
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f929e8e727d588570800000000000000
+      internalID: 8469121845601145503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_112
+      rect:
+        serializedVersion: 2
+        x: 3135
+        y: 1084
+        width: 400
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffce9509bb3226cf0800000000000000
+      internalID: -260606539946398465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_113
+      rect:
+        serializedVersion: 2
+        x: 3647
+        y: 1087
+        width: 402
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aa4c42d12a2fce70800000000000000
+      internalID: 9137568493708528296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_114
+      rect:
+        serializedVersion: 2
+        x: 2787
+        y: 1076
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5df59a8b8524340800000000000000
+      internalID: 4846533699142931932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_115
+      rect:
+        serializedVersion: 2
+        x: 3338
+        y: 1079
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a82993fa0463a4d60800000000000000
+      internalID: 7875166549856326282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_116
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 972
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e94f10bc9fc8b70800000000000000
+      internalID: 8902765213711113789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_117
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 579
+        width: 405
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b85528f80e9c620800000000000000
+      internalID: 2795011950731692862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_118
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 581
+        width: 406
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d77793a6662c1ea0800000000000000
+      internalID: -5900799189489059884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_119
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 581
+        width: 405
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cac0e734b56067e0800000000000000
+      internalID: -1774306428477977916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_120
+      rect:
+        serializedVersion: 2
+        x: 2621
+        y: 599
+        width: 404
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc03aa9d294ab05d0800000000000000
+      internalID: -3095199368263094067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_121
+      rect:
+        serializedVersion: 2
+        x: 3132
+        y: 598
+        width: 389
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46e4f3e6beb08450800000000000000
+      internalID: 6089076388922713676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_122
+      rect:
+        serializedVersion: 2
+        x: 3646
+        y: 594
+        width: 388
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d771b909ec6fae1e0800000000000000
+      internalID: -2167648903575693443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_123
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 576
+        width: 401
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afdf2b1a481b24830800000000000000
+      internalID: 4053997797793529338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_124
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 577
+        width: 403
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626f005d44da67490800000000000000
+      internalID: -7748815597701368282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_125
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 752
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 982a353ebf09f5c30800000000000000
+      internalID: 4350355176588288649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_126
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 583
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433d85f5ef3cb6020800000000000000
+      internalID: 2336176329010500404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_127
+      rect:
+        serializedVersion: 2
+        x: 3266
+        y: 589
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c673802ca585ec540800000000000000
+      internalID: 5030054980645042028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_128
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 87
+        width: 376
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b3ea709b7d835290800000000000000
+      internalID: -7902817359260621897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_129
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 95
+        width: 378
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acdef023b13e09cc0800000000000000
+      internalID: -3706212787382391350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_130
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 96
+        width: 359
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e233bfed5ceb3bac0800000000000000
+      internalID: -3840516300158061778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_131
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 94
+        width: 356
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81927793f23153460800000000000000
+      internalID: 7220698671106959640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_132
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 93
+        width: 353
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d0e8a7b57f306d60800000000000000
+      internalID: 7881369122723389648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_133
+      rect:
+        serializedVersion: 2
+        x: 2645
+        y: 92
+        width: 343
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 183af6a848e33aee0800000000000000
+      internalID: -1251087532499688575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_134
+      rect:
+        serializedVersion: 2
+        x: 3362
+        y: 455
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4e79a8d31869130800000000000000
+      internalID: 3573185455683265771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_135
+      rect:
+        serializedVersion: 2
+        x: 3334
+        y: 442
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d50581a593d79dbf0800000000000000
+      internalID: -299070214965276579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_136
+      rect:
+        serializedVersion: 2
+        x: 3356
+        y: 399
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6343484299eceba0800000000000000
+      internalID: -6058210584233294996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_137
+      rect:
+        serializedVersion: 2
+        x: 3871
+        y: 427
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba61f8b0972740f80800000000000000
+      internalID: -8141256362168478037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_138
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 287
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d59f78d9ae10c120800000000000000
+      internalID: 2431977513610614228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_139
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 276
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d1fae7e1dd083b70800000000000000
+      internalID: 8878861860551193049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_140
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 284
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eccdc632f39754750800000000000000
+      internalID: 6288565766777003214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_141
+      rect:
+        serializedVersion: 2
+        x: 3156
+        y: 93
+        width: 334
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f5511acfb1e42b0800000000000000
+      internalID: -5598506514926706878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_142
+      rect:
+        serializedVersion: 2
+        x: 3669
+        y: 95
+        width: 335
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18a342b9a72a29f60800000000000000
+      internalID: 8039666932282309249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_143
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 266
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6adf13d2e9161f910800000000000000
+      internalID: 1869382652326444454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_144
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 197
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a901ec71d551ea2c0800000000000000
+      internalID: -4418570694828355430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_glow_145
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 201
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd51f80d572f0b940800000000000000
+      internalID: 5310010548493948380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      smoke_glow_0: 6785280460817030038
+      smoke_glow_1: 3643185909687854134
+      smoke_glow_10: -8418390653138259281
+      smoke_glow_100: 2674660089517748530
+      smoke_glow_101: 2097126255196656891
+      smoke_glow_102: -2718417318120412051
+      smoke_glow_103: 8271429871287944335
+      smoke_glow_104: 1762518437835253027
+      smoke_glow_105: 268036754193532637
+      smoke_glow_106: 3202142510355839917
+      smoke_glow_107: -7494513054480534946
+      smoke_glow_108: 6154424045387085720
+      smoke_glow_109: 398389699281030749
+      smoke_glow_11: -4849030063821620472
+      smoke_glow_110: -8795856114801774300
+      smoke_glow_111: 8469121845601145503
+      smoke_glow_112: -260606539946398465
+      smoke_glow_113: 9137568493708528296
+      smoke_glow_114: 4846533699142931932
+      smoke_glow_115: 7875166549856326282
+      smoke_glow_116: 8902765213711113789
+      smoke_glow_117: 2795011950731692862
+      smoke_glow_118: -5900799189489059884
+      smoke_glow_119: -1774306428477977916
+      smoke_glow_12: 6176364594319437848
+      smoke_glow_120: -3095199368263094067
+      smoke_glow_121: 6089076388922713676
+      smoke_glow_122: -2167648903575693443
+      smoke_glow_123: 4053997797793529338
+      smoke_glow_124: -7748815597701368282
+      smoke_glow_125: 4350355176588288649
+      smoke_glow_126: 2336176329010500404
+      smoke_glow_127: 5030054980645042028
+      smoke_glow_128: -7902817359260621897
+      smoke_glow_129: -3706212787382391350
+      smoke_glow_13: 7921836059669798927
+      smoke_glow_130: -3840516300158061778
+      smoke_glow_131: 7220698671106959640
+      smoke_glow_132: 7881369122723389648
+      smoke_glow_133: -1251087532499688575
+      smoke_glow_134: 3573185455683265771
+      smoke_glow_135: -299070214965276579
+      smoke_glow_136: -6058210584233294996
+      smoke_glow_137: -8141256362168478037
+      smoke_glow_138: 2431977513610614228
+      smoke_glow_139: 8878861860551193049
+      smoke_glow_14: 8904269404957773248
+      smoke_glow_140: 6288565766777003214
+      smoke_glow_141: -5598506514926706878
+      smoke_glow_142: 8039666932282309249
+      smoke_glow_143: 1869382652326444454
+      smoke_glow_144: -4418570694828355430
+      smoke_glow_145: 5310010548493948380
+      smoke_glow_15: 9016229582956435471
+      smoke_glow_16: 1868434359763334052
+      smoke_glow_17: -4831408190004151311
+      smoke_glow_18: -6281869349017683876
+      smoke_glow_19: -7844342279138466704
+      smoke_glow_2: 4742328972992369292
+      smoke_glow_20: 2104746521547436551
+      smoke_glow_21: 2759511814183583414
+      smoke_glow_22: 7143577312781264648
+      smoke_glow_23: -3961512492385763573
+      smoke_glow_24: 8692634117344582343
+      smoke_glow_25: -2512632101485050098
+      smoke_glow_26: -1935778558849990714
+      smoke_glow_27: -5682414466924146156
+      smoke_glow_28: -216934548681008611
+      smoke_glow_29: -4237848151285561279
+      smoke_glow_3: 2041424886021279708
+      smoke_glow_30: -3016875089444282910
+      smoke_glow_31: 4366430170448402958
+      smoke_glow_32: 6084312520005677787
+      smoke_glow_33: 3104000435043236404
+      smoke_glow_34: -7776322203361918820
+      smoke_glow_35: -5788108370093411286
+      smoke_glow_36: -5058883991382803146
+      smoke_glow_37: 8850958186752664710
+      smoke_glow_38: 5388945931752469786
+      smoke_glow_39: -2646789194999645067
+      smoke_glow_4: 266185808013042133
+      smoke_glow_40: 9110274935450503797
+      smoke_glow_41: -2365115242884086458
+      smoke_glow_42: -6989060020088071167
+      smoke_glow_43: -3147377112523544008
+      smoke_glow_44: 3696599769256365271
+      smoke_glow_45: -5490972167451672227
+      smoke_glow_46: 326968093322601641
+      smoke_glow_47: 2000462242915924937
+      smoke_glow_48: 6223032327379190751
+      smoke_glow_49: -2023942920333680918
+      smoke_glow_5: 1718500161109078743
+      smoke_glow_50: -2139859356831254573
+      smoke_glow_51: 7364874640593612000
+      smoke_glow_52: -29693128021884128
+      smoke_glow_53: -8150537462548433510
+      smoke_glow_54: 1288395519779258450
+      smoke_glow_55: -1522360835401606501
+      smoke_glow_56: -5482648638234682964
+      smoke_glow_57: -8396523453085906511
+      smoke_glow_58: -2951930051783570307
+      smoke_glow_59: 4156535371432468321
+      smoke_glow_6: 5592275972635203452
+      smoke_glow_60: 3191054319158698872
+      smoke_glow_61: -3332303901630320440
+      smoke_glow_62: -3131087647565581052
+      smoke_glow_63: 4802060604747612165
+      smoke_glow_64: -2785772059641945346
+      smoke_glow_65: -6401783637332259988
+      smoke_glow_66: -2646543111843645444
+      smoke_glow_67: -4805504750862660083
+      smoke_glow_68: 1401203970310846454
+      smoke_glow_69: 5453749293192622766
+      smoke_glow_7: -2828629237894452136
+      smoke_glow_70: 3699733235882472723
+      smoke_glow_71: 593474448952885359
+      smoke_glow_72: 627531354552622598
+      smoke_glow_73: 2295242606629794501
+      smoke_glow_74: -6691082681049810294
+      smoke_glow_75: -190552241595882266
+      smoke_glow_76: -7276960903991635920
+      smoke_glow_77: 8421187091990226650
+      smoke_glow_78: 908762836172885015
+      smoke_glow_79: 7266505423198647597
+      smoke_glow_8: 5152602255665262792
+      smoke_glow_80: -2949314803100554185
+      smoke_glow_81: -1139735422805455672
+      smoke_glow_82: 4095791544251130149
+      smoke_glow_83: 3564546510263435506
+      smoke_glow_84: 8864283175435948259
+      smoke_glow_85: 8982278566400091984
+      smoke_glow_86: -7597888155002191748
+      smoke_glow_87: -1919811906754427928
+      smoke_glow_88: -1333857855441863797
+      smoke_glow_89: -882085122623537655
+      smoke_glow_9: 2523100408172400116
+      smoke_glow_90: 8926518640722972759
+      smoke_glow_91: 429120409104298842
+      smoke_glow_92: -4142768192005761366
+      smoke_glow_93: 8920917128295913909
+      smoke_glow_94: -7911397391337304764
+      smoke_glow_95: -8845473662849200225
+      smoke_glow_96: -428679688030940636
+      smoke_glow_97: -7487761988798647019
+      smoke_glow_98: 4231124995246144642
+      smoke_glow_99: -940360252678396397
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

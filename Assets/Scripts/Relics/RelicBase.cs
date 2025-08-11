@@ -22,12 +22,3 @@ public abstract class RelicBase : ScriptableObject
     public virtual void OnDamageDealt(RelicContext ctx, EnemyBase enemy, ref float finalDamage, ElementTag element) {}
     public virtual void ModifyStatusApplication(RelicContext ctx, ref StatusEffect effect) {}
 }
-
-public struct StatusEffect
-{
-    public string type;
-    public float magnitude;
-    public float duration;
-    public float tickInterval;
-    public int stacks;
-}

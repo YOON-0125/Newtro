@@ -1,0 +1,1404 @@
+fileFormatVersion: 2
+guid: 69aa2495870acfd4cbab0f96127932fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9179243272170839087
+    second: cauterize_0
+  - first:
+      213: -3855594550431379225
+    second: cauterize_1
+  - first:
+      213: -4782908789544690799
+    second: cauterize_2
+  - first:
+      213: 7004452720346658333
+    second: cauterize_3
+  - first:
+      213: -8030325559157775443
+    second: cauterize_4
+  - first:
+      213: 8750669384051988747
+    second: cauterize_5
+  - first:
+      213: 369329618836504534
+    second: cauterize_6
+  - first:
+      213: 4753152255694317941
+    second: cauterize_7
+  - first:
+      213: -6845226016607980595
+    second: cauterize_8
+  - first:
+      213: -6170167204880977670
+    second: cauterize_9
+  - first:
+      213: -6006972530288948232
+    second: cauterize_10
+  - first:
+      213: -2842158990980005364
+    second: cauterize_11
+  - first:
+      213: 6654479748534154986
+    second: cauterize_12
+  - first:
+      213: -6102932544363355266
+    second: cauterize_13
+  - first:
+      213: -1211574517115756661
+    second: cauterize_14
+  - first:
+      213: -3397144169157704412
+    second: cauterize_15
+  - first:
+      213: -6054010201334949466
+    second: cauterize_16
+  - first:
+      213: 474453007621994795
+    second: cauterize_17
+  - first:
+      213: 1470831026688882578
+    second: cauterize_18
+  - first:
+      213: -6216151463816478290
+    second: cauterize_19
+  - first:
+      213: 4507661685660860871
+    second: cauterize_20
+  - first:
+      213: -8045365267867541511
+    second: cauterize_21
+  - first:
+      213: 1191701281335203970
+    second: cauterize_22
+  - first:
+      213: 8987113405459192881
+    second: cauterize_23
+  - first:
+      213: -961947588223420588
+    second: cauterize_24
+  - first:
+      213: 1595243755554395198
+    second: cauterize_25
+  - first:
+      213: -6749876250177995242
+    second: cauterize_26
+  - first:
+      213: -6218694588566399938
+    second: cauterize_27
+  - first:
+      213: -299761707304031587
+    second: cauterize_28
+  - first:
+      213: 2470059582203001088
+    second: cauterize_29
+  - first:
+      213: 7212906327437886432
+    second: cauterize_30
+  - first:
+      213: -3792578364509483980
+    second: cauterize_31
+  - first:
+      213: -8312023144283913444
+    second: cauterize_32
+  - first:
+      213: 5217379620557750686
+    second: cauterize_33
+  - first:
+      213: -3287130482726168765
+    second: cauterize_34
+  - first:
+      213: 5966412888466338104
+    second: cauterize_35
+  - first:
+      213: 180221680490315488
+    second: cauterize_36
+  - first:
+      213: -7144140723408580425
+    second: cauterize_37
+  - first:
+      213: 2991987625187846643
+    second: cauterize_38
+  - first:
+      213: 3466550085960559089
+    second: cauterize_39
+  - first:
+      213: -152330650598913900
+    second: cauterize_40
+  - first:
+      213: -105276079657952641
+    second: cauterize_41
+  - first:
+      213: 8628320697024930006
+    second: cauterize_42
+  - first:
+      213: -3023848119733380796
+    second: cauterize_43
+  - first:
+      213: -7143495205528333531
+    second: cauterize_44
+  - first:
+      213: -5298849011897858925
+    second: cauterize_45
+  - first:
+      213: 712243666530005167
+    second: cauterize_46
+  - first:
+      213: 3218529870174123057
+    second: cauterize_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cauterize_0
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 2695
+        width: 221
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d3ec5fa0e6cc9080800000000000000
+      internalID: -9179243272170839087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_1
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 2928
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e01b972f2d2e7ac0800000000000000
+      internalID: -3855594550431379225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_2
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 2693
+        width: 223
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b581efbc1bf9db0800000000000000
+      internalID: -4782908789544690799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_3
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 2691
+        width: 238
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d16f74253a0d43160800000000000000
+      internalID: 7004452720346658333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_4
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 2692
+        width: 239
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da329af437d8e8090800000000000000
+      internalID: -8030325559157775443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_5
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 2691
+        width: 236
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b091e47117f907970800000000000000
+      internalID: 8750669384051988747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_6
+      rect:
+        serializedVersion: 2
+        x: 2276
+        y: 2930
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dfb7cfd45f102500800000000000000
+      internalID: 369329618836504534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_7
+      rect:
+        serializedVersion: 2
+        x: 2698
+        y: 2699
+        width: 235
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 579a1041bc696f140800000000000000
+      internalID: 4753152255694317941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_8
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2790
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc3b1d8943fd001a0800000000000000
+      internalID: -6845226016607980595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_9
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 2189
+        width: 238
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af0fd4c3e992f5aa0800000000000000
+      internalID: -6170167204880977670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_10
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 2191
+        width: 230
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb099c5f42f2aca0800000000000000
+      internalID: -6006972530288948232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_11
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 2190
+        width: 224
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c024473c47f9e88d0800000000000000
+      internalID: -2842158990980005364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_12
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 2191
+        width: 220
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae6b8680316795c50800000000000000
+      internalID: 6654479748534154986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_13
+      rect:
+        serializedVersion: 2
+        x: 2197
+        y: 2196
+        width: 212
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e732d058f270e4ba0800000000000000
+      internalID: -6102932544363355266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_14
+      rect:
+        serializedVersion: 2
+        x: 2713
+        y: 2201
+        width: 206
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f5668556f9f2fe0800000000000000
+      internalID: -1211574517115756661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_15
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1691
+        width: 198
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425c092806bead0d0800000000000000
+      internalID: -3397144169157704412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_16
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1695
+        width: 191
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9d6d22cc5dbfba0800000000000000
+      internalID: -6054010201334949466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_17
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 1698
+        width: 186
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b29bce52f78959600800000000000000
+      internalID: 474453007621994795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_18
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 1702
+        width: 178
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 297f966a601796410800000000000000
+      internalID: 1470831026688882578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_19
+      rect:
+        serializedVersion: 2
+        x: 2222
+        y: 1704
+        width: 169
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea1c131ad2bcbb9a0800000000000000
+      internalID: -6216151463816478290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_20
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 1712
+        width: 162
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c14475ab6e6e8e30800000000000000
+      internalID: 4507661685660860871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_21
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1204
+        width: 152
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ff5d704aee195090800000000000000
+      internalID: -8045365267867541511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_22
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 1207
+        width: 144
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288dc506006c98010800000000000000
+      internalID: 1191701281335203970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_23
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 1210
+        width: 137
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13cdb88c604a8bc70800000000000000
+      internalID: 8987113405459192881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_24
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1213
+        width: 131
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 457366fd3c976a2f0800000000000000
+      internalID: -961947588223420588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_25
+      rect:
+        serializedVersion: 2
+        x: 2227
+        y: 1203
+        width: 154
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e34daf36eb1732610800000000000000
+      internalID: 1595243755554395198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_26
+      rect:
+        serializedVersion: 2
+        x: 2728
+        y: 1192
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61e7b46105f9352a0800000000000000
+      internalID: -6749876250177995242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_27
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 620
+        width: 296
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e341bd14832c2b9a0800000000000000
+      internalID: -6218694588566399938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_28
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 909
+        width: 37
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ae0eeb05807dbf0800000000000000
+      internalID: -299761707304031587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_29
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 602
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00972436a1a674220800000000000000
+      internalID: 2470059582203001088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_30
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 669
+        width: 198
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e34a15d614691460800000000000000
+      internalID: 7212906327437886432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_31
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 657
+        width: 222
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c8498421e0e5bc0800000000000000
+      internalID: -3792578364509483980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_32
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 645
+        width: 246
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c13c1204df2c5ac80800000000000000
+      internalID: -8312023144283913444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_33
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 629
+        width: 278
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9105bd3f1bd76840800000000000000
+      internalID: 5217379620557750686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_34
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 777
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3479fbeed34c162d0800000000000000
+      internalID: -3287130482726168765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_35
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 764
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831395029e4fcc250800000000000000
+      internalID: 5966412888466338104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_36
+      rect:
+        serializedVersion: 2
+        x: 2445
+        y: 738
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eef27ed9a6408200800000000000000
+      internalID: 180221680490315488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_37
+      rect:
+        serializedVersion: 2
+        x: 2449
+        y: 759
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b054d30dd9eadc90800000000000000
+      internalID: -7144140723408580425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_38
+      rect:
+        serializedVersion: 2
+        x: 2274
+        y: 616
+        width: 37
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9afa394eca58920800000000000000
+      internalID: 2991987625187846643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_39
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 84
+        width: 344
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f967c5cfe8ab1030800000000000000
+      internalID: 3466550085960559089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_40
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 399
+        width: 68
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498c5a29410d2edf0800000000000000
+      internalID: -152330650598913900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_41
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 66
+        width: 380
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a54ac96fbf98ef0800000000000000
+      internalID: -105276079657952641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_42
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 53
+        width: 406
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d0625a85f3fdb770800000000000000
+      internalID: 8628320697024930006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_43
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 44
+        width: 424
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4491f88f7222906d0800000000000000
+      internalID: -3023848119733380796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_44
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 39
+        width: 434
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52317cb55f43ddc90800000000000000
+      internalID: -7143495205528333531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_45
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 241
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394066fe5e4b676b0800000000000000
+      internalID: -5298849011897858925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_46
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 203
+        width: 37
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa0fa0157d562e900800000000000000
+      internalID: 712243666530005167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cauterize_47
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 77
+        width: 68
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13476ba4dd38aac20800000000000000
+      internalID: 3218529870174123057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cauterize_0: -9179243272170839087
+      cauterize_1: -3855594550431379225
+      cauterize_10: -6006972530288948232
+      cauterize_11: -2842158990980005364
+      cauterize_12: 6654479748534154986
+      cauterize_13: -6102932544363355266
+      cauterize_14: -1211574517115756661
+      cauterize_15: -3397144169157704412
+      cauterize_16: -6054010201334949466
+      cauterize_17: 474453007621994795
+      cauterize_18: 1470831026688882578
+      cauterize_19: -6216151463816478290
+      cauterize_2: -4782908789544690799
+      cauterize_20: 4507661685660860871
+      cauterize_21: -8045365267867541511
+      cauterize_22: 1191701281335203970
+      cauterize_23: 8987113405459192881
+      cauterize_24: -961947588223420588
+      cauterize_25: 1595243755554395198
+      cauterize_26: -6749876250177995242
+      cauterize_27: -6218694588566399938
+      cauterize_28: -299761707304031587
+      cauterize_29: 2470059582203001088
+      cauterize_3: 7004452720346658333
+      cauterize_30: 7212906327437886432
+      cauterize_31: -3792578364509483980
+      cauterize_32: -8312023144283913444
+      cauterize_33: 5217379620557750686
+      cauterize_34: -3287130482726168765
+      cauterize_35: 5966412888466338104
+      cauterize_36: 180221680490315488
+      cauterize_37: -7144140723408580425
+      cauterize_38: 2991987625187846643
+      cauterize_39: 3466550085960559089
+      cauterize_4: -8030325559157775443
+      cauterize_40: -152330650598913900
+      cauterize_41: -105276079657952641
+      cauterize_42: 8628320697024930006
+      cauterize_43: -3023848119733380796
+      cauterize_44: -7143495205528333531
+      cauterize_45: -5298849011897858925
+      cauterize_46: 712243666530005167
+      cauterize_47: 3218529870174123057
+      cauterize_5: 8750669384051988747
+      cauterize_6: 369329618836504534
+      cauterize_7: 4753152255694317941
+      cauterize_8: -6845226016607980595
+      cauterize_9: -6170167204880977670
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

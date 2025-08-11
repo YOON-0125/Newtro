@@ -37,21 +37,6 @@ public class SPUM_Prefabs : MonoBehaviour
     public void OverrideControllerInit()
     {
         Animator animator = _anim;
-        
-        // Null 체크 추가
-        if (animator == null)
-        {
-            Debug.LogError("SPUM_Prefabs: Animator가 null입니다!");
-            return;
-        }
-        
-        if (animator.runtimeAnimatorController == null)
-        {
-            Debug.LogError("SPUM_Prefabs: RuntimeAnimatorController가 null입니다!");
-            Debug.LogError("SPUMController.controller를 Animator에 할당해주세요!");
-            return;
-        }
-        
         OverrideController = new AnimatorOverrideController();
         OverrideController.runtimeAnimatorController= animator.runtimeAnimatorController;
 

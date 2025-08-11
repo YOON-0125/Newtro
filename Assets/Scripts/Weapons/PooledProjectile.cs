@@ -1,27 +1,3 @@
- codex/implement-relic-system-for-rewards
-using UnityEngine;
-
-public class PooledProjectile : MonoBehaviour
-{
-    public float Speed { get; set; }
-    public int Pierce { get; set; }
-
-    private Rigidbody2D rb;
-
-    protected virtual void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
-
-    public void ApplySpeedMultiplier(float mul)
-    {
-        Speed *= mul;
-        if (rb != null)
-        {
-            rb.linearVelocity *= mul;
-        }
-    }
-=======
 using System;
 using UnityEngine;
 
@@ -31,6 +7,9 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
 public class PooledProjectile : MonoBehaviour
 {
+    public float Speed { get; set; }
+    public int Pierce { get; set; }
+    
     private Rigidbody2D rb;
     private Collider2D col;
     private TrailRenderer trail;
@@ -46,7 +25,7 @@ public class PooledProjectile : MonoBehaviour
 
     private float spawnTime;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         if (rb == null) rb = gameObject.AddComponent<Rigidbody2D>();
@@ -57,6 +36,15 @@ public class PooledProjectile : MonoBehaviour
         col.isTrigger = true;
 
         trail = GetComponent<TrailRenderer>();
+    }
+
+    public void ApplySpeedMultiplier(float mul)
+    {
+        Speed *= mul;
+        if (rb != null)
+        {
+            rb.linearVelocity *= mul;
+        }
     }
 
     /// <summary>
@@ -122,5 +110,4 @@ public class PooledProjectile : MonoBehaviour
         else
             Destroy(gameObject);
     }
-main
 }

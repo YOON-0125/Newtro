@@ -1,0 +1,2860 @@
+fileFormatVersion: 2
+guid: 5e2599a83aa8166498d89d53be2c6f24
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4731208713802433034
+    second: arrows_yellow_0
+  - first:
+      213: 8029657038975148986
+    second: arrows_yellow_1
+  - first:
+      213: 4019263237797955580
+    second: arrows_yellow_2
+  - first:
+      213: -5744938739109911217
+    second: arrows_yellow_3
+  - first:
+      213: 3466703377765571661
+    second: arrows_yellow_4
+  - first:
+      213: 4738267878125624573
+    second: arrows_yellow_5
+  - first:
+      213: 5326163534566831204
+    second: arrows_yellow_6
+  - first:
+      213: 3937026939245886383
+    second: arrows_yellow_7
+  - first:
+      213: -8376229976186957407
+    second: arrows_yellow_8
+  - first:
+      213: 5845240286478720850
+    second: arrows_yellow_9
+  - first:
+      213: -5789178869367134887
+    second: arrows_yellow_10
+  - first:
+      213: 8482334840033662639
+    second: arrows_yellow_11
+  - first:
+      213: 8200712514464105247
+    second: arrows_yellow_12
+  - first:
+      213: -4337513227142562281
+    second: arrows_yellow_13
+  - first:
+      213: 6185068079174167317
+    second: arrows_yellow_14
+  - first:
+      213: -8338569200247150590
+    second: arrows_yellow_15
+  - first:
+      213: 4772928291269689944
+    second: arrows_yellow_16
+  - first:
+      213: 8366203428637214502
+    second: arrows_yellow_17
+  - first:
+      213: -4656562342394031823
+    second: arrows_yellow_18
+  - first:
+      213: 3093265507565078137
+    second: arrows_yellow_19
+  - first:
+      213: -2420353844617422236
+    second: arrows_yellow_20
+  - first:
+      213: 2896309924514435462
+    second: arrows_yellow_21
+  - first:
+      213: -5707631110869401278
+    second: arrows_yellow_22
+  - first:
+      213: -5026438097174435270
+    second: arrows_yellow_23
+  - first:
+      213: -3835294389070154944
+    second: arrows_yellow_24
+  - first:
+      213: -3582800995394870411
+    second: arrows_yellow_25
+  - first:
+      213: -4992224515923627360
+    second: arrows_yellow_26
+  - first:
+      213: -1551758934969651409
+    second: arrows_yellow_27
+  - first:
+      213: 6794684014197965360
+    second: arrows_yellow_28
+  - first:
+      213: -5797607266693660711
+    second: arrows_yellow_29
+  - first:
+      213: -9025287744623820820
+    second: arrows_yellow_30
+  - first:
+      213: -1057263427388023215
+    second: arrows_yellow_31
+  - first:
+      213: -7397758939067943144
+    second: arrows_yellow_32
+  - first:
+      213: 1996703479994473214
+    second: arrows_yellow_33
+  - first:
+      213: 3277497241218205908
+    second: arrows_yellow_34
+  - first:
+      213: -5621707227363644833
+    second: arrows_yellow_35
+  - first:
+      213: -8480849563604008783
+    second: arrows_yellow_36
+  - first:
+      213: -175605045211392247
+    second: arrows_yellow_37
+  - first:
+      213: 3658476905579530815
+    second: arrows_yellow_38
+  - first:
+      213: -4883817193757949625
+    second: arrows_yellow_39
+  - first:
+      213: 3085796973530265482
+    second: arrows_yellow_40
+  - first:
+      213: -6721743134157989413
+    second: arrows_yellow_41
+  - first:
+      213: 3037064710758597020
+    second: arrows_yellow_42
+  - first:
+      213: 5033090140009130034
+    second: arrows_yellow_43
+  - first:
+      213: 1310765208886750011
+    second: arrows_yellow_44
+  - first:
+      213: -1017549601752542926
+    second: arrows_yellow_45
+  - first:
+      213: 744245254460087084
+    second: arrows_yellow_46
+  - first:
+      213: -7924547077188512668
+    second: arrows_yellow_47
+  - first:
+      213: -6116715192621378403
+    second: arrows_yellow_48
+  - first:
+      213: 3498710896390080160
+    second: arrows_yellow_49
+  - first:
+      213: -5743128834364522070
+    second: arrows_yellow_50
+  - first:
+      213: 2842819943920803344
+    second: arrows_yellow_51
+  - first:
+      213: -3870458274843266339
+    second: arrows_yellow_52
+  - first:
+      213: 1352119543955901011
+    second: arrows_yellow_53
+  - first:
+      213: 5061672481256747614
+    second: arrows_yellow_54
+  - first:
+      213: -4799017141562186101
+    second: arrows_yellow_55
+  - first:
+      213: 8615991922698438475
+    second: arrows_yellow_56
+  - first:
+      213: 5514763234053190481
+    second: arrows_yellow_57
+  - first:
+      213: 8937985888609381277
+    second: arrows_yellow_58
+  - first:
+      213: -2720143523171764495
+    second: arrows_yellow_59
+  - first:
+      213: -2768130010297640248
+    second: arrows_yellow_60
+  - first:
+      213: -853551137069757188
+    second: arrows_yellow_61
+  - first:
+      213: 5763173068485524673
+    second: arrows_yellow_62
+  - first:
+      213: -1016731331742880292
+    second: arrows_yellow_63
+  - first:
+      213: 897489153654041419
+    second: arrows_yellow_64
+  - first:
+      213: 6380249131174628010
+    second: arrows_yellow_65
+  - first:
+      213: 7079634372226866602
+    second: arrows_yellow_66
+  - first:
+      213: -8899185414613897723
+    second: arrows_yellow_67
+  - first:
+      213: 7689485971798984681
+    second: arrows_yellow_68
+  - first:
+      213: 8228959924654534605
+    second: arrows_yellow_69
+  - first:
+      213: 228557374932162290
+    second: arrows_yellow_70
+  - first:
+      213: -4134405395073288870
+    second: arrows_yellow_71
+  - first:
+      213: -6184635048048906160
+    second: arrows_yellow_72
+  - first:
+      213: -2444264591527860200
+    second: arrows_yellow_73
+  - first:
+      213: 2807127170543237398
+    second: arrows_yellow_74
+  - first:
+      213: -321532141784669841
+    second: arrows_yellow_75
+  - first:
+      213: 4208336445305978283
+    second: arrows_yellow_76
+  - first:
+      213: 2618822895987011681
+    second: arrows_yellow_77
+  - first:
+      213: 6021498898610551055
+    second: arrows_yellow_78
+  - first:
+      213: 2642187460134030980
+    second: arrows_yellow_79
+  - first:
+      213: -4971021458448411449
+    second: arrows_yellow_80
+  - first:
+      213: 7755369072661707800
+    second: arrows_yellow_81
+  - first:
+      213: -1152743860544609457
+    second: arrows_yellow_82
+  - first:
+      213: -5483511615619812390
+    second: arrows_yellow_83
+  - first:
+      213: -585591141258513923
+    second: arrows_yellow_84
+  - first:
+      213: -5040955629393641372
+    second: arrows_yellow_85
+  - first:
+      213: -1668074600299776447
+    second: arrows_yellow_86
+  - first:
+      213: -974696389196005944
+    second: arrows_yellow_87
+  - first:
+      213: -5074807882605429352
+    second: arrows_yellow_88
+  - first:
+      213: 1698581098070689814
+    second: arrows_yellow_89
+  - first:
+      213: 8391206620886860609
+    second: arrows_yellow_90
+  - first:
+      213: -1832416577493053798
+    second: arrows_yellow_91
+  - first:
+      213: -7212560116495459480
+    second: arrows_yellow_92
+  - first:
+      213: -5392990532186960779
+    second: arrows_yellow_93
+  - first:
+      213: -37978181075574055
+    second: arrows_yellow_94
+  - first:
+      213: 3146348581390971697
+    second: arrows_yellow_95
+  - first:
+      213: -274804072357867778
+    second: arrows_yellow_96
+  - first:
+      213: -1034032006799090520
+    second: arrows_yellow_97
+  - first:
+      213: 8451620298269915862
+    second: arrows_yellow_98
+  - first:
+      213: -2616984810745495730
+    second: arrows_yellow_99
+  - first:
+      213: 7613172427363221581
+    second: arrows_yellow_100
+  - first:
+      213: 3371353778116312553
+    second: arrows_yellow_101
+  - first:
+      213: -5282115935546306039
+    second: arrows_yellow_102
+  - first:
+      213: 4975742116223193500
+    second: arrows_yellow_103
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: arrows_yellow_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1393
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fdb297edbe575eb0800000000000000
+      internalID: -4731208713802433034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1393
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab32454b8821f6f60800000000000000
+      internalID: 8029657038975148986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_2
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1395
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7cbbbae9a47c730800000000000000
+      internalID: 4019263237797955580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_3
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 1396
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4529fe97a0e540b0800000000000000
+      internalID: -5744938739109911217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_4
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1395
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c1d5dca543c1030800000000000000
+      internalID: 3466703377765571661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_5
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1397
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc525ed785b1c140800000000000000
+      internalID: 4738267878125624573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_6
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 1398
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 464be75f3855ae940800000000000000
+      internalID: 5326163534566831204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_7
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1141
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fabf4e8542123a630800000000000000
+      internalID: 3937026939245886383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_8
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1142
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a1d5604737a1cb80800000000000000
+      internalID: -8376229976186957407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_9
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 1142
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25fdd5632177e1150800000000000000
+      internalID: 5845240286478720850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_10
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1141
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 955ac2e9d74b8afa0800000000000000
+      internalID: -5789178869367134887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_11
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1142
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa6502e789e47b570800000000000000
+      internalID: 8482334840033662639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_12
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 1141
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f13cbb92598cec170800000000000000
+      internalID: 8200712514464105247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_13
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 1142
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71efb9773be0ec3c0800000000000000
+      internalID: -4337513227142562281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_14
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1149
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ba8cae5a6c5d550800000000000000
+      internalID: 6185068079174167317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_15
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1143
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2086144fd73774c80800000000000000
+      internalID: -8338569200247150590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_16
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1152
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852ca8b2ef8dc3240800000000000000
+      internalID: 4772928291269689944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_17
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 887
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 627839a31b9ba1470800000000000000
+      internalID: 8366203428637214502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_18
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 898
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 131942b9831906fb0800000000000000
+      internalID: -4656562342394031823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_19
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 888
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976826e179c7dea20800000000000000
+      internalID: 3093265507565078137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_20
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 903
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46ad3dc700d296ed0800000000000000
+      internalID: -2420353844617422236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_21
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 888
+        width: 28
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6811f12f782c13820800000000000000
+      internalID: 2896309924514435462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_22
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 905
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24149a7bebb6ac0b0800000000000000
+      internalID: -5707631110869401278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_23
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 889
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a6d6c8e218e3ab0800000000000000
+      internalID: -5026438097174435270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_24
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 910
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043bc6ac21c46cac0800000000000000
+      internalID: -3835294389070154944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_25
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 890
+        width: 26
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573a2982a75574ec0800000000000000
+      internalID: -3582800995394870411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_26
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 898
+        width: 14
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a23061b04e08bab0800000000000000
+      internalID: -4992224515923627360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_27
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 912
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f6810687b077ae0800000000000000
+      internalID: -1551758934969651409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_28
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 890
+        width: 25
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0328b437c119b4e50800000000000000
+      internalID: 6794684014197965360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_29
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 901
+        width: 16
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df308178e2ca8fa0800000000000000
+      internalID: -5797607266693660711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_30
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 916
+        width: 35
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cefb2024d9cbfb280800000000000000
+      internalID: -9025287744623820820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_31
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 891
+        width: 25
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e5680b388d351f0800000000000000
+      internalID: -1057263427388023215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_32
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 902
+        width: 17
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81772ee9071e55990800000000000000
+      internalID: -7397758939067943144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_33
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 918
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa5bde6c37b5bb10800000000000000
+      internalID: 1996703479994473214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_34
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 892
+        width: 24
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d8422f30620c7d20800000000000000
+      internalID: 3277497241218205908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_35
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 905
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a6eb1df0fabf1b0800000000000000
+      internalID: -5621707227363644833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_36
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 923
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b04bdf5148fd4a80800000000000000
+      internalID: -8480849563604008783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_37
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 637
+        width: 22
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907986b4420209df0800000000000000
+      internalID: -175605045211392247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_38
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 651
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3ac908bc5585c230800000000000000
+      internalID: 3658476905579530815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_39
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 669
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 741cc1a4322393cb0800000000000000
+      internalID: -4883817193757949625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_40
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 639
+        width: 21
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a873f388ff3f2da20800000000000000
+      internalID: 3085796973530265482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_41
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 654
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd997199b3297b2a0800000000000000
+      internalID: -6721743134157989413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_42
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 673
+        width: 31
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9104ac6342d52a20800000000000000
+      internalID: 3037064710758597020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_43
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 639
+        width: 22
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238e3cdd0d029d540800000000000000
+      internalID: 5033090140009130034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_44
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 656
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3ba2a34306c03210800000000000000
+      internalID: 1310765208886750011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_45
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 675
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23113364700f0e1f0800000000000000
+      internalID: -1017549601752542926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_46
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 641
+        width: 23
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b1dd1ad17145a00800000000000000
+      internalID: 744245254460087084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_47
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 660
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 464915a5b6a560290800000000000000
+      internalID: -7924547077188512668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_48
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 678
+        width: 27
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d945197a0ff0d1ba0800000000000000
+      internalID: -6116715192621378403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_49
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 642
+        width: 24
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a68e17f50bed8030800000000000000
+      internalID: 3498710896390080160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_50
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 662
+        width: 22
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa14668e0ce4c40b0800000000000000
+      internalID: -5743128834364522070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_51
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 680
+        width: 25
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01e9bc55da9b37720800000000000000
+      internalID: 2842819943920803344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_52
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 645
+        width: 25
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2fef1a4be594ac0800000000000000
+      internalID: -3870458274843266339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_53
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 666
+        width: 23
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35aca57bf81b3c210800000000000000
+      internalID: 1352119543955901011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_54
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 684
+        width: 22
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e52bda6cd4cae3640800000000000000
+      internalID: 5061672481256747614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_55
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 646
+        width: 26
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86ec260657766db0800000000000000
+      internalID: -4799017141562186101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_56
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 668
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4743141107229770800000000000000
+      internalID: 8615991922698438475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_57
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 686
+        width: 23
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 153ff1261ff588c40800000000000000
+      internalID: 5514763234053190481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_58
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 650
+        width: 27
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9b240a6fca1a0c70800000000000000
+      internalID: 8937985888609381277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_59
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 671
+        width: 23
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6744ba0eb104ad0800000000000000
+      internalID: -2720143523171764495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_60
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 691
+        width: 24
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca5c1cfb60a599d0800000000000000
+      internalID: -2768130010297640248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_61
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 396
+        width: 29
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc835d53c39724f0800000000000000
+      internalID: -853551137069757188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 418
+        width: 22
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc7d260f57eaff40800000000000000
+      internalID: 5763173068485524673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_63
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 437
+        width: 24
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdda47b9d38d3e1f0800000000000000
+      internalID: -1016731331742880292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_64
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 400
+        width: 31
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ba05151a5847c00800000000000000
+      internalID: 897489153654041419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_65
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 421
+        width: 23
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa8822e7c23b8850800000000000000
+      internalID: 6380249131174628010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_66
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 442
+        width: 24
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad5a38b3f9ef3260800000000000000
+      internalID: 7079634372226866602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_67
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 402
+        width: 32
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ee99be30ebf7480800000000000000
+      internalID: -8899185414613897723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_68
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 423
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e78d6e20ca86ba60800000000000000
+      internalID: 7689485971798984681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_69
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 445
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcf65fbd373233270800000000000000
+      internalID: 8228959924654534605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_70
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 406
+        width: 31
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f690a7b8bffb2300800000000000000
+      internalID: 228557374932162290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_71
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 426
+        width: 25
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a55b23db234af96c0800000000000000
+      internalID: -4134405395073288870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_72
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 451
+        width: 20
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0503d9ff033cb2aa0800000000000000
+      internalID: -6184635048048906160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_73
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 409
+        width: 31
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 818aae4ed4a341ed0800000000000000
+      internalID: -2444264591527860200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_74
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 428
+        width: 26
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619b39fe94be4f620800000000000000
+      internalID: 2807127170543237398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_75
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 454
+        width: 19
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f61ed097830b98bf0800000000000000
+      internalID: -321532141784669841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_76
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 413
+        width: 30
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: badfac543b3076a30800000000000000
+      internalID: 4208336445305978283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_77
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 431
+        width: 26
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16037fc7c8de75420800000000000000
+      internalID: 2618822895987011681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_78
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 459
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0976135859a09350800000000000000
+      internalID: 6021498898610551055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_79
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 415
+        width: 31
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ec74ffe7feaa420800000000000000
+      internalID: 2642187460134030980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_80
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 434
+        width: 25
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c496563252630bb0800000000000000
+      internalID: -4971021458448411449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_81
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 463
+        width: 18
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c3d06f41b90ab60800000000000000
+      internalID: 7755369072661707800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_82
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 419
+        width: 31
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f43e93bf091a000f0800000000000000
+      internalID: -1152743860544609457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_83
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 438
+        width: 24
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3b04d0d37a6e3b0800000000000000
+      internalID: -5483511615619812390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_84
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 469
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df1bba9a5ff8fd7f0800000000000000
+      internalID: -585591141258513923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_85
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 184
+        width: 24
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4608c7d209dea0ab0800000000000000
+      internalID: -5040955629393641372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_86
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 217
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146b7462dfec9d8e0800000000000000
+      internalID: -1668074600299776447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_87
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 189
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cdbd165cce2972f0800000000000000
+      internalID: -974696389196005944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_88
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 225
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d73f54e19a299b0800000000000000
+      internalID: -5074807882605429352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_89
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 191
+        width: 20
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61842bc5282929710800000000000000
+      internalID: 1698581098070689814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_90
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 233
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1430ed296fd837470800000000000000
+      internalID: 8391206620886860609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_91
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 196
+        width: 18
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9e4df1d4d2f196e0800000000000000
+      internalID: -1832416577493053798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_92
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 198
+        width: 18
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86b532fa9c6d7eb90800000000000000
+      internalID: -7212560116495459480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_93
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 202
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c83fb2faf3825b0800000000000000
+      internalID: -5392990532186960779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_94
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 205
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d266c7ab03197ff0800000000000000
+      internalID: -37978181075574055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_95
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 212
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 133fc5d5d531aab20800000000000000
+      internalID: 3146348581390971697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_96
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 165
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe4744f623bf2cf0800000000000000
+      internalID: -274804072357867778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_97
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 170
+        width: 29
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac1b5c4e5166a1f0800000000000000
+      internalID: -1034032006799090520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_98
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 172
+        width: 28
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dafbd6f1ef2a4570800000000000000
+      internalID: 8451620298269915862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_99
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 176
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ffbe41e2a9eabd0800000000000000
+      internalID: -2616984810745495730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_100
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 178
+        width: 23
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4088c28cfb67a960800000000000000
+      internalID: 7613172427363221581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_101
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 183
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed3bc4266479ce20800000000000000
+      internalID: 3371353778116312553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_102
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 185
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 902155fda8722b6b0800000000000000
+      internalID: -5282115935546306039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arrows_yellow_103
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 188
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c911f6397136d0540800000000000000
+      internalID: 4975742116223193500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      arrows_yellow_0: -4731208713802433034
+      arrows_yellow_1: 8029657038975148986
+      arrows_yellow_10: -5789178869367134887
+      arrows_yellow_100: 7613172427363221581
+      arrows_yellow_101: 3371353778116312553
+      arrows_yellow_102: -5282115935546306039
+      arrows_yellow_103: 4975742116223193500
+      arrows_yellow_11: 8482334840033662639
+      arrows_yellow_12: 8200712514464105247
+      arrows_yellow_13: -4337513227142562281
+      arrows_yellow_14: 6185068079174167317
+      arrows_yellow_15: -8338569200247150590
+      arrows_yellow_16: 4772928291269689944
+      arrows_yellow_17: 8366203428637214502
+      arrows_yellow_18: -4656562342394031823
+      arrows_yellow_19: 3093265507565078137
+      arrows_yellow_2: 4019263237797955580
+      arrows_yellow_20: -2420353844617422236
+      arrows_yellow_21: 2896309924514435462
+      arrows_yellow_22: -5707631110869401278
+      arrows_yellow_23: -5026438097174435270
+      arrows_yellow_24: -3835294389070154944
+      arrows_yellow_25: -3582800995394870411
+      arrows_yellow_26: -4992224515923627360
+      arrows_yellow_27: -1551758934969651409
+      arrows_yellow_28: 6794684014197965360
+      arrows_yellow_29: -5797607266693660711
+      arrows_yellow_3: -5744938739109911217
+      arrows_yellow_30: -9025287744623820820
+      arrows_yellow_31: -1057263427388023215
+      arrows_yellow_32: -7397758939067943144
+      arrows_yellow_33: 1996703479994473214
+      arrows_yellow_34: 3277497241218205908
+      arrows_yellow_35: -5621707227363644833
+      arrows_yellow_36: -8480849563604008783
+      arrows_yellow_37: -175605045211392247
+      arrows_yellow_38: 3658476905579530815
+      arrows_yellow_39: -4883817193757949625
+      arrows_yellow_4: 3466703377765571661
+      arrows_yellow_40: 3085796973530265482
+      arrows_yellow_41: -6721743134157989413
+      arrows_yellow_42: 3037064710758597020
+      arrows_yellow_43: 5033090140009130034
+      arrows_yellow_44: 1310765208886750011
+      arrows_yellow_45: -1017549601752542926
+      arrows_yellow_46: 744245254460087084
+      arrows_yellow_47: -7924547077188512668
+      arrows_yellow_48: -6116715192621378403
+      arrows_yellow_49: 3498710896390080160
+      arrows_yellow_5: 4738267878125624573
+      arrows_yellow_50: -5743128834364522070
+      arrows_yellow_51: 2842819943920803344
+      arrows_yellow_52: -3870458274843266339
+      arrows_yellow_53: 1352119543955901011
+      arrows_yellow_54: 5061672481256747614
+      arrows_yellow_55: -4799017141562186101
+      arrows_yellow_56: 8615991922698438475
+      arrows_yellow_57: 5514763234053190481
+      arrows_yellow_58: 8937985888609381277
+      arrows_yellow_59: -2720143523171764495
+      arrows_yellow_6: 5326163534566831204
+      arrows_yellow_60: -2768130010297640248
+      arrows_yellow_61: -853551137069757188
+      arrows_yellow_62: 5763173068485524673
+      arrows_yellow_63: -1016731331742880292
+      arrows_yellow_64: 897489153654041419
+      arrows_yellow_65: 6380249131174628010
+      arrows_yellow_66: 7079634372226866602
+      arrows_yellow_67: -8899185414613897723
+      arrows_yellow_68: 7689485971798984681
+      arrows_yellow_69: 8228959924654534605
+      arrows_yellow_7: 3937026939245886383
+      arrows_yellow_70: 228557374932162290
+      arrows_yellow_71: -4134405395073288870
+      arrows_yellow_72: -6184635048048906160
+      arrows_yellow_73: -2444264591527860200
+      arrows_yellow_74: 2807127170543237398
+      arrows_yellow_75: -321532141784669841
+      arrows_yellow_76: 4208336445305978283
+      arrows_yellow_77: 2618822895987011681
+      arrows_yellow_78: 6021498898610551055
+      arrows_yellow_79: 2642187460134030980
+      arrows_yellow_8: -8376229976186957407
+      arrows_yellow_80: -4971021458448411449
+      arrows_yellow_81: 7755369072661707800
+      arrows_yellow_82: -1152743860544609457
+      arrows_yellow_83: -5483511615619812390
+      arrows_yellow_84: -585591141258513923
+      arrows_yellow_85: -5040955629393641372
+      arrows_yellow_86: -1668074600299776447
+      arrows_yellow_87: -974696389196005944
+      arrows_yellow_88: -5074807882605429352
+      arrows_yellow_89: 1698581098070689814
+      arrows_yellow_9: 5845240286478720850
+      arrows_yellow_90: 8391206620886860609
+      arrows_yellow_91: -1832416577493053798
+      arrows_yellow_92: -7212560116495459480
+      arrows_yellow_93: -5392990532186960779
+      arrows_yellow_94: -37978181075574055
+      arrows_yellow_95: 3146348581390971697
+      arrows_yellow_96: -274804072357867778
+      arrows_yellow_97: -1034032006799090520
+      arrows_yellow_98: 8451620298269915862
+      arrows_yellow_99: -2616984810745495730
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -93,7 +93,20 @@ public class FieldBase : MonoBehaviour
             {
                 ApplyDamage(enemy, damage);
                 if (slowMultiplier != 1f)
-                    enemy.ApplySlow(slowMultiplier);
+                {
+                    var statusController = enemy.GetComponent<StatusController>();
+                    if (statusController != null)
+                    {
+                        var slowEffect = new StatusEffect
+                        {
+                            type = StatusType.Ice,
+                            magnitude = 1f - slowMultiplier,
+                            duration = 0.5f,
+                            stacks = 1
+                        };
+                        statusController.ApplyStatus(slowEffect);
+                    }
+                }
                 targets.Add(enemy);
             }
         }
@@ -107,7 +120,13 @@ public class FieldBase : MonoBehaviour
             if (enemy != null)
             {
                 if (slowMultiplier != 1f)
-                    enemy.ApplySlow(1f);
+                {
+                    var statusController = enemy.GetComponent<StatusController>();
+                    if (statusController != null)
+                    {
+                        statusController.RemoveStatus(StatusType.Ice);
+                    }
+                }
                 targets.Remove(enemy);
             }
         }
@@ -118,7 +137,13 @@ public class FieldBase : MonoBehaviour
         foreach (var enemy in targets)
         {
             if (enemy != null && slowMultiplier != 1f)
-                enemy.ApplySlow(1f);
+            {
+                var statusController = enemy.GetComponent<StatusController>();
+                if (statusController != null)
+                {
+                    statusController.RemoveStatus(StatusType.Ice);
+                }
+            }
         }
         targets.Clear();
     }

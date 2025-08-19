@@ -121,9 +121,11 @@ public class BasicSkeleton : EnemyBase
         Invoke(nameof(OnAttackComplete), 0.5f);
     }
     
-    protected override void OnTriggerEnter2D(Collider2D other)
+    protected override void OnCollisionEnter2D(Collision2D collision)
     {
         if (isDead) return;
+        
+        Collider2D other = collision.collider;
         
         // 플레이어와 접촉 시 데미지
         if (other.CompareTag("Player"))
@@ -142,6 +144,9 @@ public class BasicSkeleton : EnemyBase
                 }
             }
         }
+        
+        // 부모 클래스의 충돌 처리도 호출
+        base.OnCollisionEnter2D(collision);
     }
     
     protected override void OnStateChanged(EnemyState newState)

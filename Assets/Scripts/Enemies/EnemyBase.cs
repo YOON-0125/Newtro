@@ -297,7 +297,7 @@ public abstract class EnemyBase : MonoBehaviour
         if (direction.x != 0)
         {
             float currentScaleX = transform.localScale.x;
-            if ((direction.x > 0 && currentScaleX < 0) || (direction.x < 0 && currentScaleX > 0))
+            if ((direction.x > 0 && currentScaleX > 0) || (direction.x < 0 && currentScaleX < 0))
             {
                 transform.localScale = new Vector3(currentScaleX * -1, transform.localScale.y, transform.localScale.z);
             }
@@ -558,10 +558,11 @@ public abstract class EnemyBase : MonoBehaviour
     }
     
     // 충돌 처리
-    protected virtual void OnTriggerEnter2D(Collider2D other)
+    protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
         if (isDead) return;
         
+        Collider2D other = collision.collider;
         Debug.Log($"{gameObject.name}: Collision detected with {other.name}, Tag: {other.tag}");
         
         // 플레이어와 충돌 시 데미지

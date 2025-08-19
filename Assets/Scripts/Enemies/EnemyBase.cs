@@ -219,16 +219,46 @@ public abstract class EnemyBase : MonoBehaviour
         if (spumController != null)
         {
             PlayerState targetState = GetCurrentAnimationState();
-            spumController.PlayAnimation(targetState, 0);
+            
+            // SPUM 컨트롤러 초기화 확인
+            if (spumController.StateAnimationPairs == null || spumController.StateAnimationPairs.Count == 0)
+            {
+                Debug.Log($"[EnemyBase] {enemyName}: SPUM StateAnimationPairs가 비어있습니다. 초기화를 시도합니다.");
+                spumController.PopulateAnimationLists();
+                spumController.OverrideControllerInit();
+            }
+            
+            // 해당 상태의 애니메이션이 존재하는지 확인
+            string stateKey = targetState.ToString();
+            if (spumController.StateAnimationPairs.ContainsKey(stateKey) && 
+                spumController.StateAnimationPairs[stateKey].Count > 0)
+            {
+                Debug.Log($"[EnemyBase] {enemyName}: SPUM 애니메이션 재생 - State: {targetState}");
+                spumController.PlayAnimation(targetState, 0);
+            }
+            else
+            {
+                Debug.LogWarning($"[EnemyBase] {enemyName}: SPUM 애니메이션 '{targetState}'를 찾을 수 없습니다. 기본 애니메이터를 사용합니다.");
+                // SPUM 애니메이션이 없으면 기본 애니메이터 사용
+                UpdateAnimatorDirectly();
+            }
         }
         else
         {
             // SPUM이 없는 일반 적들은 기존 애니메이터 파라미터 사용
-            bool isMoving = rb.linearVelocity.magnitude > 0.1f;
-            animator.SetBool("1_Move", isMoving);
-            animator.SetBool("isDeath", isDead);
-            animator.SetBool("5_Debuff", currentState == EnemyState.Hurt);
+            UpdateAnimatorDirectly();
         }
+    }
+    
+    /// <summary>
+    /// 기본 애니메이터 직접 제어
+    /// </summary>
+    private void UpdateAnimatorDirectly()
+    {
+        bool isMoving = rb.linearVelocity.magnitude > 0.1f;
+        animator.SetBool("1_Move", isMoving);
+        animator.SetBool("isDeath", isDead);
+        animator.SetBool("5_Debuff", currentState == EnemyState.Hurt);
     }
     
     /// <summary>

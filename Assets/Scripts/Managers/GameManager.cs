@@ -242,6 +242,9 @@ public class GameManager : MonoBehaviour
             SetGameState(GameState.GameOver);
             isGameRunning = false;
             
+            // 게임 일시정지
+            Time.timeScale = 0f;
+            
             events?.OnGameLose?.Invoke();
             
             Debug.Log("게임에서 패배했습니다!");

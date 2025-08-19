@@ -214,11 +214,33 @@ public abstract class EnemyBase : MonoBehaviour
     {
         if (animator == null) return;
         
-        // SPUM 애니메이션 파라미터 사용
-        bool isMoving = rb.linearVelocity.magnitude > 0.1f;
-        animator.SetBool("1_Move", isMoving);
-        animator.SetBool("isDeath", isDead);
-        animator.SetBool("5_Debuff", currentState == EnemyState.Hurt);
+        // SPUM 시스템이 있으면 PlayAnimation 사용
+        var spumController = GetComponentInChildren<SPUM_Prefabs>();
+        if (spumController != null)
+        {
+            PlayerState targetState = GetCurrentAnimationState();
+            spumController.PlayAnimation(targetState, 0);
+        }
+        else
+        {
+            // SPUM이 없는 일반 적들은 기존 애니메이터 파라미터 사용
+            bool isMoving = rb.linearVelocity.magnitude > 0.1f;
+            animator.SetBool("1_Move", isMoving);
+            animator.SetBool("isDeath", isDead);
+            animator.SetBool("5_Debuff", currentState == EnemyState.Hurt);
+        }
+    }
+    
+    /// <summary>
+    /// 현재 상태에 맞는 SPUM PlayerState 반환
+    /// </summary>
+    protected virtual PlayerState GetCurrentAnimationState()
+    {
+        if (isDead) return PlayerState.DEATH;
+        if (currentState == EnemyState.Hurt) return PlayerState.DAMAGED;
+        if (isAttacking) return PlayerState.ATTACK;
+        if (rb.linearVelocity.magnitude > 0.1f) return PlayerState.MOVE;
+        return PlayerState.IDLE;
     }
     
     /// <summary>
@@ -226,6 +248,7 @@ public abstract class EnemyBase : MonoBehaviour
     /// </summary>
     protected virtual void FindTarget()
     {
+        // 먼저 레이어 마스크로 찾기 시도
         Collider2D[] players = Physics2D.OverlapCircleAll(transform.position, detectionRange, playerLayer);
         
         if (players.Length > 0)
@@ -233,6 +256,20 @@ public abstract class EnemyBase : MonoBehaviour
             target = players[0].transform;
             SetState(EnemyState.Chasing);
             events?.OnTargetAcquired?.Invoke(target);
+            return;
+        }
+        
+        // 레이어 마스크로 찾지 못하면 태그로 직접 찾기 (보스 등을 위한 백업)
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+        {
+            float distanceToPlayer = Vector2.Distance(transform.position, playerObj.transform.position);
+            if (distanceToPlayer <= detectionRange)
+            {
+                target = playerObj.transform;
+                SetState(EnemyState.Chasing);
+                events?.OnTargetAcquired?.Invoke(target);
+            }
         }
     }
     
@@ -256,9 +293,11 @@ public abstract class EnemyBase : MonoBehaviour
         Vector2 targetVelocity = direction * moveSpeed * speedMul;
         rb.linearVelocity = targetVelocity;
         
-        // 이동 방향으로 회전 (2D에서는 스프라이트 플립으로 처리 가능)
-        if (direction.x != 0)
+        // SPUM 시스템이 있으면 자체 방향 전환 시스템 사용, 없으면 기본 스프라이트 플립
+        var spumController = GetComponentInChildren<SPUM_Prefabs>();
+        if (spumController == null && direction.x != 0)
         {
+            // SPUM이 없는 일반 적들만 localScale로 방향 전환
             transform.localScale = new Vector3(Mathf.Sign(direction.x) * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         }
     }

@@ -83,6 +83,23 @@ public abstract class EnemyBase : MonoBehaviour
     public Transform Target => target;
     public EnemyState CurrentState => currentState;
     
+    // 스탯 수정용 public 메서드들 (난이도 스케일링용)
+    public void SetMaxHealth(float newMaxHealth)
+    {
+        maxHealth = newMaxHealth;
+        currentHealth = maxHealth; // 체력도 함께 업데이트
+    }
+    
+    public void SetDamage(float newDamage)
+    {
+        damage = newDamage;
+    }
+    
+    public void SetMoveSpeed(float newMoveSpeed)
+    {
+        moveSpeed = newMoveSpeed;
+    }
+    
     protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -191,16 +208,17 @@ public abstract class EnemyBase : MonoBehaviour
     }
     
     /// <summary>
-    /// 애니메이션 업데이트
+    /// 애니메이션 업데이트 (SPUM 호환)
     /// </summary>
     protected virtual void UpdateAnimation()
     {
         if (animator == null) return;
         
-        animator.SetFloat("Speed", rb.linearVelocity.magnitude);
-        animator.SetBool("IsAttacking", isAttacking);
-        animator.SetBool("IsDead", isDead);
-        animator.SetInteger("State", (int)currentState);
+        // SPUM 애니메이션 파라미터 사용
+        bool isMoving = rb.linearVelocity.magnitude > 0.1f;
+        animator.SetBool("1_Move", isMoving);
+        animator.SetBool("isDeath", isDead);
+        animator.SetBool("5_Debuff", currentState == EnemyState.Hurt);
     }
     
     /// <summary>
@@ -241,7 +259,7 @@ public abstract class EnemyBase : MonoBehaviour
         // 이동 방향으로 회전 (2D에서는 스프라이트 플립으로 처리 가능)
         if (direction.x != 0)
         {
-            transform.localScale = new Vector3(direction.x > 0 ? 1 : -1, 1, 1);
+            transform.localScale = new Vector3(Mathf.Sign(direction.x) * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         }
     }
     

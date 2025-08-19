@@ -19,16 +19,16 @@ public class BasicSkeleton : EnemyBase
     {
         base.Initialize();
         
-        // 기본 스켈레톤 초기 스탯 설정
+        // 기본 스켈레톤 초기 스탯 설정 (Inspector 설정 사용)
         enemyName = "Basic Skeleton";
-        maxHealth = 50f;
-        currentHealth = maxHealth;
-        moveSpeed = 2.5f;
-        damage = contactDamage;
-        attackRange = 1f;
-        attackCooldown = contactCooldown;
-        detectionRange = 8f;
-        expValue = 10;
+        // maxHealth = 50f; // Inspector 설정 사용
+        // currentHealth = maxHealth; // 자동 설정됨
+        // moveSpeed = 2.5f; // Inspector 설정 사용
+        // damage = contactDamage; // Inspector 설정 사용
+        // attackRange = 1f; // Inspector 설정 사용
+        // attackCooldown = contactCooldown; // Inspector 설정 사용
+        // detectionRange = 8f; // Inspector 설정 사용
+        // expValue = 10; // Inspector 설정 사용
         
         // 랜덤 배회 시작점 설정
         SetRandomWanderTarget();
@@ -38,9 +38,27 @@ public class BasicSkeleton : EnemyBase
     {
         if (isDead) return;
         
-        // 타겟이 있으면 기본 행동 수행
-        if (target != null)
+        // Hurt 상태가 아닐 때만 행동
+        if (currentState == EnemyState.Hurt) return;
+        
+        // 추적 상태라면 무조건 기본 행동 수행 (타겟이 있든 없든)
+        if (currentState == EnemyState.Chasing)
         {
+            // 타겟이 없다면 다시 찾기 시도
+            if (target == null)
+            {
+                FindTarget();
+            }
+            
+            // 기본 추적 로직 수행 (타겟 추적 및 이동)
+            if (target != null)
+            {
+                ChaseTarget();
+            }
+        }
+        else if (target != null)
+        {
+            // 타겟이 있으면 기본 행동 수행
             base.UpdateBehavior();
         }
         else
@@ -152,17 +170,6 @@ public class BasicSkeleton : EnemyBase
         }
     }
     
-    protected override void OnHurt()
-    {
-        base.OnHurt();
-        
-        // 피격 시 넉백 효과
-        if (target != null)
-        {
-            Vector2 knockbackDirection = (transform.position - target.position).normalized;
-            rb.AddForce(knockbackDirection * 3f, ForceMode2D.Impulse);
-        }
-    }
     
     protected override void DropItems()
     {

@@ -337,22 +337,36 @@ public class EnemyManager : MonoBehaviour
     }
     
     /// <summary>
-    /// 난이도 스케일링 적용
+    /// 난이도 스케일링 적용 (개선된 방식)
     /// </summary>
     private void ApplyDifficultyScaling(EnemyBase enemy)
     {
-        // 체력 증가
+        // 체력 증가 (80% 배율 적용)
         float healthMultiplier = 1f + (currentDifficultyMultiplier - 1f) * 0.8f;
-        enemy.GetType().GetField("maxHealth", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)?.SetValue(enemy, enemy.MaxHealth * healthMultiplier);
-        enemy.GetType().GetField("currentHealth", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)?.SetValue(enemy, enemy.MaxHealth);
+        float newMaxHealth = enemy.MaxHealth * healthMultiplier;
+        enemy.SetMaxHealth(newMaxHealth);
         
-        // 데미지 증가
+        // 데미지 증가 (60% 배율 적용) - Inspector에서 설정된 원본 값 기준
         float damageMultiplier = 1f + (currentDifficultyMultiplier - 1f) * 0.6f;
-        enemy.GetType().GetField("damage", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)?.SetValue(enemy, enemy.GetType().GetField("damage", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)?.GetValue(enemy));
+        // 원본 데미지 값을 가져오기 위해 SerializedField의 기본값을 사용
+        // 간단하게 현재 체력 비율을 기준으로 계산
+        float originalDamage = enemy.MaxHealth / healthMultiplier; // 역산으로 원본 추정
+        if (enemy is BasicSkeleton) originalDamage = 1f; // BasicSkeleton 기본 데미지
+        else if (enemy is SkeletonMage) originalDamage = 2f; // SkeletonMage 기본 데미지
+        else originalDamage = 1f; // 기본값
         
-        // 이동 속도 약간 증가
+        enemy.SetDamage(originalDamage * damageMultiplier);
+        
+        // 이동 속도 약간 증가 (30% 배율 적용)
         float speedMultiplier = 1f + (currentDifficultyMultiplier - 1f) * 0.3f;
-        enemy.GetType().GetField("moveSpeed", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)?.SetValue(enemy, enemy.GetType().GetField("moveSpeed", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)?.GetValue(enemy));
+        // 기본 이동속도도 유사하게 추정
+        float originalSpeed = 2.5f; // 기본 이동속도
+        if (enemy is DualBladeSkeleton) originalSpeed = 3.5f;
+        else if (enemy is ShieldSkeleton) originalSpeed = 1.5f;
+        
+        enemy.SetMoveSpeed(originalSpeed * speedMultiplier);
+        
+        Debug.Log($"[EnemyManager] {enemy.EnemyName} 난이도 스케일링: 체력 x{healthMultiplier:F2}, 데미지 x{damageMultiplier:F2}, 속도 x{speedMultiplier:F2}");
     }
     
     /// <summary>

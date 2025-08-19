@@ -54,6 +54,7 @@ public abstract class EnemyBase : MonoBehaviour
     protected Animator animator;
     protected AudioSource audioSource;
     protected StatusController statusController;
+    private SPUM_Prefabs spumController; // SPUM 컨트롤러 캐싱
     
     // 상태 관련
     protected Transform target;
@@ -120,6 +121,17 @@ public abstract class EnemyBase : MonoBehaviour
         {
             statusController = gameObject.AddComponent<StatusController>();
             Debug.Log($"[EnemyBase] {enemyName}에 StatusController 자동 추가");
+        }
+        
+        // SPUM 컨트롤러 한 번만 찾아서 캐싱
+        spumController = GetComponentInChildren<SPUM_Prefabs>();
+        if (spumController != null)
+        {
+            Debug.Log($"[EnemyBase] {enemyName}: SPUM 컨트롤러 발견 및 캐싱 완료");
+        }
+        else
+        {
+            Debug.Log($"[EnemyBase] {enemyName}: SPUM 컨트롤러 없음, 기본 애니메이터 사용");
         }
         
         rb.gravityScale = 0f;
@@ -208,22 +220,21 @@ public abstract class EnemyBase : MonoBehaviour
     }
     
     /// <summary>
-    /// 애니메이션 업데이트 (SPUM 호환)
+    /// 애니메이션 업데이트 (SPUM 호환 - 캐싱 방식)
     /// </summary>
     protected virtual void UpdateAnimation()
     {
         if (animator == null) return;
         
-        // SPUM 시스템이 있으면 PlayAnimation 사용
-        var spumController = GetComponentInChildren<SPUM_Prefabs>();
+        // 캐싱된 SPUM 컨트롤러 사용
         if (spumController != null)
         {
             PlayerState targetState = GetCurrentAnimationState();
             
-            // SPUM 컨트롤러 초기화 확인
+            // SPUM 컨트롤러 초기화 확인 (한 번만)
             if (spumController.StateAnimationPairs == null || spumController.StateAnimationPairs.Count == 0)
             {
-                Debug.Log($"[EnemyBase] {enemyName}: SPUM StateAnimationPairs가 비어있습니다. 초기화를 시도합니다.");
+                Debug.Log($"[EnemyBase] {enemyName}: SPUM StateAnimationPairs 초기화 중...");
                 spumController.PopulateAnimationLists();
                 spumController.OverrideControllerInit();
             }
@@ -233,12 +244,10 @@ public abstract class EnemyBase : MonoBehaviour
             if (spumController.StateAnimationPairs.ContainsKey(stateKey) && 
                 spumController.StateAnimationPairs[stateKey].Count > 0)
             {
-                Debug.Log($"[EnemyBase] {enemyName}: SPUM 애니메이션 재생 - State: {targetState}");
                 spumController.PlayAnimation(targetState, 0);
             }
             else
             {
-                Debug.LogWarning($"[EnemyBase] {enemyName}: SPUM 애니메이션 '{targetState}'를 찾을 수 없습니다. 기본 애니메이터를 사용합니다.");
                 // SPUM 애니메이션이 없으면 기본 애니메이터 사용
                 UpdateAnimatorDirectly();
             }

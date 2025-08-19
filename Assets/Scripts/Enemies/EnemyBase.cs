@@ -293,12 +293,14 @@ public abstract class EnemyBase : MonoBehaviour
         Vector2 targetVelocity = direction * moveSpeed * speedMul;
         rb.linearVelocity = targetVelocity;
         
-        // SPUM 시스템이 있으면 자체 방향 전환 시스템 사용, 없으면 기본 스프라이트 플립
-        var spumController = GetComponentInChildren<SPUM_Prefabs>();
-        if (spumController == null && direction.x != 0)
+        // 이동 방향으로 스프라이트 뒤집기 (-1 곱하기 방식 사용)
+        if (direction.x != 0)
         {
-            // SPUM이 없는 일반 적들만 localScale로 방향 전환
-            transform.localScale = new Vector3(Mathf.Sign(direction.x) * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            float currentScaleX = transform.localScale.x;
+            if ((direction.x > 0 && currentScaleX < 0) || (direction.x < 0 && currentScaleX > 0))
+            {
+                transform.localScale = new Vector3(currentScaleX * -1, transform.localScale.y, transform.localScale.z);
+            }
         }
     }
     

@@ -14,6 +14,15 @@ public struct StatusEffect
     public int stacks;
 }
 
+[System.Serializable]
+public struct StatusEffectInfo
+{
+    public StatusType type;
+    public float remainingDuration;
+    public int stacks;
+    public float magnitude;
+}
+
 public interface IStatusReceiver
 {
     void ApplyStatus(StatusEffect e);
@@ -140,8 +149,6 @@ public class StatusController : MonoBehaviour, IStatusReceiver
 
     public void ApplyStatus(StatusEffect e)
     {
-        Debug.Log($"[StatusController] {gameObject.name}에게 상태효과 적용: {e.type} (지속시간: {e.duration}s, 강도: {e.magnitude})");
-        
         switch (e.type)
         {
             case StatusType.Fire:
@@ -268,6 +275,60 @@ public class StatusController : MonoBehaviour, IStatusReceiver
             return multiplier;
         }
         return 1f;
+    }
+    
+    /// <summary>
+    /// BossUI용 - 현재 활성화된 모든 상태효과 목록 반환
+    /// </summary>
+    public Dictionary<StatusType, StatusEffectInfo> GetActiveStatusEffects()
+    {
+        var result = new Dictionary<StatusType, StatusEffectInfo>();
+        
+        foreach (var pair in active)
+        {
+            StatusType type = pair.Key;
+            StatusState state = pair.Value;
+            
+            result[type] = new StatusEffectInfo
+            {
+                type = type,
+                remainingDuration = state.duration,
+                stacks = state.stacks,
+                magnitude = state.magnitude
+            };
+        }
+        
+        // Freeze 상태 추가
+        if (isFrozen)
+        {
+            result[StatusType.Ice] = new StatusEffectInfo
+            {
+                type = StatusType.Ice,
+                remainingDuration = freezeTimer,
+                stacks = 1,
+                magnitude = 1f // 완전 정지
+            };
+        }
+        
+        return result;
+    }
+    
+    /// <summary>
+    /// 특정 상태효과의 남은 지속시간 반환
+    /// </summary>
+    public float GetStatusDuration(StatusType statusType)
+    {
+        if (statusType == StatusType.Ice && isFrozen)
+        {
+            return freezeTimer;
+        }
+        
+        if (active.TryGetValue(statusType, out var state))
+        {
+            return state.duration;
+        }
+        
+        return 0f;
     }
 }
 

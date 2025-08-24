@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Walls
   - Grounds
+  - PlayerSpawn
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - Water
   - UI
   - 
-  - 
+  - Boss
   - Player
   - Enemy
   - Weapons
@@ -28,12 +29,12 @@ TagManager:
   - 
   - 
   - 
-  - Layer 0
-  - Layer 1
-  - Layer 2
-  - Layer 3
-  - 
-  - 
+  - Layer 0 Background
+  - Layer 1 Ground
+  - Layer 2 Object
+  - Layer 3 InnerWalls
+  - Layer 4 Walls
+  - Layer 5 Sky
   - 
   - 
   - 
@@ -45,14 +46,23 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Layer 1
+  - name: Background
     uniqueID: 2425651459
     locked: 0
-  - name: Layer 2
+  - name: Ground
     uniqueID: 4250941897
     locked: 0
-  - name: Layer 3
+  - name: Objects
     uniqueID: 4189426099
+    locked: 0
+  - name: Sky
+    uniqueID: 3047587657
+    locked: 0
+  - name: Characters
+    uniqueID: 3783098145
+    locked: 0
+  - name: UI
+    uniqueID: 654325733
     locked: 0
   m_RenderingLayers:
   - Default

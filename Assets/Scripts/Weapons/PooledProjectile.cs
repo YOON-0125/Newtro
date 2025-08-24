@@ -71,7 +71,7 @@ public class PooledProjectile : MonoBehaviour
     {
         if (Time.time >= spawnTime + lifetime)
         {
-            onHit?.Invoke(null);
+            // 수명이 다했을 때는 분열하지 않고 바로 제거
             Release();
         }
     }
@@ -90,7 +90,7 @@ public class PooledProjectile : MonoBehaviour
                     finalDamage *= sc.GetDamageTakenMultiplier(damageTag);
                     sc.ApplyStatus(statusEffect);
                 }
-                enemy.TakeDamage(finalDamage);
+                enemy.TakeDamage(finalDamage, damageTag);
                 onHit?.Invoke(enemy);
             }
 

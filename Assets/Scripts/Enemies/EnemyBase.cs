@@ -104,9 +104,12 @@ public abstract class EnemyBase : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>(); // SPUM의 UnitRoot에서 Animator 찾기
         audioSource = GetComponent<AudioSource>();
         statusController = GetComponent<StatusController>();
+        
+        // 디버그 로그 추가
+        Debug.Log($"[EnemyBase] Awake: {enemyName} - Animator 찾기 결과: {(animator != null ? animator.gameObject.name : "null")}");
         
         // 기본 설정
         if (audioSource == null)
@@ -130,10 +133,14 @@ public abstract class EnemyBase : MonoBehaviour
     {
         Initialize();
         events?.OnSpawn?.Invoke();
+        
+        // 전역 데미지 텍스트 시스템에 자동 구독
+        SubscribeToDamageTextSystem();
     }
     
     protected virtual void Update()
     {
+        Debug.Log($"[EnemyBase] Update 호출! - {enemyName}");
         if (isDead) return;
         
         UpdateBehavior();
@@ -212,34 +219,84 @@ public abstract class EnemyBase : MonoBehaviour
     /// </summary>
     protected virtual void UpdateAnimation()
     {
-        if (animator == null) return;
+        Debug.Log($"[EnemyBase] UpdateAnimation 호출됨! - {enemyName}");
+        Debug.Log($"[EnemyBase] {enemyName}: animator가 null인가? {animator == null}");
+        if (animator == null) 
+        {
+            Debug.LogWarning($"[EnemyBase] {enemyName}: animator가 null이므로 리턴!");
+            return;
+        }
         
-        // 매 프레임마다 SPUM 컴포넌트 찾기 (무식하지만 확실한 방법)
-        var spumController = GetComponentInChildren<SPUM_Prefabs>();
+        // 상세한 SPUM 컴포넌트 탐색
+        Debug.Log($"[EnemyBase] {enemyName}: GameObject 이름 - {gameObject.name}");
+        
+        // 1. 자기 자신에서 SPUM_Prefabs 찾기
+        var spumController = GetComponent<SPUM_Prefabs>();
         if (spumController != null)
         {
-            Debug.Log($"[EnemyBase] {enemyName}: SPUM 컨트롤러 발견!");
-            
+            Debug.Log($"[EnemyBase] {enemyName}: 자기 자신에서 SPUM_Prefabs 발견!");
+        }
+        else
+        {
+            Debug.Log($"[EnemyBase] {enemyName}: 자기 자신에 SPUM_Prefabs 없음");
+            // 2. 자식에서 찾기
+            spumController = GetComponentInChildren<SPUM_Prefabs>();
+            if (spumController != null)
+            {
+                Debug.Log($"[EnemyBase] {enemyName}: 자식에서 SPUM_Prefabs 발견! - {spumController.gameObject.name}");
+            }
+            else
+            {
+                Debug.Log($"[EnemyBase] {enemyName}: 자식에도 SPUM_Prefabs 없음");
+            }
+        }
+        
+        if (spumController != null)
+        {
             PlayerState targetState = GetCurrentAnimationState();
-            Debug.Log($"[EnemyBase] {enemyName}: 현재 상태 - {targetState}");
             
-            // SPUM 애니메이션 시도
+            // StateAnimationPairs가 비어있거나 해당 키가 없으면 강제 초기화
+            if (spumController.StateAnimationPairs == null || spumController.StateAnimationPairs.Count == 0 ||
+                !spumController.StateAnimationPairs.ContainsKey(targetState.ToString()))
+            {
+                Debug.LogWarning($"[EnemyBase] {enemyName}: SPUM 애니메이션 데이터 없음. 강제 초기화 시도");
+                
+                // 애니메이션 리스트 초기화
+                spumController.PopulateAnimationLists();
+                
+                // OverrideController 초기화 (안전하게)
+                try
+                {
+                    spumController.OverrideControllerInit();
+                }
+                catch (System.Exception e)
+                {
+                    Debug.LogError($"[EnemyBase] {enemyName}: OverrideController 초기화 실패: {e.Message}");
+                    UpdateAnimatorDirectly();
+                    return;
+                }
+                
+                // 초기화 후에도 없으면 기본 애니메이터 사용
+                if (!spumController.StateAnimationPairs.ContainsKey(targetState.ToString()))
+                {
+                    Debug.LogWarning($"[EnemyBase] {enemyName}: 초기화 후에도 '{targetState}' 애니메이션 없음. 기본 애니메이터 사용");
+                    UpdateAnimatorDirectly();
+                    return;
+                }
+            }
+            
             try
             {
                 spumController.PlayAnimation(targetState, 0);
-                Debug.Log($"[EnemyBase] {enemyName}: SPUM 애니메이션 재생 시도 - {targetState}");
             }
             catch (System.Exception e)
             {
                 Debug.LogError($"[EnemyBase] {enemyName}: SPUM 애니메이션 오류 - {e.Message}");
-                // 오류 발생 시 기본 애니메이터로 폴백
                 UpdateAnimatorDirectly();
             }
         }
         else
         {
-            Debug.Log($"[EnemyBase] {enemyName}: SPUM 컨트롤러 없음, 기본 애니메이터 사용");
-            // SPUM이 없는 일반 적들은 기존 애니메이터 파라미터 사용
             UpdateAnimatorDirectly();
         }
     }
@@ -261,7 +318,8 @@ public abstract class EnemyBase : MonoBehaviour
     protected virtual PlayerState GetCurrentAnimationState()
     {
         if (isDead) return PlayerState.DEATH;
-        if (currentState == EnemyState.Hurt) return PlayerState.DAMAGED;
+        // 피격 애니메이션 비활성화 (원상복구시 아래 주석 해제)
+        // if (currentState == EnemyState.Hurt) return PlayerState.DAMAGED;
         if (isAttacking) return PlayerState.ATTACK;
         if (rb.linearVelocity.magnitude > 0.1f) return PlayerState.MOVE;
         return PlayerState.IDLE;
@@ -383,6 +441,9 @@ public abstract class EnemyBase : MonoBehaviour
         events?.OnHealthChanged?.Invoke(currentHealth);
         events?.OnDamage?.Invoke(damageAmount);
         
+        // 데미지 타입에 맞는 데미지 텍스트 표시
+        ShowDamageTextBasedOnTag(damageAmount, tag);
+        
         PlaySound(hurtSound);
         
         if (currentHealth <= 0)
@@ -402,7 +463,7 @@ public abstract class EnemyBase : MonoBehaviour
     {
         // 짧은 피격 상태
         SetState(EnemyState.Hurt);
-        Invoke(nameof(RecoverFromHurt), 0.2f);
+        Invoke(nameof(RecoverFromHurt), 0.5f);
     }
     
     /// <summary>
@@ -431,6 +492,9 @@ public abstract class EnemyBase : MonoBehaviour
         events?.OnDeath?.Invoke();
         
         DropItems();
+        
+        // 사망 애니메이션 실행
+        UpdateAnimation();
         
         // 사망 애니메이션 후 파괴
         Invoke(nameof(DestroyEnemy), 2f);
@@ -603,6 +667,75 @@ public abstract class EnemyBase : MonoBehaviour
             {
                 Debug.LogError($"{gameObject.name}: PlayerHealth component not found on {other.name}!");
             }
+        }
+    }
+    
+    /// <summary>
+    /// 전역 데미지 텍스트 시스템에 구독
+    /// </summary>
+    private void SubscribeToDamageTextSystem()
+    {
+        if (events != null && events.OnDamage != null)
+        {
+            events.OnDamage.AddListener(OnDamageDealt);
+            Debug.Log($"[EnemyBase] {enemyName}: 데미지 텍스트 시스템에 구독 완료");
+        }
+    }
+    
+    /// <summary>
+    /// 데미지 이벤트 처리 (DamageTextManager 연동)
+    /// </summary>
+    private void OnDamageDealt(float damage)
+    {
+        // 적의 위치에 데미지 텍스트 표시 (기본값은 Physical)
+        DamageTextManager.Instance.ShowDamageText(transform.position, damage, DamageTextType.Physical);
+    }
+    
+    /// <summary>
+    /// 특정 데미지 타입으로 데미지 텍스트 표시
+    /// </summary>
+    public void ShowDamageTextWithType(float damage, DamageTextType damageType)
+    {
+        DamageTextManager.Instance.ShowDamageText(transform.position, damage, damageType);
+    }
+    
+    /// <summary>
+    /// DamageTag에 기반해 적절한 데미지 텍스트 표시
+    /// </summary>
+    private void ShowDamageTextBasedOnTag(float damage, DamageTag tag)
+    {
+        DamageTextType textType = DamageTextType.Physical; // 기본값
+        
+        // DamageTag에 따라 DamageTextType 변환
+        switch (tag)
+        {
+            case DamageTag.Fire:
+                textType = DamageTextType.Fire;
+                break;
+            case DamageTag.Lightning:
+                textType = DamageTextType.Electric;
+                break;
+            case DamageTag.Ice:
+                textType = DamageTextType.Ice;
+                break;
+            case DamageTag.Physical:
+            default:
+                textType = DamageTextType.Physical;
+                break;
+        }
+        
+        ShowDamageTextWithType(damage, textType);
+    }
+    
+    /// <summary>
+    /// 이벤트 해제 (메모리 누수 방지)
+    /// </summary>
+    protected virtual void OnDestroy()
+    {
+        if (events != null && events.OnDamage != null)
+        {
+            events.OnDamage.RemoveListener(OnDamageDealt);
+            Debug.Log($"[EnemyBase] {enemyName}: 데미지 텍스트 이벤트 해제 완료");
         }
     }
 }

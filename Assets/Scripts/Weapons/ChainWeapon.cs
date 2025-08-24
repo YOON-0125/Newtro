@@ -25,6 +25,8 @@ public class ChainWeapon : WeaponBase
     
     protected override void ExecuteAttack()
     {
+        Debug.Log($"[ChainWeapon] ⚡ 체인 라이트닝 발동! 레벨: {Level}, 기본데미지: {BaseDamage}, 고정보너스: {FlatDamageBonus}, 퍼센트보너스: {PercentDamageBonus:P1}, 최종데미지: {Damage}");
+        
         Transform firstTarget = FindNearestTargetFromPlayer();
         if (firstTarget == null)
         {
@@ -108,7 +110,22 @@ public class ChainWeapon : WeaponBase
         var enemy = target.GetComponent<EnemyBase>();
         if (enemy != null)
         {
-            enemy.TakeDamage(damage, damageTag);
+            float finalDamage = Damage;
+            
+            // 속성 효과 계산 (번개 저항/취약 등)
+            var statusController = enemy.GetComponent<StatusController>();
+            if (statusController != null)
+            {
+                float damageMultiplier = statusController.GetDamageTakenMultiplier(damageTag);
+                finalDamage *= damageMultiplier;
+                Debug.Log($"[ChainWeapon] 🎯 {target.name}에게 공격: 기본 {Damage} → 속성효과 적용 {finalDamage} (배율: x{damageMultiplier:F2})");
+            }
+            else
+            {
+                Debug.Log($"[ChainWeapon] 🎯 {target.name}에게 {finalDamage} 데미지 적용");
+            }
+            
+            enemy.TakeDamage(finalDamage, damageTag);
             
             // 상태효과 적용 (WeaponBase의 새 메서드 사용)
             ApplyStatusToTarget(target.gameObject);
@@ -182,6 +199,7 @@ public class ChainWeapon : WeaponBase
     
     protected override void OnLevelUp()
     {
+        float oldDamage = Damage;
         base.OnLevelUp();
         
         switch (level)
@@ -194,8 +212,10 @@ public class ChainWeapon : WeaponBase
             case 7: maxChainTargets = 6; break;
             case 8: chainDelay *= 0.7f; break;
             case 9: cooldown *= 0.7f; break;
-            case 10: maxChainTargets = 8; chainRange *= 1.5f; damage *= 1.5f; break;
+            case 10: maxChainTargets = 8; chainRange *= 1.5f; AddPercentDamageBonus(0.5f); break;
         }
+        
+        Debug.Log($"[ChainWeapon] ⬆️ 레벨업! Lv.{level} | 타겟수: {maxChainTargets}, 범위: {chainRange:F1}, 데미지: {oldDamage:F1} → {Damage:F1} | 상세: {GetDetailedDamageInfo()}");
     }
     
     protected override float GetAttackRange()

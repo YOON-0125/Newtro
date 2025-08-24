@@ -14,6 +14,10 @@ public class LevelUpManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI levelUpTitle;
     [SerializeField] private Transform upgradeOptionsContainer;
     [SerializeField] private GameObject upgradeOptionPrefab;
+    [SerializeField] private Button rerollButton;
+    [SerializeField] private TextMeshProUGUI rerollButtonText;
+    [SerializeField] private Button confirmButton;
+    [SerializeField] private TextMeshProUGUI confirmButtonText;
     
     [Header("배경")]
     [SerializeField] private GameObject backgroundOverlay;
@@ -27,6 +31,7 @@ public class LevelUpManager : MonoBehaviour
     [SerializeField] private AudioClip levelUpSound;
     [SerializeField] private AudioClip optionSelectSound;
     [SerializeField] private AudioClip optionHoverSound;
+    [SerializeField] private AudioClip rerollSound;
     
     // 이벤트
     [System.Serializable]
@@ -46,6 +51,8 @@ public class LevelUpManager : MonoBehaviour
     private GameManager gameManager;
     private AudioSource audioSource;
     private bool isLevelUpActive = false;
+    private int currentLevel = 1;
+    private UpgradeOptionUI selectedOption = null;
     
     // 싱글톤
     public static LevelUpManager Instance { get; private set; }
@@ -96,6 +103,23 @@ public class LevelUpManager : MonoBehaviour
         {
             backgroundImage.color = new Color(0, 0, 0, 0.8f); // 반투명 검정
         }
+        
+        // Reroll 버튼 설정
+        if (rerollButton != null)
+        {
+            Debug.Log("[LevelUpManager] ✅ Reroll 버튼 리스너 등록됨");
+            rerollButton.onClick.AddListener(OnRerollButtonClick);
+        }
+        else
+        {
+            Debug.LogWarning("[LevelUpManager] ❌ Reroll 버튼이 null입니다!");
+        }
+        
+        // Confirm 버튼 설정
+        if (confirmButton != null)
+        {
+            confirmButton.onClick.AddListener(OnConfirmButtonClick);
+        }
     }
     
     /// <summary>
@@ -142,6 +166,7 @@ public class LevelUpManager : MonoBehaviour
         if (isLevelUpActive) return;
         
         isLevelUpActive = true;
+        currentLevel = newLevel;
         
         // 게임 일시정지
         Time.timeScale = 0f;
@@ -158,6 +183,9 @@ public class LevelUpManager : MonoBehaviour
         
         // UI 표시
         ShowLevelUpPanel(newLevel);
+        
+        // 버튼들 활성화
+        SetupButtons();
         
         // 이벤트 발생
         events?.OnLevelUpStart?.Invoke();
@@ -224,7 +252,7 @@ public class LevelUpManager : MonoBehaviour
             // 제목 설정
             if (levelUpTitle != null)
             {
-                levelUpTitle.text = $"레벨 업! (Lv.{newLevel})";
+                levelUpTitle.text = $"LEVEL UP! (Lv.{newLevel})";
             }
             
             // 패널 애니메이션
@@ -262,23 +290,48 @@ public class LevelUpManager : MonoBehaviour
     }
     
     /// <summary>
-    /// 업그레이드 선택 처리 (UpgradeOptionUI에서 호출)
+    /// 옵션 선택 처리 (UpgradeOptionUI에서 호출)
     /// </summary>
-    public void SelectUpgrade(string upgradeId)
+    public void OnOptionSelected(UpgradeOptionUI optionUI)
     {
-        if (!isLevelUpActive) return;
+        if (!isLevelUpActive || optionUI == null) return;
+        
+        // 이전 선택 해제
+        if (selectedOption != null)
+        {
+            selectedOption.SetSelected(false);
+        }
+        
+        // 새로운 선택
+        selectedOption = optionUI;
+        selectedOption.SetSelected(true);
+        
+        // 확정 버튼 활성화
+        UpdateConfirmButton();
+        
+        // 사운드 재생
+        PlayOptionHoverSound();
+    }
+    
+    /// <summary>
+    /// 확정 버튼 클릭 처리
+    /// </summary>
+    private void OnConfirmButtonClick()
+    {
+        if (!isLevelUpActive || selectedOption == null) return;
         
         // 사운드 재생
         PlayOptionSelectSound();
         
         // 업그레이드 적용
-        if (upgradeSystem != null)
+        UpgradeOption upgrade = selectedOption.GetUpgradeOption();
+        if (upgradeSystem != null && upgrade != null)
         {
-            upgradeSystem.ApplyUpgrade(upgradeId);
+            upgradeSystem.ApplyUpgrade(upgrade.id);
         }
         
         // 이벤트 발생
-        events?.OnUpgradeSelected?.Invoke(upgradeId);
+        events?.OnUpgradeSelected?.Invoke(upgrade?.id ?? "");
         
         // 레벨업 종료
         EndLevelUp();
@@ -391,6 +444,14 @@ public class LevelUpManager : MonoBehaviour
         }
     }
     
+    private void PlayRerollSound()
+    {
+        if (audioSource != null && rerollSound != null)
+        {
+            audioSource.PlayOneShot(rerollSound);
+        }
+    }
+    
     /// <summary>
     /// 강제 레벨업 종료 (디버그용)
     /// </summary>
@@ -408,5 +469,146 @@ public class LevelUpManager : MonoBehaviour
     public bool IsLevelUpActive()
     {
         return isLevelUpActive;
+    }
+    
+    /// <summary>
+    /// 버튼들 설정
+    /// </summary>
+    private void SetupButtons()
+    {
+        // Reroll 버튼 설정
+        if (rerollButton != null)
+        {
+            rerollButton.gameObject.SetActive(true);
+            rerollButton.interactable = true;
+        }
+        
+        if (rerollButtonText != null)
+        {
+            rerollButtonText.text = "Reroll";
+        }
+        
+        // Confirm 버튼 설정
+        if (confirmButton != null)
+        {
+            confirmButton.gameObject.SetActive(true);
+            confirmButton.interactable = false; // 처음에는 비활성화
+        }
+        
+        if (confirmButtonText != null)
+        {
+            confirmButtonText.text = "Confirm";
+        }
+        
+        // 선택 초기화
+        selectedOption = null;
+    }
+    
+    /// <summary>
+    /// 확정 버튼 상태 업데이트
+    /// </summary>
+    private void UpdateConfirmButton()
+    {
+        if (confirmButton != null)
+        {
+            confirmButton.interactable = (selectedOption != null);
+        }
+    }
+    
+    /// <summary>
+    /// Reroll 버튼 클릭 이벤트
+    /// </summary>
+    private void OnRerollButtonClick()
+    {
+        Debug.Log("[LevelUpManager] 🎲 Reroll 버튼 클릭됨!");
+        
+        if (!isLevelUpActive) 
+        {
+            Debug.LogWarning("[LevelUpManager] ❌ 레벨업이 활성 상태가 아님!");
+            return;
+        }
+        
+        Debug.Log("[LevelUpManager] ✅ Reroll 실행 중...");
+        
+        // 사운드 재생
+        PlayRerollSound();
+        
+        // 새로운 옵션 생성
+        RegenerateUpgradeOptions();
+    }
+    
+    /// <summary>
+    /// 업그레이드 옵션 재생성
+    /// </summary>
+    private void RegenerateUpgradeOptions()
+    {
+        if (upgradeSystem == null) return;
+        
+        // 기존 옵션 UI 제거
+        ClearCurrentOptions();
+        
+        // 선택 상태 초기화
+        selectedOption = null;
+        UpdateConfirmButton();
+        
+        // 새 옵션 생성 (이전 옵션들 제외)
+        List<UpgradeOption> newOptions = upgradeSystem.GenerateNewUpgradeOptions(currentLevel);
+        
+        foreach (var option in newOptions)
+        {
+            CreateUpgradeOptionUI(option);
+        }
+        
+        Debug.Log($"[LevelUpManager] Reroll 완료 - 새로운 {newOptions.Count}개 옵션 생성");
+    }
+    
+    /// <summary>
+    /// 개별 옵션 리롤
+    /// </summary>
+    public void RerollSingleOption(UpgradeOptionUI optionToReroll)
+    {
+        if (upgradeSystem == null || optionToReroll == null) return;
+        
+        Debug.Log($"[LevelUpManager] 🎲 개별 옵션 리롤 시작");
+        
+        // 현재 옵션 가져오기
+        UpgradeOption currentOption = optionToReroll.GetUpgradeOption();
+        if (currentOption == null) return;
+        
+        // 현재 화면에 표시된 모든 옵션들 수집
+        List<UpgradeOption> currentDisplayedOptions = new List<UpgradeOption>();
+        foreach (var optionUI in currentOptionUIs)
+        {
+            if (optionUI != null && optionUI.GetUpgradeOption() != null)
+            {
+                currentDisplayedOptions.Add(optionUI.GetUpgradeOption());
+            }
+        }
+        
+        Debug.Log($"[LevelUpManager] 📋 현재 표시된 옵션 수: {currentDisplayedOptions.Count}");
+        Debug.Log($"[LevelUpManager] 🚫 제외할 옵션들: {string.Join(", ", currentDisplayedOptions.ConvertAll(o => o.displayName))}");
+        
+        // 새로운 옵션 생성 (현재 옵션 제외)
+        UpgradeOption newOption = upgradeSystem.GenerateSingleNewOption(currentLevel, currentOption.id);
+        
+        if (newOption != null)
+        {
+            // 옵션 교체
+            optionToReroll.ReplaceWithNewOption(newOption);
+            
+            // 선택 상태 해제 (리롤된 옵션은 선택 해제)
+            if (selectedOption == optionToReroll)
+            {
+                selectedOption = null;
+                optionToReroll.SetSelected(false);
+                UpdateConfirmButton();
+            }
+            
+            Debug.Log($"[LevelUpManager] ✅ 개별 리롤 완료: {currentOption.displayName} → {newOption.displayName}");
+        }
+        else
+        {
+            Debug.LogWarning($"[LevelUpManager] ❌ 새로운 옵션 생성 실패");
+        }
     }
 }

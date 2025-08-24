@@ -37,16 +37,16 @@ public class DualBladeSkeleton : EnemyBase
     {
         base.Initialize();
         
-        // 듀얼 블레이드 스켈레톤 초기 스탯 설정
+        // 듀얼 블레이드 스켈레톤 초기 스탯 설정 (Inspector 설정 사용)
         enemyName = "Dual Blade Skeleton";
-        maxHealth = 80f;
-        currentHealth = maxHealth;
-        moveSpeed = 4f; // 빠른 이동
-        damage = comboAttackDamage;
-        attackRange = 2f;
-        attackCooldown = 2.5f;
-        detectionRange = 12f; // 넓은 감지 범위
-        expValue = 40;
+        // maxHealth = 80f; // Inspector 설정 사용
+        // currentHealth = maxHealth; // 자동 설정됨
+        // moveSpeed = 4f; // Inspector 설정 사용
+        // damage = comboAttackDamage; // Inspector 설정 사용
+        // attackRange = 2f; // Inspector 설정 사용
+        // attackCooldown = 2.5f; // Inspector 설정 사용
+        // detectionRange = 12f; // Inspector 설정 사용
+        // expValue = 40; // Inspector 설정 사용
         
         // 블레이드 트레일 설정
         SetupBladeTrails();

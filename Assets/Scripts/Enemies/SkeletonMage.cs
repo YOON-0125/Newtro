@@ -34,16 +34,16 @@ public class SkeletonMage : EnemyBase
     {
         base.Initialize();
         
-        // 스켈레톤 마법사 초기 스탯 설정
+        // 스켈레톤 마법사 초기 스탯 설정 (Inspector 설정 사용)
         enemyName = "Skeleton Mage";
-        maxHealth = 35f;
-        currentHealth = maxHealth;
-        moveSpeed = 1.5f; // 느림
-        damage = projectileDamage;
-        attackRange = 8f; // 원거리
-        attackCooldown = 2f;
-        detectionRange = 10f;
-        expValue = 25;
+        // maxHealth = 35f; // Inspector 설정 사용
+        // currentHealth = maxHealth; // 자동 설정됨
+        // moveSpeed = 1.5f; // Inspector 설정 사용
+        // damage = projectileDamage; // Inspector 설정 사용
+        // attackRange = 8f; // Inspector 설정 사용
+        // attackCooldown = 2f; // Inspector 설정 사용
+        // detectionRange = 10f; // Inspector 설정 사용
+        // expValue = 25; // Inspector 설정 사용
         
         // 캐스팅 포인트 설정
         if (castPoint == null)

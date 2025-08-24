@@ -25,7 +25,7 @@ public class RainingFire : WeaponBase
     {
         base.InitializeWeapon();
         cooldown = 1f / fallRate;
-        damage = impactDamage;
+        baseDamage = impactDamage;
         if (fireballPrefab == null)
         {
             fireballPrefab = new GameObject("Fireball");
@@ -83,6 +83,7 @@ public class RainingFire : WeaponBase
         field.ConfigureEffect(DamageTag.Fire, effect);
     }
 
+    [System.Obsolete("Use AddPercentDamageBonus instead")]
     public override void ApplyDamageMultiplier(float m)
     {
         base.ApplyDamageMultiplier(m);

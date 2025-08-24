@@ -37,8 +37,22 @@ public class SPUM_Prefabs : MonoBehaviour
     public void OverrideControllerInit()
     {
         Animator animator = _anim;
-        OverrideController = new AnimatorOverrideController();
-        OverrideController.runtimeAnimatorController= animator.runtimeAnimatorController;
+        
+        // 이미 OverrideController인 경우 중첩 방지
+        if (animator.runtimeAnimatorController is AnimatorOverrideController)
+        {
+            Debug.LogWarning($"[SPUM_Prefabs] {gameObject.name}: 이미 OverrideController가 설정되어 있습니다.");
+            return;
+        }
+        
+        // 기본 AnimatorController가 없는 경우 처리
+        if (animator.runtimeAnimatorController == null)
+        {
+            Debug.LogError($"[SPUM_Prefabs] {gameObject.name}: RuntimeAnimatorController가 없습니다!");
+            return;
+        }
+        
+        OverrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
 
         // 모든 애니메이션 클립을 가져옵니다
         AnimationClip[] clips = animator.runtimeAnimatorController.animationClips;
@@ -49,7 +63,7 @@ public class SPUM_Prefabs : MonoBehaviour
             OverrideController[clip.name] = clip;
         }
 
-        animator.runtimeAnimatorController= OverrideController;
+        animator.runtimeAnimatorController = OverrideController;
         foreach (PlayerState state in Enum.GetValues(typeof(PlayerState)))
         {
             var stateText = state.ToString();
@@ -135,6 +149,7 @@ public class SPUM_Prefabs : MonoBehaviour
                     //StateAnimationPairs[stateType] = ATTACK_List;
                     break;
                 case "DAMAGED":
+                    Debug.Log($"[SPUM_DEBUG] Attempting to load DAMAGED clip. Original clipPath: {orderedClips.FirstOrDefault()?.ClipPath}");
                     DAMAGED_List.AddRange(orderedClips.Select(clip => LoadAnimationClip(clip.ClipPath)));
                     //StateAnimationPairs[stateType] = DAMAGED_List;
                     break;
@@ -191,12 +206,14 @@ public class SPUM_Prefabs : MonoBehaviour
     }
     AnimationClip LoadAnimationClip(string clipPath)
     {
-        // "Animations" 폴더에서 애니메이션 클립 로드
-        AnimationClip clip = Resources.Load<AnimationClip>(clipPath.Replace(".anim", ""));
+        // Remove ".anim" extension
+        string resourcePath = clipPath.Replace(".anim", "");
+        
+        AnimationClip clip = Resources.Load<AnimationClip>(resourcePath);
         
         if (clip == null)
         {
-            Debug.LogWarning($"Failed to load animation clip '{clipPath}'.");
+            Debug.LogWarning($"Failed to load animation clip '{clipPath}'. Tried loading as '{resourcePath}'.");
         }
         
         return clip;

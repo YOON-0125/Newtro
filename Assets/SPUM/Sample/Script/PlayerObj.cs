@@ -23,14 +23,31 @@ public class PlayerObj : MonoBehaviour
     private Vector2 inputDirection;
     void Start()
     {
+        InitializeSPUM();
+    }
+    
+    /// <summary>
+    /// SPUM 컴포넌트 초기화
+    /// </summary>
+    void InitializeSPUM()
+    {
         if(_prefabs == null )
         {
             _prefabs = transform.GetChild(0).GetComponent<SPUM_Prefabs>();
+            if (_prefabs == null)
+            {
+                Debug.LogError($"[PlayerObj] {gameObject.name}: SPUM_Prefabs 컴포넌트를 찾을 수 없습니다!");
+                return;
+            }
+            
             if(!_prefabs.allListsHaveItemsExist()){
                 _prefabs.PopulateAnimationLists();
             }
         }
+        
         _prefabs.OverrideControllerInit();
+        
+        // IndexPair Dictionary 초기화
         foreach (PlayerState state in Enum.GetValues(typeof(PlayerState)))
         {
             IndexPair[state] = 0;
@@ -51,6 +68,21 @@ public class PlayerObj : MonoBehaviour
         IndexPair[state] = index;
     }
     public void PlayStateAnimation(PlayerState state){
+        // IndexPair Dictionary에 키가 없는 경우 안전하게 처리
+        if (!IndexPair.ContainsKey(state))
+        {
+            Debug.LogWarning($"[PlayerObj] IndexPair에 '{state}' 키가 없습니다. 0으로 초기화합니다.");
+            IndexPair[state] = 0;
+        }
+        
+        // _prefabs가 null인지 확인
+        if (_prefabs == null)
+        {
+            Debug.LogError($"[PlayerObj] _prefabs가 null입니다. 초기화를 다시 시도합니다.");
+            InitializeSPUM();
+            return;
+        }
+        
         _prefabs.PlayAnimation(state, IndexPair[state]);
     }
     void Update()

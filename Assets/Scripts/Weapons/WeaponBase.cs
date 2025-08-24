@@ -8,13 +8,17 @@ public abstract class WeaponBase : MonoBehaviour
 {
     [Header("무기 기본 정보")]
     [SerializeField] protected string weaponName;
-    [SerializeField] protected float damage = 10f;
+    [SerializeField] protected float baseDamage = 10f; // 기본 데미지 (Inspector 설정)
     [SerializeField] protected float cooldown = 1f;
     [SerializeField] protected float range = 10f;
     [SerializeField] protected int level = 1;
     [SerializeField] protected int maxLevel = 10;
     [SerializeField] protected DamageTag damageTag = DamageTag.Physical;
     [SerializeField] protected StatusEffect statusEffect;
+    
+    [Header("데미지 보너스 (런타임)")]
+    [SerializeField] protected float flatDamageBonus = 0f; // 고정 데미지 보너스 (레벨업, 유물)
+    [SerializeField] protected float percentDamageBonus = 0f; // 퍼센트 데미지 보너스 (전역 배율)
     
     [Header("사운드")]
     [SerializeField] protected AudioClip attackSound;
@@ -38,13 +42,17 @@ public abstract class WeaponBase : MonoBehaviour
     
     // 프로퍼티
     public string WeaponName => weaponName;
-    public float Damage => damage;
+    public float BaseDamage => baseDamage;
+    public float FlatDamageBonus => flatDamageBonus;
+    public float PercentDamageBonus => percentDamageBonus;
+    public float Damage => DamageCalculator.Calculate(baseDamage, flatDamageBonus, percentDamageBonus);
     public float Cooldown => cooldown;
     public float Range { get => range; set => range = value; }
     public int Level => level;
     public int MaxLevel => maxLevel;
     public bool CanAttack => Time.time >= lastAttackTime + cooldown;
     public bool IsMaxLevel => level >= maxLevel;
+    public DamageTag DamageTag => damageTag;
     
     protected virtual void Awake()
     {
@@ -73,8 +81,24 @@ public abstract class WeaponBase : MonoBehaviour
     /// </summary>
     public virtual bool TryAttack()
     {
+        if (weaponName == "Fireball")
+        {
+            Debug.Log($"[WeaponBase] 🔥 Fireball TryAttack - CanAttack: {CanAttack}, isAttacking: {isAttacking}, Time: {Time.time}, lastAttackTime: {lastAttackTime}, cooldown: {cooldown}");
+        }
+        
         if (!CanAttack || isAttacking)
+        {
+            if (weaponName == "Fireball")
+            {
+                Debug.Log($"[WeaponBase] ❌ Fireball 공격 조건 실패 - CanAttack: {CanAttack}, isAttacking: {isAttacking}");
+            }
             return false;
+        }
+
+        if (weaponName == "Fireball")
+        {
+            Debug.Log($"[WeaponBase] ✅ Fireball 공격 시작!");
+        }
 
         var relicManager = FindObjectOfType<RelicManager>();
         if (relicManager != null)
@@ -126,16 +150,38 @@ public abstract class WeaponBase : MonoBehaviour
     /// </summary>
     protected virtual void OnLevelUp()
     {
-        // 기본적으로 데미지 10% 증가
-        damage *= 1.1f;
+        // 무기별 레벨업 로직은 각 무기에서 구현
+        // UpgradeSystem의 value 설정값만 사용
     }
 
     /// <summary>
-    /// 데미지 배수 적용
+    /// 고정 데미지 보너스 추가 (무기별 레벨업, 유물 등)
     /// </summary>
-    public virtual void ApplyDamageMultiplier(float m)
+    public virtual void AddFlatDamageBonus(float amount)
     {
-        damage *= m;
+        flatDamageBonus += amount;
+        Debug.Log($"[WeaponBase] {weaponName} 고정 데미지 보너스 추가: +{amount} (총 {flatDamageBonus})");
+    }
+    
+    /// <summary>
+    /// 퍼센트 데미지 보너스 추가 (전역 데미지 증가)
+    /// </summary>
+    public virtual void AddPercentDamageBonus(float percent)
+    {
+        percentDamageBonus += percent;
+        Debug.Log($"[WeaponBase] {weaponName} 퍼센트 데미지 보너스 추가: +{percent:P1} (총 {percentDamageBonus:P1})");
+    }
+    
+    /// <summary>
+    /// 기존 호환성을 위한 데미지 배수 적용 (Deprecated)
+    /// </summary>
+    [System.Obsolete("Use AddPercentDamageBonus instead")]
+    public virtual void ApplyDamageMultiplier(float multiplier)
+    {
+        // 기존 시스템 호환성: 1.2배 = +20% 보너스
+        float percentBonus = multiplier - 1f;
+        AddPercentDamageBonus(percentBonus);
+        Debug.LogWarning($"[WeaponBase] {weaponName} ApplyDamageMultiplier is deprecated. Use AddPercentDamageBonus instead.");
     }
 
     /// <summary>
@@ -162,6 +208,10 @@ public abstract class WeaponBase : MonoBehaviour
     /// </summary>
     protected virtual void OnAttackComplete()
     {
+        if (weaponName == "Fireball")
+        {
+            Debug.Log($"[WeaponBase] 🔥 Fireball 공격 완료! isAttacking 상태 해제");
+        }
         isAttacking = false;
     }
     
@@ -213,7 +263,7 @@ public abstract class WeaponBase : MonoBehaviour
         {
             case DamageTag.Fire:
                 effect.type = StatusType.Fire;
-                effect.magnitude = damage * 0.2f; // 데미지의 20%
+                effect.magnitude = Damage * 0.2f; // 데미지의 20%
                 effect.duration = 3f;
                 effect.tickInterval = 0.5f;
                 effect.stacks = 1;
@@ -242,7 +292,19 @@ public abstract class WeaponBase : MonoBehaviour
     /// </summary>
     public virtual string GetWeaponInfo()
     {
-        return $"{weaponName} Lv.{level}\nDamage: {damage:F1}\nCooldown: {cooldown:F1}s";
+        float finalDamage = Damage;
+        return $"{weaponName} Lv.{level}\n" +
+               $"데미지: {finalDamage:F1} ({baseDamage:F1}+{flatDamageBonus:F1}×{(1f+percentDamageBonus):F2})\n" +
+               $"쿨다운: {cooldown:F1}s";
+    }
+    
+    /// <summary>
+    /// 상세 데미지 정보 반환 (디버그용)
+    /// </summary>
+    public virtual string GetDetailedDamageInfo()
+    {
+        return $"[{weaponName}] 기본: {baseDamage:F1}, 고정보너스: {flatDamageBonus:F1}, " +
+               $"퍼센트보너스: {percentDamageBonus:P1}, 최종: {Damage:F1}";
     }
     
     /// <summary>

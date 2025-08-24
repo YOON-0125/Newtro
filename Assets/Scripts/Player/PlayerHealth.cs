@@ -40,9 +40,11 @@ public class PlayerHealth : MonoBehaviour
     private float lastDamageTime;
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
+    private SPUM_Prefabs spumController;
     
     // 프로퍼티
     public float Health => currentHealth;
+    public float CurrentHealth => currentHealth;
     public float MaxHealth => maxHealth;
     public float HealthPercentage => currentHealth / maxHealth;
     public bool IsDead => isDead;
@@ -53,6 +55,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = maxHealth;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        spumController = GetComponentInChildren<SPUM_Prefabs>();
         
         if (spriteRenderer != null)
         {
@@ -122,6 +125,12 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log($"PlayerHealth: OnHealthChanged null: {events.OnHealthChanged == null}");
             events.OnHealthChanged?.Invoke(currentHealth);
             events.OnDamageTaken?.Invoke(finalDamage);
+        }
+        
+        // SPUM 애니메이션 재생
+        if (spumController != null)
+        {
+            spumController.PlayAnimation(PlayerState.DAMAGED, 0);
         }
         
         // 데미지 시각 효과
@@ -199,6 +208,12 @@ public class PlayerHealth : MonoBehaviour
         if (isDead) return;
         
         isDead = true;
+        
+        // SPUM 애니메이션 재생
+        if (spumController != null)
+        {
+            spumController.PlayAnimation(PlayerState.DEATH, 0);
+        }
         
         // 게임 매니저에 사망 알림
         var gameManager = FindObjectOfType<GameManager>();
@@ -302,6 +317,35 @@ public class PlayerHealth : MonoBehaviour
     public void SetDamageReduction(float reduction)
     {
         damageReduction = Mathf.Clamp01(reduction);
+    }
+    
+    /// <summary>
+    /// 최대 체력 설정 (영구 업그레이드용)
+    /// </summary>
+    /// <param name="newMaxHealth">새로운 최대 체력</param>
+    public void SetMaxHealth(int newMaxHealth)
+    {
+        float healthRatio = (float)currentHealth / maxHealth;
+        maxHealth = Mathf.Max(1, newMaxHealth);
+        
+        // 체력바 UI 업데이트
+        events?.OnHealthChanged?.Invoke(currentHealth);
+        
+        Debug.Log($"[PlayerHealth] 최대 체력 설정: {maxHealth} (하트 {maxHealth/4}개)");
+    }
+    
+    /// <summary>
+    /// 현재 체력 직접 설정 (영구 업그레이드용)
+    /// </summary>
+    /// <param name="newCurrentHealth">새로운 현재 체력</param>
+    public void SetCurrentHealth(int newCurrentHealth)
+    {
+        currentHealth = Mathf.Clamp(newCurrentHealth, 0, maxHealth);
+        
+        // 체력바 UI 업데이트
+        events?.OnHealthChanged?.Invoke(currentHealth);
+        
+        Debug.Log($"[PlayerHealth] 현재 체력 설정: {currentHealth}/{maxHealth}");
     }
     
     /// <summary>

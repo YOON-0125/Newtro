@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5110881566676947707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8937088237681638223}
+  - component: {fileID: 7559340964525286306}
+  m_Layer: 0
+  m_Name: ChainWeapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8937088237681638223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5110881566676947707}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.217601, y: 3.2269065, z: -0.16682334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7559340964525286306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5110881566676947707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfb787d490dc0df4a837dc308fa3e1fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponName: ChainLightning
+  damage: 8
+  cooldown: 1
+  range: 10
+  level: 1
+  maxLevel: 10
+  damageTag: 3
+  statusEffect:
+    type: 2
+    magnitude: 0
+    duration: 0
+    tickInterval: 0
+    stacks: 0
+  attackSound: {fileID: 0}
+  events:
+    OnAttack:
+      m_PersistentCalls:
+        m_Calls: []
+    OnLevelUp:
+      m_PersistentCalls:
+        m_Calls: []
+    OnMaxLevel:
+      m_PersistentCalls:
+        m_Calls: []
+  maxChainTargets: 3
+  chainRange: 10
+  chainDelay: 0.1
+  chainEffectPrefab: {fileID: 178460, guid: 4c25fae1a0b92964290fd717a761db6a, type: 3}
+  effectDuration: 0.3

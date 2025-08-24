@@ -63,6 +63,31 @@ public class PlayerMovement : MonoBehaviour
     
     private void Awake()
     {
+        // DontDestroyOnLoad 플레이어 확인
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        GameObject dontDestroyPlayer = null;
+        
+        // DontDestroyOnLoad 플레이어가 있는지 확인
+        foreach (GameObject player in players)
+        {
+            if (player.scene.name == "DontDestroyOnLoad")
+            {
+                dontDestroyPlayer = player;
+                break;
+            }
+        }
+        
+        // 이미 DontDestroyOnLoad 플레이어가 있으면 새로운 것 제거
+        if (dontDestroyPlayer != null && dontDestroyPlayer != gameObject)
+        {
+            Debug.Log("[Player] 씬에 있는 중복 플레이어 제거");
+            Destroy(gameObject);
+            return;
+        }
+        
+        // 씬 전환 시 플레이어 유지
+        DontDestroyOnLoad(gameObject);
+        
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         
@@ -70,6 +95,8 @@ public class PlayerMovement : MonoBehaviour
         rb.gravityScale = 0f;
         rb.linearDamping = 0f;
         rb.freezeRotation = true;
+        
+        Debug.Log($"[Player] DontDestroyOnLoad 설정 완료 - 오브젝트: {gameObject.name}, 태그: {gameObject.tag}");
     }
     
     private void Update()

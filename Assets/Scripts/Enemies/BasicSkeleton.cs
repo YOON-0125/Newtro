@@ -127,7 +127,7 @@ public class BasicSkeleton : EnemyBase
         
         Collider2D other = collision.collider;
         
-        // 플레이어와 접촉 시 데미지
+        // 플레이어와 접촉 시 데미지 (기본 적과 다른 처리를 할 때만 오버라이드)
         if (other.CompareTag("Player"))
         {
             // 접촉 데미지 쿨다운 체크
@@ -143,9 +143,10 @@ public class BasicSkeleton : EnemyBase
                     events?.OnAttack?.Invoke();
                 }
             }
+            return; // 중복 데미지 방지를 위해 부모 호출 안 함
         }
         
-        // 부모 클래스의 충돌 처리도 호출
+        // 플레이어가 아닌 경우에만 부모 클래스 호출
         base.OnCollisionEnter2D(collision);
     }
     

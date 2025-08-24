@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4714207661158409907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5828054261453513577}
+  - component: {fileID: 5888699107244316697}
+  - component: {fileID: 3966579763176184548}
+  - component: {fileID: 5373929223501477043}
+  - component: {fileID: 6468475351036365929}
+  - component: {fileID: 8532927945445374753}
+  m_Layer: 0
+  m_Name: SystemManagers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5828054261453513577
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4714207661158409907}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.638195, y: 61.24304, z: -12.989835}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5888699107244316697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4714207661158409907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0be46818d8ce96e45aacd8bed9c9f342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentGold: 0
+  enableDebugLogs: 1
+--- !u!114 &3966579763176184548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4714207661158409907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b507af1decd655a4d91ca2504ee17b41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  availableUpgrades:
+  - type: 0
+    displayName: "\uAC15\uC778\uD55C \uC721\uCCB4"
+    description: "\uCD5C\uB300 \uCCB4\uB825\uC744 1\uD558\uD2B8 \uC99D\uAC00\uC2DC\uD0B5\uB2C8\uB2E4"
+    cost: 2500
+    effectValue: 4
+    isPercentage: 0
+    maxLevel: 7
+    costMultiplier: 1.3
+  - type: 1
+    displayName: "\uAC15\uB825\uD55C \uD0C0\uACA9"
+    description: "\uBAA8\uB4E0 \uB370\uBBF8\uC9C0\uB97C 10% \uC99D\uAC00\uC2DC\uD0B5\uB2C8\uB2E4"
+    cost: 2500
+    effectValue: 0.1
+    isPercentage: 1
+    maxLevel: 10
+    costMultiplier: 1.25
+  - type: 2
+    displayName: "\uC2E0\uC18D\uD55C \uBC1C\uAC78\uC74C"
+    description: "\uC774\uB3D9\uC18D\uB3C4\uB97C 10% \uC99D\uAC00\uC2DC\uD0B5\uB2C8\uB2E4"
+    cost: 2500
+    effectValue: 0.1
+    isPercentage: 1
+    maxLevel: 8
+    costMultiplier: 1.2
+  - type: 2
+    displayName: "\uC2E0\uC18D\uD55C \uBC1C\uAC78\uC74C"
+    description: "\uC774\uB3D9\uC18D\uB3C4\uB97C 10% \uC99D\uAC00\uC2DC\uD0B5\uB2C8\uB2E4"
+    cost: 2500
+    effectValue: 0.1
+    isPercentage: 1
+    maxLevel: 8
+    costMultiplier: 1.2
+  enableDebugLogs: 1
+--- !u!114 &5373929223501477043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4714207661158409907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 219ca8cf33ca9c947b7ca1a591f0d0db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gachaCost: 5000
+  commonChance: 60
+  rareChance: 25
+  epicChance: 12
+  legendaryChance: 3
+  commonArtifacts: []
+  rareArtifacts: []
+  epicArtifacts: []
+  legendaryArtifacts: []
+  enableDebugLogs: 1
+  showProbabilityCheck: 1
+--- !u!114 &6468475351036365929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4714207661158409907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdd0fe65bd0a42d48b009dd205b8e93a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableDebugLogs: 1
+--- !u!114 &8532927945445374753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4714207661158409907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5ef0bff7e15764c9637e5bc250e760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableDebugLog: 1

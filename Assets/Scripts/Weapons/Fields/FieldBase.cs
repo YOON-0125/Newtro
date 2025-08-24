@@ -70,12 +70,36 @@ public class FieldBase : MonoBehaviour
 
     protected virtual void Tick()
     {
-        foreach (var enemy in targets)
+        // HashSet을 배열로 복사해서 순회 중 수정 문제 방지
+        var enemyArray = new EnemyBase[targets.Count];
+        targets.CopyTo(enemyArray);
+        
+        var deadEnemies = new List<EnemyBase>();
+        var aliveEnemies = new List<EnemyBase>();
+        
+        // 배열을 순회하면서 살아있는 적과 죽은 적 분류
+        foreach (var enemy in enemyArray)
         {
-            if (enemy != null)
+            if (enemy == null || enemy.IsDead)
             {
-                ApplyTick(enemy);
+                deadEnemies.Add(enemy);
             }
+            else
+            {
+                aliveEnemies.Add(enemy);
+            }
+        }
+        
+        // 죽은 적들을 HashSet에서 제거
+        foreach (var deadEnemy in deadEnemies)
+        {
+            targets.Remove(deadEnemy);
+        }
+        
+        // 살아있는 적들에게만 데미지 적용
+        foreach (var enemy in aliveEnemies)
+        {
+            ApplyTick(enemy);
         }
     }
 

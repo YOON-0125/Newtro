@@ -39,7 +39,10 @@ public class EnemyManager : MonoBehaviour
     }
     
     [Header("이벤트")]
-    [SerializeField] private EnemyManagerEvents events;
+    [SerializeField] private EnemyManagerEvents _events;
+    
+    // Public 프로퍼티로 events 노출
+    public EnemyManagerEvents events => _events;
     
     // 내부 변수
     private List<EnemyBase> activeEnemies = new List<EnemyBase>();
@@ -148,7 +151,7 @@ public class EnemyManager : MonoBehaviour
         currentDifficultyMultiplier = Mathf.Pow(difficultyScale, currentWave - 1);
         nextWaveTime = Time.time + waveInterval;
         
-        events?.OnWaveStart?.Invoke(currentWave);
+        _events?.OnWaveStart?.Invoke(currentWave);
         
         Debug.Log($"웨이브 {currentWave} 시작! 난이도 배율: {currentDifficultyMultiplier:F2}");
     }
@@ -308,8 +311,8 @@ public class EnemyManager : MonoBehaviour
             // 적 이벤트 연결
             enemy.events.OnDeath.AddListener(() => OnEnemyDied(enemy));
             
-            events?.OnEnemySpawned?.Invoke(enemy);
-            events?.OnEnemyCountChanged?.Invoke(activeEnemies.Count);
+            _events?.OnEnemySpawned?.Invoke(enemy);
+            _events?.OnEnemyCountChanged?.Invoke(activeEnemies.Count);
             
             return enemy;
         }
@@ -377,8 +380,8 @@ public class EnemyManager : MonoBehaviour
         if (activeEnemies.Contains(enemy))
         {
             activeEnemies.Remove(enemy);
-            events?.OnEnemyDestroyed?.Invoke(enemy);
-            events?.OnEnemyCountChanged?.Invoke(activeEnemies.Count);
+            _events?.OnEnemyDestroyed?.Invoke(enemy);
+            _events?.OnEnemyCountChanged?.Invoke(activeEnemies.Count);
         }
     }
     

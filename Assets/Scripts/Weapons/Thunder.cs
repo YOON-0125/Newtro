@@ -22,7 +22,7 @@ public class Thunder : WeaponBase
     protected override void InitializeWeapon()
     {
         base.InitializeWeapon();
-        damage = strikeDamage;
+        baseDamage = strikeDamage;
         if (fieldPrefab == null)
         {
             fieldPrefab = new GameObject("ThunderField");
@@ -100,6 +100,7 @@ public class Thunder : WeaponBase
         }
     }
 
+    [System.Obsolete("Use AddPercentDamageBonus instead")]
     public override void ApplyDamageMultiplier(float m)
     {
         base.ApplyDamageMultiplier(m);

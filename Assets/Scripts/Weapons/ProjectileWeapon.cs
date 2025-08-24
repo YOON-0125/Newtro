@@ -91,7 +91,7 @@ public class ProjectileWeapon : WeaponBase
         if (projectileComponent == null)
             projectileComponent = projectile.AddComponent<Projectile>();
             
-        projectileComponent.Initialize(damage, projectileLifetime, damageTag, statusEffect);
+        projectileComponent.Initialize(Damage, projectileLifetime, damageTag, statusEffect);
         // 회전 설정 (발사 방향으로)
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         projectile.transform.rotation = Quaternion.Euler(0, 0, angle);
@@ -138,7 +138,7 @@ public class ProjectileWeapon : WeaponBase
             case 10:
                 projectileCount = 5;
                 spreadAngle = 45f;
-                damage *= 1.5f;
+                AddPercentDamageBonus(0.5f);
                 break;
         }
     }

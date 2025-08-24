@@ -16,11 +16,14 @@ public class ElectricField : FieldBase
     {
         this.damage = damage;
         this.tickInterval = tickInterval;
+        Debug.Log($"[ElectricField] 💥 펄스 발동! 데미지: {damage}, 취약성배율: {vulnerabilityMultiplier}");
         Tick();
     }
 
     protected override void ApplyTick(EnemyBase enemy)
     {
-        ApplyDamage(enemy, damage * vulnerabilityMultiplier);
+        float finalDamage = damage * vulnerabilityMultiplier;
+        Debug.Log($"[ElectricField] ⚡ 전기장 데미지! 대상: {enemy.name}, 기본: {damage:F1}, 취약성: {vulnerabilityMultiplier:F2}, 최종: {finalDamage:F1}");
+        ApplyDamage(enemy, finalDamage);
     }
 }

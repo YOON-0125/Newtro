@@ -10,6 +10,7 @@ public class ExpOrb : MonoBehaviour
     public float magnetRange = 3f;
     public float magnetSpeed = 8f;
     [SerializeField] private float lifetime = 30f;
+    [SerializeField] private LayerMask playerLayer = 1; // Player 레이어만
     
     [Header("시각 효과")]
     [SerializeField] private float bobSpeed = 2f;
@@ -28,17 +29,17 @@ public class ExpOrb : MonoBehaviour
         spawnTime = Time.time;
         
         // 디버그 로그 추가
-        Debug.Log($"[ExpOrb] useCustomVisuals = {useCustomVisuals}");
+        // Debug.Log($"[ExpOrb] useCustomVisuals = {useCustomVisuals}");
         
         // 시각적 설정 (프리팹을 사용하지 않는 경우에만)
         if (!useCustomVisuals)
         {
-            Debug.Log("[ExpOrb] 기본 구체 생성");
+            // Debug.Log("[ExpOrb] 기본 구체 생성");
             SetupVisuals();
         }
         else
         {
-            Debug.Log("[ExpOrb] 커스텀 비주얼 사용 - SetupVisuals 스킵");
+            // Debug.Log("[ExpOrb] 커스텀 비주얼 사용 - SetupVisuals 스킵");
         }
         
         // 프리팹 사용 시에도 콜라이더는 확인
@@ -195,7 +196,7 @@ public class ExpOrb : MonoBehaviour
     /// </summary>
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log($"[ExpOrb] OnTriggerEnter2D - 충돌한 오브젝트: {other.name}, 태그: {other.tag}");
+        // Debug.Log($"[ExpOrb] OnTriggerEnter2D - 충돌한 오브젝트: {other.name}, 태그: {other.tag}");
         
         if (other.CompareTag("Player"))
         {
@@ -204,7 +205,7 @@ public class ExpOrb : MonoBehaviour
         }
         else
         {
-            Debug.Log($"[ExpOrb] 플레이어가 아닌 오브젝트와 충돌: {other.name}");
+            // Debug.Log($"[ExpOrb] 플레이어가 아닌 오브젝트와 충돌: {other.name}");
         }
     }
     

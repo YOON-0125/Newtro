@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 /// <summary>
@@ -125,114 +126,95 @@ public class UpgradeSystem : MonoBehaviour
         
         if (allUpgrades.Count == 0)
         {
-            Debug.Log("[UpgradeSystem] 기본 업그레이드 옵션들 추가 중...");
-            // 기본 업그레이드 옵션들 추가
-            // AddDefaultUpgrades();
-            Debug.Log($"[UpgradeSystem] 기본 업그레이드 추가 완료. 총 개수: {allUpgrades.Count}");
+            Debug.LogWarning("[UpgradeSystem] Inspector에 업그레이드가 설정되지 않았습니다! Inspector에서 All Upgrades 리스트를 채워주세요.");
+            Debug.LogWarning("[UpgradeSystem] 모든 값(value1, value2, description 등)은 Inspector에서 설정 가능합니다.");
         }
         else
         {
             Debug.Log("[UpgradeSystem] Inspector에서 설정된 업그레이드 사용");
+            Debug.Log("[UpgradeSystem] 모든 value1, value2, description 값들이 Inspector 설정을 우선으로 사용됩니다.");
         }
     }
     
     /// <summary>
-    /// 기본 업그레이드들 추가 (Inspector에서 설정하지 않은 경우)
+    /// 기본 업그레이드들 추가 (Inspector에서 설정하지 않은 경우) - 모든 값은 Inspector에서 설정 권장
     /// </summary>
-    /*
     private void AddDefaultUpgrades()
     {
+        /*
         // 무기 업그레이드
         allUpgrades.Add(new UpgradeOption
         {
-            id = "weapon_damage_boost",
-            displayName = "무기 데미지 강화",
-            description = "모든 무기의 데미지가 20% 증가합니다.",
+            id = "WeaponDamageBoost",
+            displayName = "Weapon Damage Boost",
             type = UpgradeType.WeaponUpgrade,
             value1 = 1.2f, // 데미지 배율
-            weight = 100,
             canRepeat = true
         });
         
         allUpgrades.Add(new UpgradeOption
         {
-            id = "weapon_speed_boost",
-            displayName = "공격 속도 강화",
-            description = "모든 무기의 공격 속도가 15% 증가합니다.",
+            id = "WeaponSpeedBoost",
+            displayName = "Attack Speed Boost",
             type = UpgradeType.WeaponUpgrade,
             value1 = 0.85f, // 쿨다운 배율 (85% = 15% 빨라짐)
-            weight = 100,
             canRepeat = true
         });
         
         // 플레이어 업그레이드
         allUpgrades.Add(new UpgradeOption
         {
-            id = "health_boost",
-            displayName = "체력 강화",
-            description = "최대 체력이 1하트(4HP) 증가합니다.",
+            id = "HealthBoost",
+            displayName = "Health Boost",
             type = UpgradeType.PlayerUpgrade,
             value1 = 4f, // 체력 증가량
-            weight = 80,
             canRepeat = true
         });
         
         allUpgrades.Add(new UpgradeOption
         {
-            id = "movement_speed_boost",
+            id = "MovementSpeedBoost",
             displayName = "이동 속도 강화",
-            description = "이동 속도가 20% 증가합니다.",
             type = UpgradeType.PlayerUpgrade,
-            targetId = "movement_speed",
+            targetId = "MovementSpeed",
             value1 = 1.2f, // 이동속도 배율
-            weight = 90,
             canRepeat = true
         });
         
         // 새 무기
         allUpgrades.Add(new UpgradeOption
         {
-            id = "new_fireball",
-            displayName = "파이어볼 획득",
-            description = "화염 투사체를 발사하는 파이어볼 무기를 획득합니다.",
+            id = "NewFireball",
+            displayName = "Fireball",
             type = UpgradeType.NewWeapon,
             targetId = "Fireball",
-            weight = 60,
             canRepeat = false
         });
         
         allUpgrades.Add(new UpgradeOption
         {
-            id = "new_chain_lightning",
-            displayName = "라이트닝 체인 획득",
-            description = "연쇄 번개로 여러 적을 동시에 공격하는 무기를 획득합니다.",
+            id = "NewChainLightning",
+            displayName = "Lightning Chain",
             type = UpgradeType.NewWeapon,
             targetId = "ChainLightning",
-            weight = 60,
             canRepeat = false
         });
         
         allUpgrades.Add(new UpgradeOption
         {
-            id = "new_electric_sphere",
-            displayName = "전기 구체 획득",
-            description = "주변에 전기 피해를 주는 구체를 생성하는 무기를 획득합니다.",
+            id = "NewElectricSphere",
+            displayName = "Electric Sphere",
             type = UpgradeType.NewWeapon,
             targetId = "ElectricSphere",
-            weight = 50,
-            minLevel = 2,
             canRepeat = false
         });
         
         allUpgrades.Add(new UpgradeOption
         {
-            id = "new_frost_nova",
-            displayName = "프로스트 노바 획득",
-            description = "플레이어 주변으로 얼음 폭발을 일으키는 무기를 획득합니다.",
+            id = "NewFrostNova",
+            displayName = "Frost Nova",
             type = UpgradeType.NewWeapon,
             targetId = "FrostNova",
-            weight = 50,
-            minLevel = 3,
             canRepeat = false
         });
         
@@ -240,11 +222,8 @@ public class UpgradeSystem : MonoBehaviour
         {
             id = "new_raining_fire",
             displayName = "레이닝 파이어 획득",
-            description = "하늘에서 화염구를 떨어뜨려 화염 지대를 만드는 무기를 획득합니다.",
             type = UpgradeType.NewWeapon,
             targetId = "RainingFire",
-            weight = 40,
-            minLevel = 4,
             canRepeat = false
         });
         
@@ -252,11 +231,8 @@ public class UpgradeSystem : MonoBehaviour
         {
             id = "new_thunder",
             displayName = "썬더 획득",
-            description = "번개를 떨어뜨려 전기 지대를 생성하는 무기를 획득합니다.",
             type = UpgradeType.NewWeapon,
             targetId = "Thunder",
-            weight = 40,
-            minLevel = 5,
             canRepeat = false
         });
         
@@ -265,70 +241,68 @@ public class UpgradeSystem : MonoBehaviour
         {
             id = "heal_on_kill",
             displayName = "처치 시 회복",
-            description = "적을 처치할 때마다 체력이 1/4칸 회복됩니다.",
             type = UpgradeType.SpecialUpgrade,
             value1 = 1f, // 회복량
-            weight = 50,
             canRepeat = false
         });
         
         // 개별 무기 업그레이드
         allUpgrades.Add(new UpgradeOption
         {
-            id = "fireball_level_up",
-            displayName = "파이어볼 레벨업",
-            description = "파이어볼의 데미지와 분열 효과가 강화됩니다.",
+            id = "FireballLevelUp",
+            displayName = "Fireball Level Up",
             type = UpgradeType.WeaponUpgrade,
             targetId = "Fireball",
-            weight = 40,
+            value1 = 5f, // 데미지 증가량
+            value2 = 1f, // 분열 수 증가량
             canRepeat = true,
             prerequisites = new List<string> { "new_fireball" }
         });
         
         allUpgrades.Add(new UpgradeOption
         {
-            id = "chain_lightning_level_up",
-            displayName = "라이트닝 체인 레벨업",
-            description = "라이트닝 체인의 연쇄 수와 범위가 증가합니다.",
+            id = "ChainLightningLevelUp",
+            displayName = "Lightning Chain Level Up",
             type = UpgradeType.WeaponUpgrade,
             targetId = "ChainLightning",
-            weight = 40,
+            value1 = 3f, // 데미지 증가량
+            value2 = 1f, // 연쇄 수 증가량
             canRepeat = true,
-            prerequisites = new List<string> { "new_chain_lightning" }
+            prerequisites = new List<string> { "NewChainLightning" }
         });
         
         allUpgrades.Add(new UpgradeOption
         {
-            id = "electric_sphere_level_up",
-            displayName = "전기 구체 레벨업",
-            description = "전기 구체의 데미지와 전기장 범위가 증가합니다.",
+            id = "ElectricSphereLevelUp",
+            displayName = "Electric Sphere Level Up",
             type = UpgradeType.WeaponUpgrade,
             targetId = "ElectricSphere",
-            weight = 40,
+            value1 = 3f, // 데미지 증가량
+            value2 = 1.1f, // 초당 틱수 배율 (곱셉연산)
             canRepeat = true,
-            prerequisites = new List<string> { "new_electric_sphere" }
+            prerequisites = new List<string> { "NewElectricSphere" }
         });
         
         allUpgrades.Add(new UpgradeOption
         {
-            id = "frost_nova_level_up",
-            displayName = "프로스트 노바 레벨업",
-            description = "프로스트 노바의 범위와 냉각 효과가 강화됩니다.",
+            id = "FrostNovaLevelUp",
+            displayName = "Frost Nova Level Up",
             type = UpgradeType.WeaponUpgrade,
             targetId = "FrostNova",
-            weight = 40,
+            value1 = 5f, // 데미지 증가량
+            value2 = 1.1f, // 냉각효과 강화 배율 (곱셉연산)
             canRepeat = true,
-            prerequisites = new List<string> { "new_frost_nova" }
+            prerequisites = new List<string> { "NewFrostNova" }
         });
         
         allUpgrades.Add(new UpgradeOption
         {
             id = "raining_fire_level_up",
             displayName = "레이닝 파이어 레벨업",
-            description = "레이닝 파이어의 낙하 속도와 화염 지대 지속시간이 증가합니다.",
             type = UpgradeType.WeaponUpgrade,
             targetId = "RainingFire",
-            weight = 40,
+            value1 = 4f, // 데미지 증가량
+            value2 = 1.1f, // 지속시간 증가 배율 (곱셉연산)
             canRepeat = true,
             prerequisites = new List<string> { "new_raining_fire" }
         });
@@ -337,15 +311,19 @@ public class UpgradeSystem : MonoBehaviour
         {
             id = "thunder_level_up",
             displayName = "썬더 레벨업",
-            description = "썬더의 데미지와 전기 지대 효과가 강화됩니다.",
             type = UpgradeType.WeaponUpgrade,
             targetId = "Thunder",
-            weight = 40,
+            value1 = 4f, // 데미지 증가량
+            value2 = 1.1f, // 전기지대 유지시간 증가 배율 (곱셉연산)
             canRepeat = true,
             prerequisites = new List<string> { "new_thunder" }
         });
+        */
+        
+        Debug.LogWarning("[UpgradeSystem] AddDefaultUpgrades() 메서드가 주석처리되었습니다.");
+        Debug.LogWarning("[UpgradeSystem] 모든 업그레이드는 Inspector의 'All Upgrades' 리스트에서 설정해주세요.");
+        Debug.LogWarning("[UpgradeSystem] value1, value2, description, weight, minLevel 모두 Inspector에서 조절 가능합니다.");
     }
-    */
     
     /// <summary>
     /// 레벨업 시 업그레이드 옵션 생성
@@ -372,6 +350,148 @@ public class UpgradeSystem : MonoBehaviour
     }
     
     /// <summary>
+    /// Reroll용 새로운 업그레이드 옵션 생성 (이전 옵션들 제외)
+    /// </summary>
+    public List<UpgradeOption> GenerateNewUpgradeOptions(int currentLevel)
+    {
+        List<UpgradeOption> availableUpgrades = GetAvailableUpgrades(currentLevel);
+        List<UpgradeOption> selectedOptions = new List<UpgradeOption>();
+        
+        Debug.Log($"[UpgradeSystem] 🎲 리롤 시작 - 사용 가능한 옵션: {availableUpgrades.Count}개");
+        
+        // 이전에 제공된 옵션들 제외
+        if (lastOfferedOptions != null && lastOfferedOptions.Count > 0)
+        {
+            Debug.Log($"[UpgradeSystem] 🚫 제외할 이전 옵션들: {string.Join(", ", lastOfferedOptions.ConvertAll(o => o.displayName))}");
+            
+            int beforeCount = availableUpgrades.Count;
+            foreach (var lastOption in lastOfferedOptions)
+            {
+                availableUpgrades.RemoveAll(upgrade => upgrade.id == lastOption.id);
+            }
+            int afterCount = availableUpgrades.Count;
+            
+            Debug.Log($"[UpgradeSystem] ✅ 옵션 제외 완료: {beforeCount}개 → {afterCount}개 (제외됨: {beforeCount - afterCount}개)");
+        }
+        else
+        {
+            Debug.Log($"[UpgradeSystem] ℹ️ 제외할 이전 옵션이 없음");
+        }
+        
+        // 가중치 기반 랜덤 선택
+        for (int i = 0; i < optionsPerLevelUp && availableUpgrades.Count > 0; i++)
+        {
+            UpgradeOption selected = SelectWeightedRandom(availableUpgrades);
+            selectedOptions.Add(selected);
+            
+            if (!allowDuplicateOptions)
+            {
+                availableUpgrades.Remove(selected);
+            }
+        }
+        
+        // 옵션이 부족한 경우 경고
+        if (selectedOptions.Count < optionsPerLevelUp)
+        {
+            Debug.LogWarning($"[UpgradeSystem] ⚠️ 리롤 옵션 부족! 요청: {optionsPerLevelUp}개, 생성: {selectedOptions.Count}개");
+            
+            // 옵션이 너무 부족한 경우 이전 옵션 제외를 무시하고 다시 시도
+            if (selectedOptions.Count == 0 && lastOfferedOptions != null && lastOfferedOptions.Count > 0)
+            {
+                Debug.Log($"[UpgradeSystem] 🔄 옵션이 없어 이전 옵션 제외를 무시하고 재시도");
+                return GenerateUpgradeOptions(currentLevel); // 제외 없이 생성
+            }
+        }
+        
+        // 새로운 옵션들로 업데이트
+        lastOfferedOptions = selectedOptions;
+        
+        Debug.Log($"[UpgradeSystem] 🎲 리롤 완료 - 새로운 옵션들: {string.Join(", ", selectedOptions.ConvertAll(o => o.displayName))}");
+        return selectedOptions;
+    }
+    
+    /// <summary>
+    /// 단일 옵션 리롤용 새로운 옵션 생성 (구버전 - 호환성 유지)
+    /// </summary>
+    public UpgradeOption GenerateSingleNewOption(int currentLevel, string excludeId)
+    {
+        return GenerateSingleNewOption(currentLevel, excludeId, null);
+    }
+    
+    /// <summary>
+    /// 단일 옵션 리롤용 새로운 옵션 생성 (현재 화면 옵션들 제외)
+    /// </summary>
+    public UpgradeOption GenerateSingleNewOption(int currentLevel, string excludeId, List<UpgradeOption> currentDisplayedOptions)
+    {
+        List<UpgradeOption> availableUpgrades = GetAvailableUpgrades(currentLevel);
+        
+        Debug.Log($"[UpgradeSystem] 🎲 개별 리롤 시작 - 사용 가능한 옵션: {availableUpgrades.Count}개");
+        
+        // 리롤하려는 옵션 제거
+        int beforeExclude = availableUpgrades.Count;
+        availableUpgrades.RemoveAll(upgrade => upgrade.id == excludeId);
+        Debug.Log($"[UpgradeSystem] 🚫 리롤 대상 제외: '{excludeId}' (제거됨: {beforeExclude - availableUpgrades.Count}개)");
+        
+        // 현재 화면에 표시된 다른 옵션들도 제외
+        if (currentDisplayedOptions != null && currentDisplayedOptions.Count > 0)
+        {
+            beforeExclude = availableUpgrades.Count;
+            foreach (var displayedOption in currentDisplayedOptions)
+            {
+                if (displayedOption.id != excludeId) // 리롤되는 옵션이 아닌 경우만
+                {
+                    availableUpgrades.RemoveAll(upgrade => upgrade.id == displayedOption.id);
+                }
+            }
+            
+            var excludedNames = currentDisplayedOptions
+                .Where(o => o.id != excludeId)
+                .Select(o => o.displayName)
+                .ToArray();
+            Debug.Log($"[UpgradeSystem] 🚫 현재 화면 옵션들 제외: [{string.Join(", ", excludedNames)}] (제거됨: {beforeExclude - availableUpgrades.Count}개)");
+        }
+        else
+        {
+            Debug.Log($"[UpgradeSystem] ℹ️ 현재 화면 옵션 정보 없음 - lastOfferedOptions 사용");
+            
+            // 현재 화면 옵션이 제공되지 않은 경우 기존 방식 사용
+            if (lastOfferedOptions != null)
+            {
+                beforeExclude = availableUpgrades.Count;
+                foreach (var lastOption in lastOfferedOptions)
+                {
+                    if (lastOption.id != excludeId)
+                    {
+                        availableUpgrades.RemoveAll(upgrade => upgrade.id == lastOption.id);
+                    }
+                }
+                Debug.Log($"[UpgradeSystem] 🚫 이전 옵션들 제외 (fallback): (제거됨: {beforeExclude - availableUpgrades.Count}개)");
+            }
+        }
+        
+        if (availableUpgrades.Count == 0)
+        {
+            Debug.LogWarning($"[UpgradeSystem] ⚠️ 개별 리롤 옵션 부족! 제외 조건을 완화하여 재시도");
+            
+            // 제외 조건을 완화하여 재시도 (리롤 대상만 제외)
+            availableUpgrades = GetAvailableUpgrades(currentLevel);
+            availableUpgrades.RemoveAll(upgrade => upgrade.id == excludeId);
+            
+            if (availableUpgrades.Count == 0)
+            {
+                Debug.LogError($"[UpgradeSystem] ❌ 리롤 불가능! 사용 가능한 옵션이 없습니다!");
+                return null;
+            }
+        }
+        
+        // 가중치 기반 랜덤 선택
+        UpgradeOption selectedOption = SelectWeightedRandom(availableUpgrades);
+        
+        Debug.Log($"[UpgradeSystem] 🎲 개별 리롤 완료: '{excludeId}' → '{selectedOption?.displayName}'");
+        return selectedOption;
+    }
+    
+    /// <summary>
     /// 현재 레벨에서 사용 가능한 업그레이드 필터링
     /// </summary>
     private List<UpgradeOption> GetAvailableUpgrades(int currentLevel)
@@ -387,6 +507,16 @@ public class UpgradeSystem : MonoBehaviour
             // 반복 가능 여부 확인
             if (!upgrade.canRepeat && HasUpgrade(upgrade.id))
                 continue;
+            
+            // 이미 보유한 무기의 "new_weapon" 옵션 제외
+            if (upgrade.type == UpgradeType.NewWeapon && weaponManager != null)
+            {
+                if (weaponManager.HasWeapon(upgrade.targetId))
+                {
+                    Debug.Log($"[UpgradeSystem] 이미 보유한 무기 제외: {upgrade.targetId}");
+                    continue;
+                }
+            }
             
             // 선행 조건 확인
             if (!CheckPrerequisites(upgrade))
@@ -435,12 +565,54 @@ public class UpgradeSystem : MonoBehaviour
     /// </summary>
     public bool ApplyUpgrade(string upgradeId)
     {
+        Debug.Log($"[UpgradeSystem] 🔍 업그레이드 찾기: '{upgradeId}'");
+        Debug.Log($"[UpgradeSystem] 전체 업그레이드 개수: {allUpgrades.Count}");
+        
+        for (int i = 0; i < allUpgrades.Count; i++)
+        {
+            var u = allUpgrades[i];
+            Debug.Log($"[UpgradeSystem] {i}: id='{u.id}', displayName='{u.displayName}', targetId='{u.targetId}'");
+        }
+        
         UpgradeOption upgrade = allUpgrades.Find(u => u.id == upgradeId);
+        
+        // ID로 찾지 못했다면 displayName이나 targetId로도 검색
+        if (upgrade == null)
+        {
+            Debug.LogWarning($"[UpgradeSystem] ID로 찾지 못함. displayName으로 검색: '{upgradeId}'");
+            upgrade = allUpgrades.Find(u => u.displayName == upgradeId);
+        }
+        
+        if (upgrade == null)
+        {
+            Debug.LogWarning($"[UpgradeSystem] displayName으로도 찾지 못함. targetId로 검색: '{upgradeId}'");
+            upgrade = allUpgrades.Find(u => u.targetId == upgradeId);
+        }
+        
+        // Fireball 특별 처리 - 직접 무기 추가
+        if (upgrade == null && upgradeId == "Fireball")
+        {
+            Debug.Log($"[UpgradeSystem] 🔥 Fireball 특별 처리 - WeaponManager.AddWeapon 직접 호출");
+            if (weaponManager != null)
+            {
+                bool success = weaponManager.AddWeapon("Fireball");
+                Debug.Log($"[UpgradeSystem] WeaponManager.AddWeapon('Fireball') 결과: {success}");
+                return success;
+            }
+            else
+            {
+                Debug.LogError($"[UpgradeSystem] WeaponManager가 null입니다!");
+                return false;
+            }
+        }
+        
         if (upgrade == null)
         {
             Debug.LogError($"UpgradeSystem: 업그레이드 '{upgradeId}'를 찾을 수 없습니다!");
             return false;
         }
+        
+        Debug.Log($"[UpgradeSystem] ✅ 업그레이드 발견: id='{upgrade.id}', type='{upgrade.type}', targetId='{upgrade.targetId}'");
         
         // 업그레이드 기록
         RecordUpgrade(upgrade);
@@ -502,7 +674,7 @@ public class UpgradeSystem : MonoBehaviour
         
         switch (upgrade.id)
         {
-            case "weapon_damage_boost":
+            case "WeaponDamageBoost":
                 // 모든 장착된 무기의 데미지 증가
                 foreach (var weapon in weaponManager.EquippedWeapons)
                 {
@@ -514,7 +686,7 @@ public class UpgradeSystem : MonoBehaviour
                 }
                 break;
                 
-            case "weapon_speed_boost":
+            case "WeaponSpeedBoost":
                 // 모든 장착된 무기의 공격 속도 증가
                 foreach (var weapon in weaponManager.EquippedWeapons)
                 {
@@ -525,24 +697,24 @@ public class UpgradeSystem : MonoBehaviour
                 }
                 break;
                 
-            case "fireball_level_up":
-                // 파이어볼 레벨업
-                weaponManager.LevelUpWeapon("Fireball");
+            case "FireballLevelUp":
+                // 파이어볼 레벨업 - value1: splitCount 증가값
+                ApplySpecificWeaponUpgrade("Fireball", upgrade);
                 break;
                 
-            case "chain_lightning_level_up":
-                // 라이트닝 체인 레벨업
-                weaponManager.LevelUpWeapon("ChainLightning");
+            case "ChainLightningLevelUp":
+                // 라이트닝 체인 레벨업 - value1: chainTargets 증가값, value2: chainRange 배율
+                ApplySpecificWeaponUpgrade("ChainLightning", upgrade);
                 break;
                 
-            case "electric_sphere_level_up":
-                // 전기 구체 레벨업
-                weaponManager.LevelUpWeapon("ElectricSphere");
+            case "ElectricSphereLevelUp":
+                // 전기 구체 레벨업 - value1: radius 증가값, value2: linkRadius 증가값, value3: tickRate 증가값
+                ApplySpecificWeaponUpgrade("ElectricSphere", upgrade);
                 break;
                 
-            case "frost_nova_level_up":
-                // 프로스트 노바 레벨업
-                weaponManager.LevelUpWeapon("FrostNova");
+            case "FrostNovaLevelUp":
+                // 프로스트 노바 레벨업 - value1: radius 증가값
+                ApplySpecificWeaponUpgrade("FrostNova", upgrade);
                 break;
                 
             case "raining_fire_level_up":
@@ -562,9 +734,15 @@ public class UpgradeSystem : MonoBehaviour
     /// </summary>
     private void ApplyNewWeapon(UpgradeOption upgrade)
     {
-        if (weaponManager == null) return;
+        if (weaponManager == null) 
+        {
+            Debug.LogError($"[UpgradeSystem] WeaponManager가 null입니다! 새 무기 '{upgrade.targetId}' 추가 실패");
+            return;
+        }
         
-        weaponManager.AddWeapon(upgrade.targetId);
+        Debug.Log($"[UpgradeSystem] 🔥 새 무기 추가: '{upgrade.targetId}'");
+        bool success = weaponManager.AddWeapon(upgrade.targetId);
+        Debug.Log($"[UpgradeSystem] WeaponManager.AddWeapon('{upgrade.targetId}') 결과: {success}");
     }
     
     /// <summary>
@@ -572,18 +750,65 @@ public class UpgradeSystem : MonoBehaviour
     /// </summary>
     private void ApplyPlayerUpgrade(UpgradeOption upgrade)
     {
-        switch (upgrade.id)
+        Debug.Log($"[UpgradeSystem] 🏥 ApplyPlayerUpgrade 호출: id='{upgrade.id}', value1={upgrade.value1}");
+        
+        switch (upgrade.id) // ID 통일로 대소문자 구분 제거
         {
-            case "health_boost":
+            case "HealthBoost":
                 if (playerHealth != null)
                 {
+                    float oldMaxHealth = playerHealth.MaxHealth;
+                    float oldCurrentHealth = playerHealth.Health;
+                    
+                    Debug.Log($"[UpgradeSystem] 하트 증가 + 완전회복 전: MaxHealth={oldMaxHealth}, CurrentHealth={oldCurrentHealth}");
+                    
+                    // 하트(최대 체력) 증가
                     playerHealth.IncreaseMaxHealth(upgrade.value1);
+                    
+                    // 체력 100% 완전 회복
+                    playerHealth.FullHeal();
+                    
+                    Debug.Log($"[UpgradeSystem] 하트 증가 + 완전회복 후: MaxHealth={playerHealth.MaxHealth}, CurrentHealth={playerHealth.Health}");
+                    Debug.Log($"[UpgradeSystem] 💖 하트 증가 (+{upgrade.value1}포인트) + 체력 100% 회복!");
+                    Debug.Log($"[UpgradeSystem] ✅ 체력 업그레이드 적용 완료! (+{upgrade.value1} + Full Heal)");
+                }
+                else
+                {
+                    Debug.LogError("[UpgradeSystem] ❌ PlayerHealth가 null입니다!");
                 }
                 break;
                 
-            case "movement_speed_boost":
-                // PlayerObj의 이동속도 증가 (구현 필요)
+            case "MovementSpeedBoost":
+                // PlayerObj의 이동속도 증가
                 ApplyMovementSpeedBoost(upgrade.value1);
+                break;
+                
+            case "WeaponDamageBoost":
+                // 모든 장착된 무기의 데미지 증가 (PlayerUpgrade로도 분류될 수 있음)
+                if (weaponManager != null)
+                {
+                    foreach (var weapon in weaponManager.EquippedWeapons)
+                    {
+                        if (weapon != null)
+                        {
+                            ApplyDamageMultiplier(weapon, upgrade.value1);
+                        }
+                    }
+                }
+                break;
+                
+            case "WeaponSpeedBoost":
+                // 모든 장착된 무기의 공격 속도 증가 (PlayerUpgrade로도 분류될 수 있음)
+                if (weaponManager != null)
+                {
+                    foreach (var weapon in weaponManager.EquippedWeapons)
+                    {
+                        if (weapon != null)
+                        {
+                            ApplyCooldownMultiplier(weapon, upgrade.value1);
+                        }
+                    }
+                }
                 break;
         }
     }
@@ -603,17 +828,320 @@ public class UpgradeSystem : MonoBehaviour
     }
     
     /// <summary>
+    /// 특정 무기 업그레이드 적용 (value1,2,3 사용)
+    /// </summary>
+    private void ApplySpecificWeaponUpgrade(string weaponName, UpgradeOption upgrade)
+    {
+        if (weaponManager == null) return;
+        
+        // 먼저 기본 레벨업 수행
+        bool success = weaponManager.LevelUpWeapon(weaponName);
+        if (!success)
+        {
+            Debug.LogWarning($"[UpgradeSystem] {weaponName} 레벨업 실패");
+            return;
+        }
+        
+        // 무기별 추가 업그레이드 적용
+        WeaponBase weapon = weaponManager.GetWeapon(weaponName);
+        if (weapon == null)
+        {
+            Debug.LogWarning($"[UpgradeSystem] {weaponName} 무기를 찾을 수 없음");
+            return;
+        }
+        
+        Debug.Log($"[UpgradeSystem] 🔧 {weaponName} 커스텀 업그레이드 시작: value1={upgrade.value1}, value2={upgrade.value2}, value3={upgrade.value3}");
+        Debug.Log($"[UpgradeSystem] 무기 타입: {weapon.GetType().Name}");
+        ApplyCustomWeaponUpgrade(weapon, weaponName, upgrade);
+        Debug.Log($"[UpgradeSystem] ✅ {weaponName} 커스텀 업그레이드 완료");
+    }
+    
+    /// <summary>
+    /// 무기별 커스텀 업그레이드 적용
+    /// </summary>
+    private void ApplyCustomWeaponUpgrade(WeaponBase weapon, string weaponName, UpgradeOption upgrade)
+    {
+        switch (weaponName)
+        {
+            case "Fireball":
+                ApplyFireballUpgrade(weapon, upgrade);
+                break;
+            case "ChainLightning":
+                ApplyChainLightningUpgrade(weapon, upgrade);
+                break;
+            case "ElectricSphere":
+                ApplyElectricSphereUpgrade(weapon, upgrade);
+                break;
+            case "FrostNova":
+                ApplyFrostNovaUpgrade(weapon, upgrade);
+                break;
+            case "RainingFire":
+                ApplyRainingFireUpgrade(weapon, upgrade);
+                break;
+            case "Thunder":
+                ApplyThunderUpgrade(weapon, upgrade);
+                break;
+            default:
+                Debug.LogWarning($"[UpgradeSystem] {weaponName}에 대한 커스텀 업그레이드가 정의되지 않음");
+                break;
+        }
+    }
+    
+    /// <summary>
+    /// 파이어볼 커스텀 업그레이드 (value1: 데미지 증가량, value2: splitCount 증가값)
+    /// </summary>
+    private void ApplyFireballUpgrade(WeaponBase weapon, UpgradeOption upgrade)
+    {
+        var fireball = weapon as Fireball;
+        if (fireball != null)
+        {
+            // value1: 데미지 증가량 (합연산)
+            if (upgrade.value1 > 0)
+            {
+                ApplyWeaponFlatBonus(fireball, upgrade.value1);
+            }
+            
+            // value2: 분열 수 증가
+            if (upgrade.value2 > 0)
+            {
+                var splitCountField = typeof(Fireball).GetField("splitCount", 
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                if (splitCountField != null)
+                {
+                    int currentSplitCount = (int)splitCountField.GetValue(fireball);
+                    int newSplitCount = currentSplitCount + Mathf.RoundToInt(upgrade.value2);
+                    splitCountField.SetValue(fireball, newSplitCount);
+                    Debug.Log($"[UpgradeSystem] Fireball splitCount: {currentSplitCount} → {newSplitCount}");
+                }
+            }
+        }
+    }
+    
+    /// <summary>
+    /// 체인 라이트닝 커스텀 업그레이드 (value1: 데미지 증가량, value2: chainTargets 증가값)
+    /// </summary>
+    private void ApplyChainLightningUpgrade(WeaponBase weapon, UpgradeOption upgrade)
+    {
+        Debug.Log($"[UpgradeSystem] ChainLightning 업그레이드 시작, 무기 타입: {weapon.GetType().Name}");
+        
+        // ChainWeapon 클래스로 직접 캐스팅
+        var chainWeapon = weapon as ChainWeapon;
+        Debug.Log($"[UpgradeSystem] ChainWeapon 캐스팅 결과: {(chainWeapon != null ? "성공" : "실패")}");
+        
+        if (chainWeapon != null)
+        {
+            // value1: 데미지 증가량 (합연산)
+            if (upgrade.value1 > 0)
+            {
+                ApplyWeaponFlatBonus(chainWeapon, upgrade.value1);
+            }
+            
+            // value2: 연쇄 수 증가
+            if (upgrade.value2 > 0)
+            {
+                var maxTargetsField = typeof(ChainWeapon).GetField("maxChainTargets", 
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                    
+                if (maxTargetsField != null)
+                {
+                    int currentTargets = (int)maxTargetsField.GetValue(chainWeapon);
+                    int newTargets = currentTargets + Mathf.RoundToInt(upgrade.value2);
+                    maxTargetsField.SetValue(chainWeapon, newTargets);
+                    Debug.Log($"[UpgradeSystem] ✅ ChainLightning maxChainTargets: {currentTargets} → {newTargets}");
+                }
+                else
+                {
+                    Debug.LogWarning($"[UpgradeSystem] ❌ maxChainTargets 업그레이드 실패 - Field not found");
+                }
+            }
+        }
+    }
+    
+    /// <summary>
+    /// 일렉트릭 스피어 커스텀 업그레이드 (value1: 데미지 증가량, value2: 초당 틱수 배율)
+    /// </summary>
+    private void ApplyElectricSphereUpgrade(WeaponBase weapon, UpgradeOption upgrade)
+    {
+        var electricSphere = weapon as ElectricSphere;
+        if (electricSphere != null)
+        {
+            // value1: 데미지 증가량 (합연산)
+            if (upgrade.value1 > 0)
+            {
+                ApplyWeaponFlatBonus(electricSphere, upgrade.value1);
+            }
+            
+            // value2: 초당 틱수 배율 (곱셈연산)
+            if (upgrade.value2 > 0)
+            {
+                var tickField = typeof(ElectricSphere).GetField("tickPerSec", 
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                    
+                if (tickField != null)
+                {
+                    float currentTick = (float)tickField.GetValue(electricSphere);
+                    float newTick = currentTick * upgrade.value2; // 곱셈연산
+                    tickField.SetValue(electricSphere, newTick);
+                    Debug.Log($"[UpgradeSystem] ElectricSphere tickPerSec: {currentTick:F2} → {newTick:F2} (x{upgrade.value2})");
+                }
+                else
+                {
+                    Debug.LogWarning($"[UpgradeSystem] ❌ tickPerSec 업그레이드 실패 - Field not found");
+                }
+            }
+        }
+    }
+    
+    /// <summary>
+    /// 프로스트 노바 커스텀 업그레이드 (value1: 데미지 증가량, value2: 냉각효과 강화 배율)
+    /// </summary>
+    private void ApplyFrostNovaUpgrade(WeaponBase weapon, UpgradeOption upgrade)
+    {
+        var frostNova = weapon as FrostNova;
+        if (frostNova != null)
+        {
+            // value1: 데미지 증가량 (합연산)
+            if (upgrade.value1 > 0)
+            {
+                ApplyWeaponFlatBonus(frostNova, upgrade.value1);
+            }
+            
+            // value2: 냉각효과 강화 배율 (곱셈연산)
+            if (upgrade.value2 > 0)
+            {
+                var statusEffectField = typeof(WeaponBase).GetField("statusEffect", 
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                    
+                if (statusEffectField != null)
+                {
+                    StatusEffect statusEffect = (StatusEffect)statusEffectField.GetValue(frostNova);
+                    if (statusEffect.magnitude > 0) // struct는 null이 될 수 없으므로 magnitude만 체크
+                    {
+                        float currentMagnitude = statusEffect.magnitude;
+                        float newMagnitude = currentMagnitude * upgrade.value2; // 곱셈연산
+                        statusEffect.magnitude = newMagnitude;
+                        statusEffectField.SetValue(frostNova, statusEffect); // struct이므로 다시 설정 필요
+                        Debug.Log($"[UpgradeSystem] FrostNova 냉각효과 강화: {currentMagnitude:F2} → {newMagnitude:F2} (x{upgrade.value2})");
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"[UpgradeSystem] ❌ FrostNova statusEffect magnitude가 0");
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning($"[UpgradeSystem] ❌ statusEffect 업그레이드 실패 - Field not found");
+                }
+            }
+        }
+    }
+    
+    /// <summary>
+    /// 레이닝 파이어 커스텀 업그레이드 (value1: 데미지 증가량, value2: 지속시간 배율)
+    /// </summary>
+    private void ApplyRainingFireUpgrade(WeaponBase weapon, UpgradeOption upgrade)
+    {
+        // RainingFire 클래스가 없으므로 FieldWeapon으로 캐스팅
+        var fieldWeapon = weapon as FieldWeapon;
+        if (fieldWeapon != null)
+        {
+            // value1: 데미지 증가량 (합연산)
+            if (upgrade.value1 > 0)
+            {
+                ApplyWeaponFlatBonus(fieldWeapon, upgrade.value1);
+            }
+            
+            // value2: 지속시간 배율 (곱셈연산)
+            if (upgrade.value2 > 0)
+            {
+                var durationField = typeof(FieldWeapon).GetField("duration", 
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                    
+                if (durationField != null)
+                {
+                    float currentDuration = (float)durationField.GetValue(fieldWeapon);
+                    float newDuration = currentDuration * upgrade.value2; // 곱셈연산
+                    durationField.SetValue(fieldWeapon, newDuration);
+                    Debug.Log($"[UpgradeSystem] RainingFire 지속시간: {currentDuration:F2}s → {newDuration:F2}s (x{upgrade.value2})");
+                }
+                else
+                {
+                    Debug.LogWarning($"[UpgradeSystem] ❌ RainingFire duration 업그레이드 실패 - Field not found");
+                }
+            }
+        }
+    }
+    
+    /// <summary>
+    /// 썬더 커스텀 업그레이드 (value1: 데미지 증가량, value2: 전기지대 유지시간 배율)
+    /// </summary>
+    private void ApplyThunderUpgrade(WeaponBase weapon, UpgradeOption upgrade)
+    {
+        // Thunder 클래스가 없으므로 FieldWeapon으로 캐스팅
+        var fieldWeapon = weapon as FieldWeapon;
+        if (fieldWeapon != null)
+        {
+            // value1: 데미지 증가량 (합연산)
+            if (upgrade.value1 > 0)
+            {
+                ApplyWeaponFlatBonus(fieldWeapon, upgrade.value1);
+            }
+            
+            // value2: 전기지대 유지시간 배율 (곱셈연산)
+            if (upgrade.value2 > 0)
+            {
+                var fieldDurationField = typeof(FieldWeapon).GetField("fieldDuration", 
+                    System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                    
+                if (fieldDurationField != null)
+                {
+                    float currentFieldDuration = (float)fieldDurationField.GetValue(fieldWeapon);
+                    float newFieldDuration = currentFieldDuration * upgrade.value2; // 곱셈연산
+                    fieldDurationField.SetValue(fieldWeapon, newFieldDuration);
+                    Debug.Log($"[UpgradeSystem] Thunder 전기지대 유지시간: {currentFieldDuration:F2}s → {newFieldDuration:F2}s (x{upgrade.value2})");
+                }
+                else
+                {
+                    Debug.LogWarning($"[UpgradeSystem] ❌ Thunder fieldDuration 업그레이드 실패 - Field not found");
+                }
+            }
+        }
+    }
+    
+    /// <summary>
     /// 헬퍼 메서드들 (확장 가능)
     /// </summary>
     private void ApplyDamageMultiplier(WeaponBase weapon, float multiplier)
     {
-        // WeaponBase에 공개 메서드 필요하거나 리플렉션 사용
-        // 임시로 직접 접근 (WeaponBase 수정 필요)
+        // 새로운 시스템: 퍼센트 보너스로 변환 (1.2 → +20%)
+        if (weapon != null)
+        {
+            float percentBonus = multiplier - 1f;
+            weapon.AddPercentDamageBonus(percentBonus);
+            Debug.Log($"[UpgradeSystem] {weapon.WeaponName} 전역 데미지 증가: +{percentBonus:P1} (배율 {multiplier:F2})");
+        }
+    }
+    
+    /// <summary>
+    /// 무기별 고정 데미지 보너스 적용 (레벨업)
+    /// </summary>
+    private void ApplyWeaponFlatBonus(WeaponBase weapon, float flatAmount)
+    {
+        if (weapon != null)
+        {
+            weapon.AddFlatDamageBonus(flatAmount);
+            Debug.Log($"[UpgradeSystem] {weapon.WeaponName} 고정 데미지 보너스: +{flatAmount}");
+        }
     }
     
     private void ApplyCooldownMultiplier(WeaponBase weapon, float multiplier)
     {
-        // WeaponBase에 쿨다운 배율 적용 메서드 필요
+        // WeaponBase의 ApplyCooldownMultiplier 메서드 사용
+        if (weapon != null)
+        {
+            weapon.ApplyCooldownMultiplier(multiplier);
+            Debug.Log($"[UpgradeSystem] {weapon.WeaponName} 쿨다운 배율 적용: x{multiplier}");
+        }
     }
     
     private void ApplyMovementSpeedBoost(float multiplier)
@@ -648,10 +1176,70 @@ public class UpgradeSystem : MonoBehaviour
     {
         foreach (string prerequisite in upgrade.prerequisites)
         {
-            if (!HasUpgrade(prerequisite))
+            // 무기 선행조건인 경우 WeaponManager에서 실제 무기 보유 확인
+            if (prerequisite.StartsWith("New") && weaponManager != null)
+            {
+                string weaponName = GetWeaponNameFromPrerequisite(prerequisite);
+                if (!weaponManager.HasWeapon(weaponName))
+                {
+                    Debug.Log($"[UpgradeSystem] 무기 선행조건 미충족: {weaponName} 무기 없음");
+                    return false;
+                }
+                Debug.Log($"[UpgradeSystem] 무기 선행조건 충족: {weaponName} 무기 보유 중");
+            }
+            // 업그레이드 선행조건인 경우 기존 방식
+            else if (!HasUpgrade(prerequisite))
+            {
+                Debug.Log($"[UpgradeSystem] 업그레이드 선행조건 미충족: {prerequisite}");
                 return false;
+            }
         }
         return true;
+    }
+    
+    /// <summary>
+    /// 선행조건 ID에서 실제 무기 이름 추출
+    /// </summary>
+    private string GetWeaponNameFromPrerequisite(string prerequisiteId)
+    {
+        // "new_chain_lightning" → "ChainLightning"
+        // "new_fireball" → "Fireball"
+        switch (prerequisiteId)
+        {
+            case "NewFireball":
+                return "Fireball";
+            case "NewChainLightning":
+                return "ChainLightning";
+            case "NewElectricSphere":
+                return "ElectricSphere";
+            case "NewFrostNova":
+                return "FrostNova";
+            case "new_raining_fire":
+                return "RainingFire";
+            case "new_thunder":
+                return "Thunder";
+            default:
+                // 알 수 없는 경우 "New" 제거하고 그대로 사용
+                string weaponName = prerequisiteId.Substring(3); // "New" 제거
+                return ConvertToPascalCase(weaponName);
+        }
+    }
+    
+    /// <summary>
+    /// snake_case를 PascalCase로 변환
+    /// </summary>
+    private string ConvertToPascalCase(string snakeCase)
+    {
+        string[] parts = snakeCase.Split('_');
+        string result = "";
+        foreach (string part in parts)
+        {
+            if (part.Length > 0)
+            {
+                result += char.ToUpper(part[0]) + part.Substring(1).ToLower();
+            }
+        }
+        return result;
     }
     
     private bool CheckExclusions(UpgradeOption upgrade)

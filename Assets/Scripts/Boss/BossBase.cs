@@ -35,9 +35,15 @@ public class BossBase : EnemyBase
     [SerializeField] protected float patternCooldownMax = 4f; // 패턴 간 최대 대기시간
     [SerializeField] protected bool enableDebugPattern = true; // 패턴 디버그 로그
     
+    [Header("패턴 선택 가중치")]
+    [SerializeField] protected int chargeWeight = 1; // 돌진 패턴 가중치
+    [SerializeField] protected int projectileWeight = 1; // 투사체 패턴 가중치  
+    [SerializeField] protected int summonWeight = 1; // 소환 패턴 가중치
+    
     [Header("돌진 패턴 설정")]
     [SerializeField] protected float chargeSpeed = 15f; // 돌진 속도
     [SerializeField] protected float chargePrepareTime = 1f; // 돌진 예고 시간
+    [SerializeField] protected float chargeDuration = 1f; // 돌진 지속 시간
     [SerializeField] protected float chargeStunTime = 0.8f; // 돌진 후 경직 시간
     [SerializeField] protected float chargeDamage = 20f; // 돌진 데미지
     
@@ -124,6 +130,10 @@ public class BossBase : EnemyBase
     protected Vector3 chargeStartPosition;
     protected bool enableWallBounce = false;
     
+    // 돌진 시각 효과 관련
+    protected GameObject chargeWarningIndicator;
+    protected SpriteRenderer chargeWarningRenderer;
+    
     // 투사체 패턴 관련
     protected int currentBurstCount = 0;
     protected float burstTimer = 0f;
@@ -203,9 +213,9 @@ public class BossBase : EnemyBase
         }
         
         // 보스는 기본적으로 넓은 감지 범위
-        if (detectionRange < 15f)
+        if (detectionRange < 30f)
         {
-            detectionRange = 15f;
+            detectionRange = 30f;
         }
     }
     
@@ -277,10 +287,7 @@ public class BossBase : EnemyBase
     /// </summary>
     protected virtual void ChangeState(BossState newState)
     {
-        if (enableDebugPattern)
-        {
-            Debug.Log($"[BossBase] {bossName} 상태 변경: {currentBossState} → {newState}");
-        }
+        Debug.Log($"[BossBase] {bossName} 상태 변경: {currentBossState} → {newState}");
         
         currentBossState = newState;
         stateTimer = 0f;
@@ -413,6 +420,9 @@ public class BossBase : EnemyBase
         
         Debug.Log($"[BossBase] {bossName} 처치됨!");
         
+        // 사망 시 돌진 예고 효과도 정리
+        DestroyChargeWarningIndicator();
+        
         // 보스 처치 이벤트 (BossManager가 구독)
         OnBossDefeated?.Invoke(this);
         
@@ -483,12 +493,29 @@ public class BossBase : EnemyBase
         base.UpdateBehavior();
         
         // 패턴 발동 조건 체크 (거리 기반, 2D)
-        float distanceToPlayer = Vector2.Distance(transform.position, target.position);
-        
-        if (distanceToPlayer <= detectionRange)
+        if (target != null)
         {
-            // 랜덤하게 패턴 선택
-            SelectRandomPattern();
+            float distanceToPlayer = Vector2.Distance(transform.position, target.position);
+            
+            if (enableDebugPattern)
+            {
+                Debug.Log($"[BossBase] {bossName} Idle 상태: 거리={distanceToPlayer:F1}, 감지범위={detectionRange}, stateTimer={stateTimer:F1}, target={target.name}");
+            }
+            
+            // stateTimer가 일정 시간 이상일 때 패턴 발동 (너무 자주 발동 방지)
+            if (distanceToPlayer <= detectionRange && stateTimer >= 2f)
+            {
+                Debug.Log($"[BossBase] {bossName} 패턴 발동 조건 충족! 패턴 선택 시작");
+                // 랜덤하게 패턴 선택
+                SelectRandomPattern();
+            }
+        }
+        else
+        {
+            if (enableDebugPattern)
+            {
+                Debug.LogWarning($"[BossBase] {bossName} Idle 상태: target이 null입니다!");
+            }
         }
     }
     
@@ -509,29 +536,42 @@ public class BossBase : EnemyBase
     }
     
     /// <summary>
-    /// 랜덤 패턴 선택
+    /// 가중치 기반 패턴 선택
     /// </summary>
     protected virtual void SelectRandomPattern()
     {
-        int randomPattern = Random.Range(0, 3); // 0: 돌진, 1: 투사체, 2: 소환
-        
-        switch (randomPattern)
+        int totalWeight = chargeWeight + projectileWeight + summonWeight;
+        if (totalWeight <= 0)
         {
-            case 0:
-                ChangeState(BossState.ChargePrepare);
-                break;
-            case 1:
-                ChangeState(BossState.ShootingPrepare);
-                break;
-            case 2:
-                ChangeState(BossState.SummonPrepare);
-                break;
+            Debug.LogWarning("[BossBase] 모든 패턴 가중치가 0 이하입니다. 기본 패턴을 사용합니다.");
+            ChangeState(BossState.ChargePrepare);
+            return;
         }
         
-        if (enableDebugPattern)
+        int randomValue = Random.Range(0, totalWeight);
+        int currentWeight = 0;
+        
+        // 돌진 패턴 체크
+        currentWeight += chargeWeight;
+        if (randomValue < currentWeight)
         {
-            Debug.Log($"[BossBase] {bossName} 패턴 선택: {randomPattern} (0:돌진, 1:투사체, 2:소환)");
+            ChangeState(BossState.ChargePrepare);
+            if (enableDebugPattern) Debug.Log($"[BossBase] {bossName} 패턴 선택: 돌진 (가중치: {chargeWeight}/{totalWeight})");
+            return;
         }
+        
+        // 투사체 패턴 체크
+        currentWeight += projectileWeight;
+        if (randomValue < currentWeight)
+        {
+            ChangeState(BossState.ShootingPrepare);
+            if (enableDebugPattern) Debug.Log($"[BossBase] {bossName} 패턴 선택: 투사체 (가중치: {projectileWeight}/{totalWeight})");
+            return;
+        }
+        
+        // 소환 패턴
+        ChangeState(BossState.SummonPrepare);
+        if (enableDebugPattern) Debug.Log($"[BossBase] {bossName} 패턴 선택: 소환 (가중치: {summonWeight}/{totalWeight})");
     }
     
     /// <summary>
@@ -571,6 +611,9 @@ public class BossBase : EnemyBase
         
         currentChargeCount = 0;
         
+        // 돌진 예고 시각 효과 생성
+        CreateChargeWarningIndicator();
+        
         if (enableDebugPattern)
         {
             Debug.Log($"[BossBase] {bossName} 돌진 패턴 설정: {maxChargeCount}회, 벽튕김 {enableWallBounce}");
@@ -582,17 +625,31 @@ public class BossBase : EnemyBase
     /// </summary>
     protected virtual void UpdateChargePrepareState()
     {
+        Debug.Log($"[BossBase] {bossName} ChargePrepare 상태: stateTimer={stateTimer:F2}, chargePrepareTime={chargePrepareTime}");
+        
         // 플레이어 방향으로 돌진 방향 설정 (2D)
         if (target != null)
         {
             Vector2 direction2D = ((Vector2)target.position - (Vector2)transform.position).normalized;
             chargeDirection = direction2D;
             chargeStartPosition = transform.position;
+            
+            // 시각 효과 업데이트
+            UpdateChargeWarningIndicator();
+            
+            Debug.Log($"[BossBase] {bossName} 돌진 방향 설정: {chargeDirection}, 시각효과 업데이트 완료");
+        }
+        else
+        {
+            Debug.LogWarning($"[BossBase] {bossName} ChargePrepare 상태에서 target이 null!");
         }
         
         // 예고 시간 완료 시 돌진 시작
         if (stateTimer >= chargePrepareTime)
         {
+            Debug.Log($"[BossBase] {bossName} 예고 시간 완료! 돌진 시작");
+            // 예고 효과 제거하고 돌진 시작
+            DestroyChargeWarningIndicator();
             ChangeState(BossState.Charging);
         }
     }
@@ -606,8 +663,8 @@ public class BossBase : EnemyBase
         Vector2 movement = chargeDirection * chargeSpeed * Time.deltaTime;
         transform.position = (Vector2)transform.position + movement;
         
-        // 시간 기반 돌진 종료 (2초 후 경직)
-        if (stateTimer >= 2f)
+        // 시간 기반 돌진 종료
+        if (stateTimer >= chargeDuration)
         {
             ChangeState(BossState.ChargeStunned);
         }
@@ -964,6 +1021,131 @@ public class BossBase : EnemyBase
         // 보스 주변 원형 범위에서 랜덤 위치 (2D)
         Vector2 randomCircle = Random.insideUnitCircle * spawnAreaRadius;
         return (Vector2)transform.position + randomCircle;
+    }
+    
+    #endregion
+    
+    #region 돌진 예고 시각 효과 시스템
+    
+    /// <summary>
+    /// 돌진 예고 시각 효과 생성
+    /// </summary>
+    protected virtual void CreateChargeWarningIndicator()
+    {
+        Debug.Log($"[BossBase] {bossName} 돌진 예고 시각 효과 생성 시작");
+        
+        if (chargeWarningIndicator != null)
+        {
+            DestroyChargeWarningIndicator();
+        }
+        
+        // 직사각형 GameObject 생성
+        chargeWarningIndicator = GameObject.CreatePrimitive(PrimitiveType.Quad);
+        chargeWarningIndicator.name = "ChargeWarningIndicator";
+        
+        Debug.Log($"[BossBase] {bossName} Quad GameObject 생성됨: {chargeWarningIndicator.name}");
+        
+        // Collider 제거 (시각 효과용이므로 충돌 불필요)
+        Collider collider = chargeWarningIndicator.GetComponent<Collider>();
+        if (collider != null)
+        {
+            DestroyImmediate(collider);
+            Debug.Log($"[BossBase] {bossName} Collider 제거 완료");
+        }
+        
+        // MeshRenderer와 MeshFilter 모두 제거
+        MeshRenderer meshRenderer = chargeWarningIndicator.GetComponent<MeshRenderer>();
+        if (meshRenderer != null)
+        {
+            DestroyImmediate(meshRenderer);
+            Debug.Log($"[BossBase] {bossName} MeshRenderer 제거 완료");
+        }
+        
+        MeshFilter meshFilter = chargeWarningIndicator.GetComponent<MeshFilter>();
+        if (meshFilter != null)
+        {
+            DestroyImmediate(meshFilter);
+            Debug.Log($"[BossBase] {bossName} MeshFilter 제거 완료");
+        }
+        
+        chargeWarningRenderer = chargeWarningIndicator.AddComponent<SpriteRenderer>();
+        Debug.Log($"[BossBase] {bossName} SpriteRenderer 추가 완료");
+        
+        // 텍스처 생성 (1x1 빨간색 텍스처)
+        Texture2D redTexture = new Texture2D(1, 1);
+        redTexture.SetPixel(0, 0, new Color(1f, 0f, 0f, 1f)); // 빨간색 100% 불투명
+        redTexture.Apply();
+        // pivot을 길이의 1/7 지점(0.143, 0.5)으로 설정하여 보스 뒤쪽에서 시작하도록
+        chargeWarningRenderer.sprite = Sprite.Create(redTexture, new Rect(0, 0, 1, 1), new Vector2(0.143f, 0.5f));
+        
+        // 색상 설정 (추가 투명도 제어용)
+        chargeWarningRenderer.color = new Color(1f, 0f, 0f, 0.5f);
+        
+        // 정렬 레이어와 순서 설정 (Ground 레이어보다 위에 표시)
+        chargeWarningRenderer.sortingLayerName = "Default";
+        chargeWarningRenderer.sortingOrder = -8;
+        
+        Debug.Log($"[BossBase] {bossName} 시각 효과 설정 완료: SortingLayer={chargeWarningRenderer.sortingLayerName}, Order={chargeWarningRenderer.sortingOrder}, Color={chargeWarningRenderer.color}");
+    }
+    
+    /// <summary>
+    /// 돌진 예고 시각 효과 업데이트
+    /// </summary>
+    protected virtual void UpdateChargeWarningIndicator()
+    {
+        if (chargeWarningIndicator == null || target == null) return;
+        
+        // 돌진 방향으로 직사각형 회전 및 위치 설정
+        Vector2 direction2D = ((Vector2)target.position - (Vector2)transform.position).normalized;
+        float angle = Mathf.Atan2(direction2D.y, direction2D.x) * Mathf.Rad2Deg;
+        
+        // 직사각형 크기 설정 (가로 400배, 세로 150배)
+        float warningWidth = 400f;
+        float warningHeight = 150f;
+        chargeWarningIndicator.transform.localScale = new Vector3(warningWidth, warningHeight, 1f);
+        
+        // pivot이 왼쪽 중앙이므로 보스 위치에 바로 배치 (offset 불필요)
+        chargeWarningIndicator.transform.position = (Vector2)transform.position;
+        chargeWarningIndicator.transform.rotation = Quaternion.Euler(0, 0, angle);
+        
+        // Fill 효과 - 시간에 따라 투명도 증가
+        float fillProgress = stateTimer / chargePrepareTime;
+        fillProgress = Mathf.Clamp01(fillProgress);
+        
+        // 반투명(0.3) -> 불투명(0.9)으로 변화 (더 선명하게)
+        float alpha = Mathf.Lerp(0.3f, 0.9f, fillProgress);
+        Color currentColor = chargeWarningRenderer.color;
+        currentColor.a = alpha;
+        chargeWarningRenderer.color = currentColor;
+        
+        if (enableDebugPattern)
+        {
+            Debug.Log($"[BossBase] 돌진 예고 Fill 진행률: {fillProgress * 100:F1}%, Alpha: {alpha:F2}");
+        }
+    }
+    
+    /// <summary>
+    /// 돌진 예고 시각 효과 제거
+    /// </summary>
+    protected virtual void DestroyChargeWarningIndicator()
+    {
+        if (chargeWarningIndicator != null)
+        {
+            // Texture 정리
+            if (chargeWarningRenderer != null && chargeWarningRenderer.sprite != null && chargeWarningRenderer.sprite.texture != null)
+            {
+                DestroyImmediate(chargeWarningRenderer.sprite.texture);
+            }
+            
+            DestroyImmediate(chargeWarningIndicator);
+            chargeWarningIndicator = null;
+            chargeWarningRenderer = null;
+            
+            if (enableDebugPattern)
+            {
+                Debug.Log($"[BossBase] {bossName} 돌진 예고 효과 제거");
+            }
+        }
     }
     
     #endregion

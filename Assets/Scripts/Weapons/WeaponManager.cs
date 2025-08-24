@@ -33,6 +33,7 @@ public class WeaponManager : MonoBehaviour
     private List<WeaponBase> equippedWeapons = new List<WeaponBase>();
     private Dictionary<string, WeaponBase> weaponsByName = new Dictionary<string, WeaponBase>();
     private Coroutine autoAttackCoroutine;
+    private Transform playerTransform;
     
     // 프로퍼티
     public int EquippedWeaponCount => equippedWeapons.Count;
@@ -57,6 +58,18 @@ public class WeaponManager : MonoBehaviour
     
     private void Awake()
     {
+        // 플레이어 찾기
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            playerTransform = player.transform;
+            Debug.Log($"[WeaponManager] 플레이어 발견: {player.name}");
+        }
+        else
+        {
+            Debug.LogWarning("[WeaponManager] 플레이어를 찾을 수 없습니다! Player 태그를 확인하세요.");
+        }
+        
         // 무기 컨테이너 설정
         if (weaponContainer == null)
         {
@@ -77,8 +90,9 @@ public class WeaponManager : MonoBehaviour
         // availableWeapons가 설정된 WeaponManager만 무기를 추가
         if (availableWeapons.Count > 0)
         {
-            // 테스트를 위해 체인 라이트닝 무기 자동 장착
+            // 테스트를 위해 무기들 자동 장착
             AddWeapon("ChainLightning");
+            // AddWeapon("ElectricSphere"); // 초기 자동공격에서 제외
 
             // 자동 공격 시작
             if (autoAttack)
@@ -87,6 +101,25 @@ public class WeaponManager : MonoBehaviour
         else
         {
             Debug.LogWarning($"{gameObject.name}의 WeaponManager에 무기가 설정되지 않았습니다.");
+        }
+    }
+    
+    private void Update()
+    {
+        // WeaponContainer가 플레이어를 따라다니도록 설정
+        if (playerTransform != null && weaponContainer != null)
+        {
+            weaponContainer.position = playerTransform.position;
+        }
+        else if (playerTransform == null)
+        {
+            // 플레이어가 없거나 파괴된 경우 다시 찾기
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                playerTransform = player.transform;
+                Debug.Log($"[WeaponManager] 플레이어 재발견: {player.name}");
+            }
         }
     }
     
@@ -127,7 +160,15 @@ public class WeaponManager : MonoBehaviour
             {
                 if (weapon != null && weapon.CanAttack)
                 {
+                    if (weapon.WeaponName == "Fireball")
+                    {
+                        Debug.Log($"[WeaponManager] 🔥 Fireball 자동공격 시도! CanAttack: {weapon.CanAttack}, Level: {weapon.Level}, Damage: {weapon.Damage}, Cooldown: {weapon.Cooldown}");
+                    }
                     weapon.TryAttack();
+                }
+                else if (weapon != null && weapon.WeaponName == "Fireball")
+                {
+                    Debug.Log($"[WeaponManager] ❌ Fireball 공격 불가능 - CanAttack: {weapon.CanAttack}, Level: {weapon.Level}");
                 }
             }
             
@@ -185,6 +226,11 @@ public class WeaponManager : MonoBehaviour
         equippedWeapons.Add(weapon);
         weaponsByName[weaponName] = weapon;
         
+        if (weaponName == "Fireball")
+        {
+            Debug.Log($"[WeaponManager] 🔥 Fireball 생성 완료! Level: {weapon.Level}, Damage: {weapon.Damage}, Cooldown: {weapon.Cooldown}, Range: {weapon.Range}, CanAttack: {weapon.CanAttack}");
+        }
+        
         var relicManager = FindObjectOfType<RelicManager>();
         if (relicManager != null)
         {
@@ -197,6 +243,11 @@ public class WeaponManager : MonoBehaviour
             if (c != weapon.Cooldown)
                 weapon.ApplyCooldownMultiplier(Mathf.Max(0.0001f, c / Mathf.Max(0.0001f, weapon.Cooldown)));
             weapon.Range = r;
+            
+            if (weaponName == "Fireball")
+            {
+                Debug.Log($"[WeaponManager] 🔥 Fireball 유물 효과 적용 후: Damage: {weapon.Damage}, Cooldown: {weapon.Cooldown}, Range: {weapon.Range}");
+            }
         }
 
         events?.OnWeaponAdded?.Invoke(weapon);
@@ -235,6 +286,11 @@ public class WeaponManager : MonoBehaviour
         
         if (weapon.LevelUp())
         {
+            if (weaponName == "Fireball")
+            {
+                Debug.Log($"[WeaponManager] 🔥 Fireball 레벨업 성공! Level: {weapon.Level}, Damage: {weapon.Damage}, Cooldown: {weapon.Cooldown}, Range: {weapon.Range}");
+            }
+            
             var relicManager = FindObjectOfType<RelicManager>();
             if (relicManager != null)
             {
@@ -247,11 +303,20 @@ public class WeaponManager : MonoBehaviour
                 if (c != weapon.Cooldown)
                     weapon.ApplyCooldownMultiplier(Mathf.Max(0.0001f, c / Mathf.Max(0.0001f, weapon.Cooldown)));
                 weapon.Range = r;
+                
+                if (weaponName == "Fireball")
+                {
+                    Debug.Log($"[WeaponManager] 🔥 Fireball 유물 효과 적용 후: Damage: {weapon.Damage}, Cooldown: {weapon.Cooldown}, Range: {weapon.Range}");
+                }
             }
 
             events?.OnWeaponLevelUp?.Invoke(weapon);
             Debug.Log($"무기 레벨업: {weaponName} -> Lv.{weapon.Level}");
             return true;
+        }
+        else if (weaponName == "Fireball")
+        {
+            Debug.LogWarning($"[WeaponManager] ❌ Fireball 레벨업 실패! 현재 Level: {weapon.Level}, MaxLevel 도달했는지 확인 필요");
         }
         
         return false;

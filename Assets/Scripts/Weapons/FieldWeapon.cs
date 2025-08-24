@@ -94,7 +94,7 @@ public class FieldWeapon : WeaponBase
         if (fieldInstance == null)
             fieldInstance = fieldObject.AddComponent<FieldInstance>();
             
-          fieldInstance.Initialize(this, damage, fieldRadius, fieldDuration, tickInterval, effectType, slowEffect, damageTag, statusEffect);
+          fieldInstance.Initialize(this, Damage, fieldRadius, fieldDuration, tickInterval, effectType, slowEffect, damageTag, statusEffect);
         activeFields.Add(fieldInstance);
     }
     
@@ -227,7 +227,7 @@ public class FieldWeapon : WeaponBase
             case 10:
                 maxFields = 4;
                 fieldRadius *= 1.5f;
-                damage *= 1.5f;
+                AddPercentDamageBonus(0.5f);
                 break;
         }
     }

@@ -77,6 +77,7 @@ public class GameManager : MonoBehaviour
         
         // 프로퍼티
         public GameState CurrentState => currentState;
+        public float GetGameTime() => gameTime;
         public float GameTime => gameTime;
         public float RemainingTime => Mathf.Max(0, gameDuration - gameTime);
         public float GameDuration => gameDuration;
@@ -164,6 +165,10 @@ public class GameManager : MonoBehaviour
                 objectPool = poolObj.AddComponent<SimpleObjectPool>();
                 Debug.Log("[GameManager] SimpleObjectPool 자동 생성 완료");
             }
+            
+            // DamageTextManager 미리 초기화 (첫 데미지 지연 방지)
+            var damageTextManager = DamageTextManager.Instance;
+            Debug.Log("[GameManager] DamageTextManager 사전 초기화 완료");
             
             if (player != null)
             {

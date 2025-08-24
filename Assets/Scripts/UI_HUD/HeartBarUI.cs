@@ -36,6 +36,7 @@ public class HealthBarUI : MonoBehaviour
         if (playerHealth != null && playerHealth.events != null)
         {
             playerHealth.events.OnHealthChanged.AddListener(UpdateHealthUI);
+            playerHealth.events.OnDamageTaken.AddListener(OnPlayerDamaged);
         }
         
         InitializeHearts();
@@ -44,9 +45,10 @@ public class HealthBarUI : MonoBehaviour
     private void OnDestroy()
     {
         // 이벤트 해제
-        if (playerHealth != null)
+        if (playerHealth != null && playerHealth.events != null)
         {
             playerHealth.events.OnHealthChanged.RemoveListener(UpdateHealthUI);
+            playerHealth.events.OnDamageTaken.RemoveListener(OnPlayerDamaged);
         }
     }
     
@@ -134,6 +136,15 @@ public class HealthBarUI : MonoBehaviour
     }
     
     /// <summary>
+    /// 플레이어 피격 시 호출
+    /// </summary>
+    /// <param name="damageAmount">받은 데미지</param>
+    private void OnPlayerDamaged(float damageAmount)
+    {
+        StartCoroutine(HeartDamageFlashEffect());
+    }
+    
+    /// <summary>
     /// 하트 표시를 업데이트합니다
     /// </summary>
     private void UpdateHealthDisplay()
@@ -197,6 +208,47 @@ public class HealthBarUI : MonoBehaviour
         }
         
         heartTransform.localScale = originalScale;
+    }
+    
+    /// <summary>
+    /// 피격 시 하트 플래시 효과
+    /// </summary>
+    private System.Collections.IEnumerator HeartDamageFlashEffect()
+    {
+        // 모든 하트에 효과 적용
+        Color originalColor = Color.white;
+        
+        // 0.1초 흰색 플래시
+        foreach (var heart in heartImages)
+        {
+            if (heart != null && heart.gameObject.activeInHierarchy)
+            {
+                heart.color = Color.white;
+            }
+        }
+        
+        yield return new WaitForSeconds(0.1f);
+        
+        // 붉은 틴트
+        Color redTint = new Color(1f, 0.3f, 0.3f, 1f);
+        foreach (var heart in heartImages)
+        {
+            if (heart != null && heart.gameObject.activeInHierarchy)
+            {
+                heart.color = redTint;
+            }
+        }
+        
+        yield return new WaitForSeconds(0.2f);
+        
+        // 원복
+        foreach (var heart in heartImages)
+        {
+            if (heart != null && heart.gameObject.activeInHierarchy)
+            {
+                heart.color = originalColor;
+            }
+        }
     }
     
 #if UNITY_EDITOR
